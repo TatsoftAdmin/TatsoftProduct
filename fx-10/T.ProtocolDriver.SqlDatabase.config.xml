@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>SQL Database Connector</Description>
+	<AssemblyName>T.ProtocolDriver.SqlDatabase</AssemblyName>
+	<AssemblyVersion>1.0.0.0</AssemblyVersion>
+	<CustomInterface>Custom</CustomInterface>
+	<TagProvider Enable="true" BranchSeparator="." AttributeSeparator="." Access="Read" />
+	<ProtocolOptions>
+		<ProtocolOptions>
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<Custom>
+		</Custom>
+	</Settings>
+	<Station>
+		<Custom>
+			<AssemblyName>T.ProtocolDriver.SqlDatabase.Editors.dll</AssemblyName>
+			<TypeName>T.ProtocolDriver.SqlDatabase.Editors.StationEditor</TypeName>
+		</Custom>
+	</Station>
+
+	<Points>
+		<Address AllowConfigDataType="false">
+			<AssemblyName>T.ProtocolDriver.SqlDatabase.Editors.dll</AssemblyName>
+			<TypeName>T.ProtocolDriver.SqlDatabase.Editors.AddressEditor;Static</TypeName>
+		</Address>
+	</Points>
+</Protocol>

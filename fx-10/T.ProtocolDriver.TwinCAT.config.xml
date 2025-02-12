@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>Beckhoff TwinCAT devices</Description>
+	<AssemblyName>T.ProtocolDriver.TwinCAT</AssemblyName>
+	<AssemblyVersion>2.5.0.1</AssemblyVersion>
+	<Import>true</Import>
+	<Multiplatform>true</Multiplatform>
+	<ShouldCloseCommAPIAfterErrors>true</ShouldCloseCommAPIAfterErrors>
+	<ProtocolOptions>
+		<ProtocolOptions>
+			<Names P1="BlockSize"/>
+			<EditTypes P1="int=1-2000"/>
+			<DefaultValues P1="300"/>
+			<EditModes P1="Enable"/>
+			<Hint P1="Maximum size of blocks"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="290" G2="150" />
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<Custom>
+		</Custom>
+	</Settings>
+
+	<Station>
+		<Custom>
+			<Names P1="AmsNetID" P2="AmsSrvPort"/>
+			<DefaultValues P1 ="192.168.1.1.1.1" P2="801"/>
+			<EditModes P1="Enable" P2="Enable"/>
+			<EditTypes P1="string" P2="int"/>
+			<Hint P1="AmsNetID" P2="AmsSrvPort"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="240" G2="90" />
+		</Custom>
+	</Station>
+	<Points>
+		<Address AllowConfigDataType="false" >
+			<Names P1="Variable"/>
+			<DefaultValues P1=""/>
+			<EditTypes P1="string" />
+			<EditModes P1="Enable"/>
+			<Hint
+		  P1=""
+	/>
+		</Address>
+	</Points>
+</Protocol>

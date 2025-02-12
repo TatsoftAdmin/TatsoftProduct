@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>TTS08 SD50 Server</Description>
+	<AssemblyName>T.ProtocolDriver.TTS08</AssemblyName>
+	<AssemblyVersion>1.1.0.1</AssemblyVersion>
+	<Multiplatform>true</Multiplatform>
+	<ProtocolOptions>
+		<ProtocolOptions>
+			<Names P1="DeadBand(ms)"/>
+			<EditTypes P1="int" />
+			<EditModes P1="Enable"/>
+			<DefaultValues P1="100"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="200" G2="80"/>
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<TCPIP>
+			<DefaultValues P1="false" P2="true" P3="9976" P4="1"/>
+			<EditModes P1="Hidden" P2="Enable" P3="Enable" P4="Enable" />
+		</TCPIP>
+	</Settings>
+
+	<Station>
+		<TCPIP>
+			<Names P1="IP" P2="Port"  />
+			<DefaultValues P1 ="192.168.1.1" P2="9876"  />
+			<EditModes P1="Enable" P2="Enable" />
+			<EditTypes P1="ip" P2="int"  />
+			<Hint P1="IP Address of the server" P2="TCP/IP Port of the server" />
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="230" G2="90" />
+		</TCPIP>
+	</Station>
+	<Points>
+		<Address AllowConfigDataType="false" >
+			<Names P1="SensorTxId" P2="Separator"  P3="ItemID" />
+			<DefaultValues P1="0100" P2=":" P3="PRESSURE"/>
+			<EditTypes P1="hex=0000-FFFF"
+					   P2="Separator"
+					   P3="ComboBox=BATTERY;
+                 PRESSURE;
+                 TENSION;
+                 TORQUE;
+                 TEMPERATURE;
+                 X_AXIS_ACCELERATION;
+                 Y_AXIS_ACCELERATION;  
+                 Z_AXIS_ACCELERATION; 
+                 RPM;
+                 TIMESTAMP;  
+                 "/>
+			<EditModes P1="Enable" P2="Hidden" P3="Enable"/>
+			<Hint
+				  P1="Sensor TxID"
+				  P3="Parameter"
+			/>
+		</Address>
+	</Points>
+</Protocol>

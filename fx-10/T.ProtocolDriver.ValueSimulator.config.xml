@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>ValueSimulator - Auto Generated Values</Description>
+	<AssemblyName>T.ProtocolDriver.ValueSimulator</AssemblyName>
+	<AssemblyVersion>1.0.0.3</AssemblyVersion>
+	<AllowUserTypes>true</AllowUserTypes>
+	<AllowNoArrayIndexesForArray>true</AllowNoArrayIndexesForArray>
+	<UseLastArrayPosition>true</UseLastArrayPosition>
+	<Multiplatform>true</Multiplatform>
+	<ProtocolOptions>
+	</ProtocolOptions>
+
+	<Points>
+		<Address AllowConfigDataType="true">
+			<Names P1="Type" P2="" P3="Min" P4="" P5="Max" P6="" P7="Step"/>
+			<DefaultValues P1="INTEGER" P2=":" P3="" P4=";" P5="" P6=";" P7="" />
+			<EditTypes P1="ComboBox=BOOL;INTEGER;FLOAT;STRING;RAMP;SINE;"
+				 P2="Separator" P3="String" P4="Separator" P5="String" P6="Separator" P7="String"/>
+			<EditModes P1="Enable" P2="Hidden" P3="Enable" P4="Hidden" P5="Enable" P6="Hidden" P7="Enable"/>
+			<Hint />
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="300" G2="135" /> />
+		</Address>
+	</Points>
+</Protocol>

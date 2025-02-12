@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<ShouldCloseCommAPIAfterErrors>true</ShouldCloseCommAPIAfterErrors>
+	<Description>National Instruments Labview Data Sockets</Description>
+	<AssemblyName>T.ProtocolDriver.NIDataSockets</AssemblyName>
+	<AssemblyVersion>1.1.0.0</AssemblyVersion>
+	<AllowUserTypes>false</AllowUserTypes>
+	<Multiplatform>true</Multiplatform>
+	<AllowNoArrayIndexesForArray>false</AllowNoArrayIndexesForArray>
+	<ProtocolOptions>
+		<ProtocolOptions>
+			<Names P1="BlockSize" P2="Encoding" />
+			<EditTypes P1="int=0-250" P2="ComboBox=DSTP;OPC;LOOKOUT;HTTP;FTP;"  />
+			<DefaultValues P1="250" P2="LOOKOUT"  />
+			<EditModes P1="Enable" P2="Enable" />
+			<Hint P1="Maximum size of the read blocks\r\nRange: 0-250 items" P2="Message format" />
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="290" G2="150" />
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<TCPIP>
+			<DefaultValues P1="false" P2="false" P3="515" P4="1"/>
+			<EditModes P1="Hidden" P2="Enable" P3="Enable" P4="Enable" />
+		</TCPIP>
+	</Settings>
+	<Station>
+		<TCPIP>
+			<Names P1="Server" />
+			<DefaultValues P1 ="localhost"  />
+			<EditModes P1="Enable" />
+			<EditTypes P1="String" />
+			<Hint P1="IP or Server Name"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="230" G2="90" />
+		</TCPIP>
+	</Station>
+	<Points>
+		<Address AllowConfigDataType="false" >
+			<Names P1="Address" />
+			<DefaultValues P2=""/>
+			<EditTypes P1="String" />
+			<EditModes P1="Enable" />
+			<Hint 	P1="Address, data path"	/>
+		</Address>
+	</Points>
+</Protocol>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Provider>
+	<Description>SQL Server Database</Description>
+	<ConnectionString>
+		
+		<!-- *** Must set the userName ans passWord in the LogonName and LogonPassword columns-->		
+		
+		<System.Data.Odbc>			
+			<Names P1="Driver" P2="Server" P3="Database" P4="Additional Parameters"/>
+			<EditTypes P1="string"  P2="string" P3="string" P4="string"/>
+			<DefaultValues P1="{SQL Native Client}" P2="myServerAddress" P3="myDatabase" P4=""/>
+			<EditModes P1="Disable"  P2="Enable" P3="Enable" P4="Enable"/>
+			<Hint P1="Driver Name" P2="Server Name\SQL Instance" P3="Database Name" P4="Aditional parameters to be added to the ConnectionString, separated by ',' (comma)"/>
+			<Parameters UserSyntax="Uid" PassSyntax="Pwd" />
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="420" G2="170" />
+		</System.Data.Odbc>
+
+		<System.Data.OleDb>
+			<Names P1="Provider" P2="Data Source" P3="Initial Catalog" P4="Additional Parameters"/>
+			<EditTypes P1="string"  P2="string" P3="string" P4="string"/>
+			<DefaultValues P1="SQLOLEDB.1" P2=".\SQLEXPRESS" P3="" P4=""/>
+			<EditModes P1="Disable"  P2="Enable" P3="Enable" P4="Enable"/>
+			<Hint P1="Provider Name" P2="Server Name\SQL Instance" P3="Database Name" P4="Aditional parameters to be added to the ConnectionString, separated by ',' (comma)"/>
+			<Parameters UserSyntax="User Id" PassSyntax="Password" />
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="390" G2="170" />
+		</System.Data.OleDb>
+
+		<System.Data.SqlClient>
+			<Names P1="Data Source" P2="Initial Catalog" P3="Additional Parameters"/>
+			<EditTypes P1="string" P2="string" P3="string"/>
+			<DefaultValues P1=".\SQLEXPRESS" P2="myDatabase" P3="User Id="/>
+			<EditModes P1="Enable" P2="Enable" P3="Enable"/>
+			<Hint P1="Server Name\SQL Instance" P2="Database Name" P3="Aditional parameters to be added to the ConnectionString, separated by ',' (comma)"/>
+			<Parameters UserSyntax="User Id" PassSyntax="Password" />
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="390" G2="170" />
+		</System.Data.SqlClient>
+	</ConnectionString>
+</Provider>

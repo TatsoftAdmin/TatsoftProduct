@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>MQTT SparkplugB Publisher</Description>
+	<AssemblyName>T.ProtocolDriver.MQTTspBPub</AssemblyName>
+	<AssemblyVersion>1.0.0.2</AssemblyVersion>
+	<Import>true</Import>
+	<CustomInterface>Custom</CustomInterface>
+	<AllowUserTypes>true</AllowUserTypes>
+	<AllowNoArrayIndexesForArray>true</AllowNoArrayIndexesForArray>
+	<EnableCheckingWorkItemAfterWriting >true</EnableCheckingWorkItemAfterWriting >
+	<UseLastArrayPosition>true</UseLastArrayPosition>
+	<EnableWriteGroup>true</EnableWriteGroup>
+	<Multiplatform>true</Multiplatform>
+	<EnableQualityEvent>true</EnableQualityEvent>
+	<ProtocolOptions>
+		<ProtocolOptions>
+			<Names P1="Type"  P2="TagProperties" P3="TimePublishRate" P4="StoreAndForward" P5="PublishDBIRTHAfterNBIRTH" P6="UseParenthesesForArray" P7="PublishUDTsAsSimpleTags" P8="GroupID" P9="ForceMessageTimestamp"/>
+			<EditTypes P1="ComboBox=Publisher;"  P2="String" P3="int" P4="CheckBox" P5="CheckBox" P6="CheckBox" P7="CheckBox" P8="String" P9="CheckBox"/>
+			<DefaultValues P1="Publisher" P2="" P3="500" P4="false" P5="true" P6="false" P7="false" P8="GroupId" P9="false"/>
+			<EditModes P1="Disable" P2="Enable" P3="Enable" P4="Enable" P5="Enable" P6="Enable" P7="Enable" P8="Enable" P9="Enable"/>
+			<Hint P1="MQTT spB Publisher client" P2="Type here tag properties separated by ','"
+				  P3="Time for publishing in ms." P4="Enable StoreAndForward" P5="When NBIRTH is Requested a DBIRTH message is requested as well."
+				  P6="Replace brackets by parentheses in the metric name"  P7="Publish Metric in UDT Structure or convert it to simple tags (in structured in folders)"
+				  P8="Provides a logical grouping of Edge Node’s in SparkplugB Namespace" P9="Force Tag Timestamp to be the same as the Message Timestamp in DBIRTHs"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="420" G2="200" />
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<TCPIP>
+			<EditModes P1="Hidden" P2="Hidden" P3="Hidden" P4="Hidden" P5="Hidden" />
+		</TCPIP>
+	</Settings>
+	<Station>
+		<TCPIP>
+			<Names P1="BrokerURL" P2="Port" P3="ClientID" P4="Username" P5="Password" P6="X509Certificate" P7="CertificatePassword"
+				   P8="Network Security" P9="WebSocket" P10="CollectorID" P11="QoS" P12="KeepAlive (sec.)" P13="Report out of range by Exception" P14="NodeID" />
+			<DefaultValues P1 ="localhost" P2="1883" P3="_SolutionName_-_Guid_" P4="" P5="" P6="" P7="" P8="None" P9="false" P10="" P11="AtLeastOnce" P12="10" P13="false" P14="NodeId" />
+			<EditModes P1="Enable" P2="Enable" P3="Enable" P4="Enable" P5="Enable" P6="Enable" P7="Enable" P8="Enable" P9="Enable" P10="Enable" P11="Enable" P12="Enable" P13="Enable" P14="Enable" />
+			<EditTypes P1="string" P2="int" P3="string" P4="string" P5="password" P6="string" P7="password" P8="ComboBox=None;Ssl2;Ssl3;Tls;Tls11;Tls12;"
+					   P9="CheckBox" P10="string" P11="ComboBox=AtMostOnce;AtLeastOnce;ExactlyOnce;" P12="int" P13="CheckBox" P14="String" />
+			<Hint P1="URL of Broker" P2="Port" P3="Client Identification. If empty then one will be auto generated" P4="Username" P5="Password" P6="X509Certificate full file name" P7="X509Cerfificate Password (.pfx)"
+				  P8="Encryption Ssl Protocol" P9="Use WebSocket connection or not." P10="Only for Publisher type and when using other MQTT Brokers, it is the ID from a Collector Client"
+				  P11="Quality of Service" P12="Session Keep Alive Timespan in seconds" P13="Report out of range by Exception uses Tag Min/Max as limits" 
+				  P14=" Identifies ID of Edge Node in SparkplugB Namespace" 
+				  />
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="390" G2="220" />
+		</TCPIP>
+	</Station>
+	<Points>
+		<Address AllowConfigDataType="false">
+			<AssemblyName>T.ProtocolDriver.MQTTspBPub.Editors.dll</AssemblyName>
+			<TypeName>T.ProtocolDriver.MQTTspBPub.Editors.AddressEditor;Static</TypeName>
+		</Address>
+	</Points>
+</Protocol>

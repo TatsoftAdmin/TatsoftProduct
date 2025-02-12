@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>Modbus Slave Protocol</Description>
+	<AssemblyName>T.ProtocolDriver.ModbusSlave</AssemblyName>
+	<AssemblyVersion>2.0.0.8</AssemblyVersion>
+	<Multiplatform>true</Multiplatform>
+	<ProtocolOptions>
+		<ProtocolOptions>
+			<Names P1="SlaveID" P2="Encoding" />
+			<EditTypes P1="int" P2="LabelBox=ASCII;RTU;RTU TCP;" />
+			<DefaultValues P1="2" P2="RTU TCP" />
+			<EditModes P1="Enable" P2="Enable" />
+			<Hint P1="Own slave address in modbus network" P2="Message Format" />
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Timeout>
+		<Timeout>
+			<EditModes P1="Enable" P2="Enable" P3="Enable" P4="Enable" P5="Enable" />
+		</Timeout>
+	</Timeout>
+
+	<Settings AllowCustomTypes="false">
+		<Serial>
+			<DefaultValues P1="true" P2="false" P3="com1" P4="9600" P5="8" P6="1" P7="even" />
+			<EditModes P1="Enable" P2="Hidden" P3="Enable" P4="Enable" P5="Enable" P6="Enable" P7="Enable" />
+		</Serial>
+		<TCPIP>
+			<EditModes P1="Disable" P2="Hidden" P3="Enable" P4="Disable" />
+			<DefaultValues P1="true" P2="false" P3="502" P4="1" />
+		</TCPIP>
+	</Settings>
+
+	<Points>
+		<Address AllowConfigDataType="true">
+			<Names P1="Operand" P2="Address" />
+			<DefaultValues P1="4" P2="0001" />
+			<EditTypes P1="ComboBox=0:Coils;1:Input Status;3:Input Registers;4:Holding Registers;" P2="modbus=1-65535" />
+			<EditModes P1="Enable" P2="Enable" />
+			<Hint
+				  P1="0	Coil
+1	Input Status
+3	Input Registers
+4	Holding Registers"
+				  P2="Address from 1 to 65535" />
+		</Address>
+	</Points>
+</Protocol>

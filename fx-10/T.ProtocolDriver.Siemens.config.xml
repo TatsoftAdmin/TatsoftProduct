@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>Siemens S7 devices</Description>
+	<AssemblyName>T.ProtocolDriver.Siemens</AssemblyName>
+	<AssemblyVersion>2.2.2.0</AssemblyVersion>
+	<Import>true</Import>
+	<CustomInterface>Custom</CustomInterface>
+	<AllowNoArrayIndexesForArray>true</AllowNoArrayIndexesForArray>
+	<Multiplatform>true</Multiplatform>
+	<ProtocolOptions>
+		<ProtocolOptions>
+			<!--
+      <Names P1="Device Number" P2="PLC Number"/>
+      <EditTypes P1="int" P2="int" P3="int"/>
+      <EditModes P1="Enable" P2="Enable"/>
+      <DefaultValues P1="1" P2="1"/>
+      -->
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Timeout>
+		<Timeout>
+			<EditModes P1="Enable" P2="Enable" P3="Enable" P4="Enable" P5="Enable" />
+			<DefaultValues P1 ="1000" P2="1000" P3="1000" P4="500" P5="1"/>
+			<EditTypes P1="int" P2="int" P3="int" P4="int" P5="int=1-10"/>
+		</Timeout>
+	</Timeout>
+
+	<Settings AllowCustomTypes="false">
+		<TCPIP>
+			<EditModes P1="Hidden" P2="Hidden" P3="Hidden" P4="Hidden" P5="Hidden" />
+		</TCPIP>
+	</Settings>
+	<Station>
+		<TCPIP>
+			<Names P1="IP" P2="Rack" P3="Slot" P4="TCP Port" P5="S7 Family"/>
+			<DefaultValues P1 ="192.168.1.1" P2="0" P3="2" P4="102" P5="300/400"/>
+			<EditModes P1="Enable" P2="Enable" P3="Enable" P4="Disable" P5="Enable"/>
+			<EditTypes P1="ip" P2="int" P3="int" P4="int" P5="ComboBox=300/400;1200;"/>
+			<Hint P1="IP Address of the slave" P2="Rack of the slave" P3="Slot of the slave" P4="TCP Port on the PLC" P5="PLC Family"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="240" G2="100" />
+		</TCPIP>
+	</Station>
+
+	<Points>
+		<Address AllowConfigDataType="false">
+			<AssemblyName>T.ProtocolDriver.Siemens.Editors.dll</AssemblyName>
+			<TypeName>T.ProtocolDriver.Siemens.Editors.AddressEditor</TypeName>
+			<!--
+      <Names P1="Type" P2="DB Group" P3="Format" P4="Address" P5="Bit or String Length"/>
+      <DefaultValues P1="M" P2="" P3="W" P4="0" P5="" P6=""/>	  
+	  <EditTypes P1="ComboBox=C:Counters;DB:Data Blocks;I:Inputs;M:Flags;Q:Outputs;T:Timers;"
+				 P2="int" P3="ComboBox=
+B:Byte;
+W:Word;
+DW:Dword;
+F:Float;
+.DBB:Byte for Data Blocks;
+.DBDW:Dword for Data Blocks;
+.DBW:Word for Data Blocks;
+.DBF:Float for Data Blocks;               
+.DBST:String for Data Blocks;               
+C:Counter;
+T:Timer;
+ST:String;
+"
+
+P4="int" P5="Bit or String Length"/>
+
+
+      <EditModes P1="Enable" P2="Enable" P3="Enable" P4="Enable" P5="Enable"/>      
+      -->
+
+			<Hint P1="M	Flags
+I	Inputs
+Q	Outputs
+C	Counters
+T	Timers
+DB	Data Blocks"
+
+	 P2="Group number for DB only"
+
+	 P3="B	Byte
+W	Word
+DW	Dword
+F	Float
+ST	String
+C	Counter
+T	Timer
+DBB	Byte for Data Blocks
+DBW	Word for Data Blocks
+DBDW	Dword for Data Blocks
+DBF	Float for Data Blocks
+DBST	String for Data Blocks"
+
+	 P4="Address Number"
+	 P5="Bit number or String Length"
+/>
+
+
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="360" G2="145" />
+			/>
+		</Address>
+	</Points>
+</Protocol>
+

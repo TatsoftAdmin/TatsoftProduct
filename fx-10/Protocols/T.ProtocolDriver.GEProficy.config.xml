@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>GE Proficy Historian Connector</Description>
+	<AssemblyName>T.ProtocolDriver.GEProficy</AssemblyName>
+	<AssemblyVersion>1.0.0.0</AssemblyVersion>
+	<CustomInterface>Custom</CustomInterface>
+	<AllowUserTypes>true</AllowUserTypes>
+	<AllowNoArrayIndexesForArray>true</AllowNoArrayIndexesForArray>
+	<UseLastArrayPosition>true</UseLastArrayPosition>
+	<Multiplatform>false</Multiplatform>
+	<TagProvider Enable="true" BranchSeparator="\" AttributeSeparator="|" Access="ReadWrite" IsHistorian="true" />
+	<ProtocolOptions>
+		<ProtocolOptions>
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<Custom>
+		</Custom>
+	</Settings>
+	<Station>
+		<Custom>
+			<AssemblyName>T.ProtocolDriver.GEProficy.Editors.dll</AssemblyName>
+			<TypeName>T.ProtocolDriver.GEProficy.Editors.StationEditor</TypeName>
+		</Custom>
+	</Station>
+
+	<Points>
+		<Address AllowConfigDataType="false">
+			<AssemblyName>T.ProtocolDriver.GEProficy.Editors.dll</AssemblyName>
+			<TypeName>T.ProtocolDriver.GEProficy.Editors.AddressEditor;Static</TypeName>
+		</Address>
+	</Points>
+</Protocol>

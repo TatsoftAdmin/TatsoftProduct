@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Provider>
+	<Description>.Net Framework Data Provider for SQLite</Description>
+	<ConnectionString>
+		<System.Data.SQLite>
+			<Names P1="Provider" P2="Data Source" P3="Additional Parameters"/>
+			<EditTypes P1="string"  P2="string" P3="string"/>
+			<DefaultValues P1="System.Data.SQLite" P2="" P3=""/>
+			<EditModes P1="Disable"  P2="Enable" P3="Enable"/>
+			<Hint P1="Provider Name" P2="Path and fileName of dataSource" P3="Aditional parameters to be added to the ConnectionString, separated by ',' (comma)"/>			
+			<Parameters PassSyntax="Password" />
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="450" G2="170" />
+		</System.Data.SQLite>
+	</ConnectionString>
+</Provider>

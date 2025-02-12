@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<ShouldCloseCommAPIAfterErrors>true</ShouldCloseCommAPIAfterErrors>
+	<Description>BACNet Ethernet Driver</Description>
+	<AssemblyName>T.ProtocolDriver.BacNet</AssemblyName>
+	<AssemblyVersion>1.0.0.0</AssemblyVersion>
+	<AllowUserTypes>true</AllowUserTypes>
+	<AllowNoArrayIndexesForArray>true</AllowNoArrayIndexesForArray>
+	<Multiplatform>true</Multiplatform>
+	<CompactFramework>true</CompactFramework>
+	<EnableWriteGroup>true</EnableWriteGroup>
+	<CustomInterface>Custom</CustomInterface>
+	<ProtocolOptions>
+		<ProtocolOptions>
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<TCPIP>
+			<DefaultValues P1="false" P2="false" P3="502" P4="1"/>
+			<EditModes P1="Hidden" P2="Enable" P3="Enable" P4="Enable" />
+		</TCPIP>
+	</Settings>
+	<Station>
+		<TCPIP>
+			<Names P1="Device ID" P2="IP" P3="Port" P4="Connect Timeout" P5="Retry Attempts"/>
+			<DefaultValues  P1="0" P2="192.168.1.1" P3="47808" P4="5" P5="3"/>
+			<EditModes  P1="Enable" P2="Enable" P3="Enable" P4="Enable" P5="Enable"/>
+			<EditTypes  P1="int=0-255" P2="ip" P3="int" P4="int" P5="int=1-10"/>
+			<Hint P1="Destination slave address" P2="IP Address of the slave" P3="TCP/IP Port of the slave" P4="Connect Timeout" P5="Retry Attempts"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="250" G2="140" />
+		</TCPIP>
+	</Station>
+	<Points>
+		<Address AllowConfigDataType="true" >
+			<Names P1="Type" P2="Separator" P3="Object Instance" P4="Separator2" P5="Address"/>
+			<DefaultValues P1="0" P2="." P3="" P4="." P5=""/>
+			<EditTypes P1="ComboBox=AnalogInput;AnalogOutput;AnalogValue;BinaryOutput;BinaryInput;BinaryValue;MultiStateInput;MultiStateOutput;MultiStateValue" P2="separator" P3="string" P4="separator" P5="string"/>
+			<EditModes P1="Enable" P2="Hidden" P3="Enable" P4="Hidden" P5="Enable"/>
+			<Hint P1="Datatype indicator" P2=""	P3="Object Instance" P4=""	P5="Address"/>
+		</Address>
+	</Points>
+</Protocol>

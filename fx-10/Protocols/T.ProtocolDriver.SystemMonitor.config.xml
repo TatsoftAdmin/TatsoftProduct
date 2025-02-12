@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>System Monitor of the Local computer</Description>
+	<AssemblyName>T.ProtocolDriver.SystemMonitor</AssemblyName>
+	<AssemblyVersion>1.1.0.0</AssemblyVersion>
+	<AllowUserTypes>true</AllowUserTypes>
+	<Multiplatform>true</Multiplatform>
+	<Settings AllowCustomTypes="false">
+		<Custom>
+		</Custom>
+	</Settings>
+	<Station>
+		<Custom>
+			<Names P1="Station" />
+			<DefaultValues P1 ="127.0.0.1"/>
+			<EditModes P1="Disable" />
+			<EditTypes P1="string" />
+			<Hint P1="Station address" />
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="240" G2="90" />
+		</Custom>
+	</Station>
+	<Points>
+		<Address AllowConfigDataType="false">
+			<Names P1="Information"/>
+			<DefaultValues P1="Processor"/>
+			<EditTypes P1="ComboBox=SystemMonitor;Processor;MemoryAvailable;MemoryInUse;MemoryTotal;MemoryPhysicalAvailable;MemoryPhysicalInUse;MemoryPhysicalTotal;HDWriteBytesPerSecond;HDReadBytesPerSecond;NetDataReceivedBytesPerSecond;NetDataSentBytesPerSecond;"/>
+			<EditModes P1="Enable" />
+			<Hint
+				  P1= 
+"SystemMonitor: Map to a SystemMonitor template tag
+Processor: Used CPU Percentage
+MemoryAvailable: Total of memory available (including virtual memory) in kilobytes
+MemoryInUse: Total of memory being used (including virtual memory) in kilobytes
+MemoryTotal: Total of memory (including virtual memory) in kilobytes
+MemoryPhysicalAvailable: Total of physical memory available in kilobytes
+MemoryPhysicalInUse: Total of physical memory being used in kilobytes
+MemoryPhysicalTotal: Total of physical memory in kilobytes
+HDWriteBytesPerSecond: Bytes per seconds written to the Hard Disk
+HDReadBytesPerSecond: Bytes per seconds read from the Hard Disk
+NetDataReceivedBytesPerSecond: Bytes per seconds received through the network
+NetDataSentBytesPerSecond: Bytes per seconds sent through the network"
+			/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="300" G2="135" />
+		</Address>
+	</Points>
+</Protocol>

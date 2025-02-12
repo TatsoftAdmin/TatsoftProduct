@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>DataHub Communication Service</Description>
+	<AssemblyName>T.ProtocolDriver.DataHubService</AssemblyName>
+	<AssemblyVersion>1.0.0.0</AssemblyVersion>
+	<DefaultName>DataHubService</DefaultName>
+	<CustomInterface>Custom</CustomInterface>
+	<AllowUserTypes>true</AllowUserTypes>
+	<AllowNoArrayIndexesForArray>true</AllowNoArrayIndexesForArray>
+	<UseLastArrayPosition>true</UseLastArrayPosition>
+	<TagProvider Enable="true" BranchSeparator="." AttributeSeparator="." Access="ReadWrite" />
+	<Multiplatform>true</Multiplatform>
+	<ProtocolOptions>
+		<ProtocolOptions>
+			
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<Custom>
+		</Custom>
+	</Settings>
+	<Station>
+		<Custom>
+			<Names P1="Listening Port" P2="AccessKey" />
+			<DefaultValues P1="30001" P2=""/>
+			<EditModes P1="Enable" P2="Enable" />
+			<EditTypes P1="int" P2="password"/>
+			<Hint P1="Listening port number" P2="Access Key" />
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="290" G2="180" />
+		</Custom>
+	</Station>
+	<Points>
+		
+	</Points>
+</Protocol>

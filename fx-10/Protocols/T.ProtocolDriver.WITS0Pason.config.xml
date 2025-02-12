@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+  <ShouldCloseCommAPIAfterErrors>true</ShouldCloseCommAPIAfterErrors>
+  <Description>WITS Level 0 Pason</Description>
+  <AssemblyName>T.ProtocolDriver.WITS0Pason</AssemblyName>
+  <AssemblyVersion>1.0.10.0</AssemblyVersion>
+  <AllowUserTypes>true</AllowUserTypes>
+  <Multiplatform>true</Multiplatform>
+  <AllowNoArrayIndexesForArray>true</AllowNoArrayIndexesForArray>
+  <ProtocolOptions>
+    <ProtocolOptions>
+      <GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+      <GridValues G1="290" G2="150" />
+    </ProtocolOptions>
+  </ProtocolOptions>  
+  <Settings AllowCustomTypes="false">
+    <Serial>
+      <DefaultValues P1="false" P2="false" P3="com1" P4="9600" P5="8" P6="1" P7="none" />
+      <EditModes P1="Hidden" P2="Enable" P3="Enable" P4="Enable" P5="Enable" P6="Enable" P7="Enable" /> 
+    </Serial>
+    <MultiSerial>
+      <DefaultValues P1="false" P2="false" P3="2" P4="9600" P5="8" P6="1" P7="none" />
+      <EditModes P1="Hidden" P2="Hidden" P3="Enable" P4="Enable" P5="Enable" P6="Enable" P7="Enable"/>
+    </MultiSerial>
+    <UDP>
+      <DefaultValues P1="false" P2="false" P3="123" P4="1"/>
+      <EditModes P1="Hidden" P2="Enable" P3="Enable" P4="Enable" />
+    </UDP>
+    <TCPIP>
+      <DefaultValues P1="false" P2="false" P3="123" P4="1"/>
+      <EditModes P1="Hidden" P2="Enable" P3="Enable" P4="Enable" />	  
+    </TCPIP>
+  </Settings>
+
+  <Station>
+    <Serial>
+	  <GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+	  <GridValues G1="175" G2="80" />
+    </Serial>
+    <MultiSerial>
+      <Names P1="ComPort" />
+      <DefaultValues P1="com1" />
+      <EditModes P1="Enable" />
+      <EditTypes P1="LabelBox=com1;com2;com3;com4;com5;com6;com7;com8;"/>
+      <Hint P1="Serial port identification" />
+    </MultiSerial>
+    <TCPIP>
+      <Names P1="IP" P2="Port"  />
+      <DefaultValues P1 ="192.168.1.1" P2="100"  />
+      <EditModes P1="Enable" P2="Enable" />
+      <EditTypes P1="ip" P2="int"  />
+      <Hint P1="IP Address of the server" P2="TCP/IP Port of the server" />      
+	  <GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+	  <GridValues G1="230" G2="90" />
+	</TCPIP>
+    <UDP>
+      <Names P1="IP" P2="Port"  />
+      <DefaultValues P1 ="192.168.1.1" P2="100"  />
+      <EditModes P1="Enable" P2="Enable" />
+      <EditTypes P1="ip" P2="int"  />
+      <Hint P1="IP Address of the server" P2="TCP/IP Port of the server" />
+      <GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+      <GridValues G1="230" G2="90" />
+    </UDP>
+  </Station>
+  <Points>
+    <Address AllowConfigDataType="false" >
+      <Names P1="RecordID" P2="Separator"  P3="ItemID" />
+      <DefaultValues P1="1" P2=":" P3="1"/>
+      <EditTypes P1="ComboBox=01:General Time-Based - Drilling data gathered at regular time intervals;
+                 02:Drilling - Depth Based - Drilling data gathered at regular depth intervals;
+                 03:Drilling - Connections - Data gathered at drilling connections;
+                 04:Hydraulics - Hydraulics data gathered while circulating;
+                 05:Trip Time - Tripping data gathered while running in/pulling out;
+                 06:Trip - Connections  Tripping data gathered at tripping connections;  
+                 07:Survey Directional - Directional/Survey data;  
+                 08:MWD Formation Evaluation - MWD Formation Evaluation data;  
+                 09: MWD Mechanical - MWD Mechanical data;  
+                 10:Pressure Evaluation - Pressure Evaluation data; 
+                 11:Mud Tank Volumes - Mud Tank (Pit) Volume data;  
+                 12:Chromatograph Cycle Based - Chromatograph Cycle data;  
+                 13:Chromatograph Depth-Based - Chromatograph data averaged over depth intervals;  
+                 14:Lagged Mud Properties - Mud Property data based returns depth increments;  
+                 15:Cuttings Lithology - Cuttings Lithology and related data;  
+                 16:Hydrocarbon Show - Hydrocarbon Show related data;  
+                 17:Cementing - Well Cementing operations data;  
+                 18:Drill Stem -Testing  Well Testing operations data;  
+                 19:Configuration - Drillstring and Rig Configuration data;  
+                 20:Mud Report - Mud Report data;  
+                 21:Bit Report - Bit Report data;  
+                 22:Comments - Freeform Comments;  
+                 23:Well Identification - Well Identification data;  
+                 24:Vessel Motion  Mooring Status - Vessel Motion and Mooring Status data;  
+                 25:Weather  Sea State - Weather and Sea State data;"
+                 P2="Separator"
+                 P3="int=1-65535"/>
+      <EditModes P1="Enable" P2="Hidden" P3="Enable"/>
+      <Hint 
+			P1="Record ID"						
+			P2="Address from 1 to 99"			
+			/>
+    </Address>
+  </Points>  
+</Protocol>

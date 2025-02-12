@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>Fatek FBs PLCs using Facon protocol</Description>
+	<AssemblyName>T.ProtocolDriver.Facon</AssemblyName>
+	<AssemblyVersion>1.0.0.0</AssemblyVersion>
+	<Multiplatform>true</Multiplatform>
+	<ProtocolOptions>
+		<ProtocolOptions>
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<Serial>
+			<DefaultValues P1="false" P2="false" P3="com1" P4="9600" P5="7" P6="1" P7="even" />
+			<EditModes P1="Hidden" P2="Hidden" P3="Enable" P4="Enable" P5="Enable" P6="Enable" P7="Enable" />
+		</Serial>
+		<MultiSerial>
+			<DefaultValues P1="false" P2="false" P3="2" P4="9600" P5="7" P6="1" P7="even" />
+			<EditModes P1="Hidden" P2="Hidden" P3="Enable" P4="Enable" P5="Enable" P6="Enable" P7="Enable"/>
+		</MultiSerial>
+		<TCPIP>
+			<DefaultValues P1="false" P2="false" P3="0" P4="1"/>
+			<EditModes P1="Hidden" P2="Hidden" P3="Hidden" P4="Enable" />
+		</TCPIP>
+	</Settings>
+
+	<Station>
+		<Serial>
+			<Names P1="DeviceID" />
+			<EditTypes P1="int=0-254" />
+			<DefaultValues P1="1" />
+			<EditModes P1="Enable" />
+			<Hint P1="Device address"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="200" G2="100" />
+		</Serial>
+		<MultiSerial>
+			<Names P1="ComPort" P2="DeviceID" />
+			<DefaultValues P1="com1" P2="1" />
+			<EditModes P1="Enable" P2="Enable"/>
+			<EditTypes P1="LabelBox=com1;com2;com3;com4;com5;com6;com7;com8;" P2="int=0-254"/>
+			<Hint P1="Serial port identification" P2="Device address"/>
+		</MultiSerial>
+		<TCPIP>
+			<Names P1="IP" P2="Port" P3="DeviceID" />
+			<DefaultValues P1 ="192.168.1.1" P2="500" P3="1" />
+			<EditModes P1="Enable" P2="Enable" P3="Enable"/>
+			<EditTypes P1="ip" P2="int" P3="int=0-250" />
+			<Hint P1="IP Address of the device" P2="TCP/IP Port of the device" P3="Device address"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="230" G2="90" />
+		</TCPIP>
+	</Station>
+	<Points>
+		<Address AllowConfigDataType="true" >
+			<Names P1="Operand" P2="Address" />
+			<DefaultValues P1="M" P2="0"/>
+			<EditTypes P1="ComboBox=X:Input Discrete;Y:Output Relay;M:Internal Relay;S:Step Relay;T:Timer Discrete;C:Counter Discrete;TMR:Time Register;CTR:Counter Register;HR:Data Register;DR:Data Register;  " P2="int=0-65535"/>
+			<EditModes P1="Enable" P2="Enable"/>
+			<Hint
+				  P1=""
+				  P2=""
+			/>
+		</Address>
+	</Points>
+</Protocol>

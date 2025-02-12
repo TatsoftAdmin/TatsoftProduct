@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Provider>
+  <Description>Firebird Database</Description>
+  <ConnectionString>
+    <System.Data.Odbc>
+      <Names P1="Driver" P2="DbName" P3="Additional Parameters"/>
+      <EditTypes P1="None"  P2="FileName" P3="string"/>
+      <DefaultValues P1="Firebird/InterBase(r) driver" P2="myDatabase" P3=""/>
+      <EditModes P1="Disable"  P2="Enable" P3=""/>
+      <Hint P1="Driver Name" P2="Database Name" P3="Aditional parameters to be added to the ConnectionString, separated by ',' (comma)"/>
+	  <Parameters UserSyntax="Uid" PassSyntax="Pwd" />
+	  <GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+	  <GridValues G1="400" G2="150" />
+    </System.Data.Odbc>
+
+  </ConnectionString>
+</Provider>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>AB Rockwell Serial Micrologix</Description>
+	<AssemblyName>T.ProtocolDriver.DF1Serial</AssemblyName>
+	<AssemblyVersion>1.0.1.2</AssemblyVersion>
+	<Multiplatform>true</Multiplatform>
+	<ProtocolOptions>
+		<ProtocolOptions>
+			<Names P1="Interface" P2="Protocol" P3="Model" P4="CheckSum"/>
+			<EditTypes P1="string" P2="string" P3="string" P4="ComboBox=CRC;BCC;"/>
+			<EditModes P1="Disable" P2="Disable" P3="Disable" P4="Enable"/>
+			<DefaultValues P1="Serial" P2="DF1" P3="500" P4="CRC"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="180" G2="90"/>
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<Serial>
+			<DefaultValues P1="false" P2="false" P3="com1" P4="9600" P5="8" P6="1" P7="even" />
+			<EditModes P1="Hidden" P2="Enable" P3="Enable" P4="Enable" P5="Enable" P6="Enable" P7="Enable" />
+		</Serial>
+	</Settings>
+	<Station>
+		<Serial>
+			<Names P1="SlaveID" />
+			<EditTypes P1="int=0-247" />
+			<DefaultValues P1="1" />
+			<EditModes P1="Enable" />
+			<Hint P1="Destination slave address"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="175" G2="80" />
+		</Serial>
+	</Station>
+
+	<Points>
+		<Address AllowConfigDataType="true">
+			<Names P1="FileType" P2="FileNumber" P3="" P4="Address" P5="Parameter"/>
+			<DefaultValues P1="N" P2="" P3=":" P4="0" P5=""/>
+			<EditTypes P1="ComboBox=N:Integer;B:Binary;T:Timer;C:Counter;R:Control;F:Float;O:Output;I:Input;S:Status;"
+					   P2="int" P3="Separator" P4="int" P5="String"/>
+			<EditModes P1="Enable" P2="Optional" P3="Hidden" P4="Enable" P5="Optional"/>
+			<Hint P1="N	Integer
+B	Binary
+F	Float
+O	Output
+I	Input"
+				  P2="Address File" P3="" P4="Address Element" P5="Advanced Parameter"/>
+
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="300" G2="135" />
+			/>
+		</Address>
+	</Points>
+</Protocol>

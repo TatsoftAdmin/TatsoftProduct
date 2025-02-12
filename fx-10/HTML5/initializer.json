@@ -1,0 +1,6 @@
+﻿{
+  "builder.Services.1": "<assembly>;<type>;<method>",
+  "Initializer.1": "<assembly>;<type>;<method>",
+  "Licensing.1": "<assembly>;<type>;<method>;<argument>",
+  "LoadAssembly.1": "<assembly>"
+}

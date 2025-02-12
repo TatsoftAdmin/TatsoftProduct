@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MQTTspBSimulator xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ConnectionParameters>
+		<BrokerUrl>127.0.0.1</BrokerUrl>
+		<BrokerPort>1883</BrokerPort>
+		<UserName />
+		<Password />
+	</ConnectionParameters>
+	<PayloadSettings>
+		<GroupID Name="GroupID">
+			<NodeIDs>
+				<NodeID Name="Barcelona">
+					<DeviceIDs>
+						<DeviceID Name="Panel_1">
+							<Variables>
+								<Variable Name="Name" Type="string" VariationFlag="false" Min="" Max="10" InitialValue="Barcelona - Panel_1" />
+								<Variable Name="State" Type="boolean" VariationFlag="true" Min="" Max="" InitialValue="False" />
+								<Variable Name="Latitude" Type="double" VariationFlag="false" Min="41.34" Max="41.72" InitialValue="41.34" />
+								<Variable Name="Longitude" Type="double" VariationFlag="false" Min="1.56" Max="2.5" InitialValue="1.56" />
+								<Variable Name="PanelPower" Type="double" VariationFlag="true" Min="200" Max="500" InitialValue="200" />
+								<Variable Name="PanelVoltage" Type="double" VariationFlag="true" Min="12" Max="24" InitialValue="0" />
+								<Variable Name="PanelCurrent" Type="double" VariationFlag="true" Min="3" Max="5" InitialValue="0" />
+								<Variable Name="TemperaturePort" Type="double" VariationFlag="true" Min="15" Max="35" InitialValue="15" />
+							</Variables>
+						</DeviceID>
+						<DeviceID Name="Panel_2">
+							<Variables>
+								<Variable Name="Name" Type="string" VariationFlag="false" Min="" Max="10" InitialValue="Barcelona - Panel_2" />
+								<Variable Name="State" Type="boolean" VariationFlag="true" Min="" Max="" InitialValue="False" />
+								<Variable Name="Latitude" Type="double" VariationFlag="false" Min="41.34" Max="41.72" InitialValue="41.50" />
+								<Variable Name="Longitude" Type="double" VariationFlag="false" Min="1.56" Max="2.5" InitialValue="2.03" />
+								<Variable Name="PanelPower" Type="double" VariationFlag="true" Min="200" Max="500" InitialValue="200" />
+								<Variable Name="PanelVoltage" Type="double" VariationFlag="true" Min="12" Max="24" InitialValue="0" />
+								<Variable Name="PanelCurrent" Type="double" VariationFlag="true" Min="3" Max="5" InitialValue="0" />
+								<Variable Name="TemperaturePort" Type="double" VariationFlag="true" Min="15" Max="35" InitialValue="15" />
+							</Variables>
+						</DeviceID>
+						<DeviceID Name="Panel_3">
+							<Variables>
+								<Variable Name="Name" Type="string" VariationFlag="false" Min="" Max="10" InitialValue="Barcelona - Panel_3" />
+								<Variable Name="State" Type="boolean" VariationFlag="true" Min="" Max="" InitialValue="False" />
+								<Variable Name="Latitude" Type="double" VariationFlag="false" Min="41.34" Max="41.72" InitialValue="41.71" />
+								<Variable Name="Longitude" Type="double" VariationFlag="false" Min="1.56" Max="2.5" InitialValue="1.85" />
+								<Variable Name="PanelPower" Type="double" VariationFlag="true" Min="200" Max="500" InitialValue="200" />
+								<Variable Name="PanelVoltage" Type="double" VariationFlag="true" Min="12" Max="24" InitialValue="0" />
+								<Variable Name="PanelCurrent" Type="double" VariationFlag="true" Min="3" Max="5" InitialValue="0" />
+								<Variable Name="TemperaturePort" Type="double" VariationFlag="true" Min="15" Max="35" InitialValue="15" />
+							</Variables>
+						</DeviceID>
+						<DeviceID Name="Panel_4">
+							<Variables>
+								<Variable Name="Name" Type="string" VariationFlag="false" Min="" Max="10" InitialValue="Barcelona - Panel_4" />
+								<Variable Name="State" Type="boolean" VariationFlag="true" Min="" Max="" InitialValue="False" />
+								<Variable Name="Latitude" Type="double" VariationFlag="false" Min="41.34" Max="41.72" InitialValue="41.60" />
+								<Variable Name="Longitude" Type="double" VariationFlag="false" Min="1.56" Max="2.5" InitialValue="1.95" />
+								<Variable Name="PanelPower" Type="double" VariationFlag="true" Min="200" Max="500" InitialValue="200" />
+								<Variable Name="PanelVoltage" Type="double" VariationFlag="true" Min="12" Max="24" InitialValue="0" />
+								<Variable Name="PanelCurrent" Type="double" VariationFlag="true" Min="3" Max="5" InitialValue="0" />
+								<Variable Name="TemperaturePort" Type="double" VariationFlag="true" Min="15" Max="35" InitialValue="15" />
+							</Variables>
+						</DeviceID>
+					</DeviceIDs>
+				</NodeID>
+				<NodeID Name="Bilbao">
+					<DeviceIDs>
+						<DeviceID Name="Panel_1">
+							<Variables>
+								<Variable Name="Name" Type="string" VariationFlag="false" Min="" Max="10" InitialValue="Bilbao - Panel_1" />
+								<Variable Name="State" Type="boolean" VariationFlag="true" Min="" Max="" InitialValue="False" />
+								<Variable Name="Latitude" Type="double" VariationFlag="false" Min="43.31" Max="43.34" InitialValue="43.31" />
+								<Variable Name="Longitude" Type="double" VariationFlag="false" Min="-3.24" Max="-2.46" InitialValue="-3.24" />
+								<Variable Name="PanelPower" Type="double" VariationFlag="true" Min="200" Max="500" InitialValue="200" />
+								<Variable Name="PanelVoltage" Type="double" VariationFlag="true" Min="12" Max="24" InitialValue="0" />
+								<Variable Name="PanelCurrent" Type="double" VariationFlag="true" Min="3" Max="5" InitialValue="0" />
+								<Variable Name="TemperaturePort" Type="double" VariationFlag="true" Min="15" Max="35" InitialValue="15" />
+							</Variables>
+						</DeviceID>
+						<DeviceID Name="Panel_2">
+							<Variables>
+								<Variable Name="Name" Type="string" VariationFlag="false" Min="" Max="10" InitialValue="Bilbao - Panel_2" />
+								<Variable Name="State" Type="boolean" VariationFlag="true" Min="" Max="" InitialValue="False" />
+								<Variable Name="Latitude" Type="double" VariationFlag="false" Min="43.31" Max="43.34" InitialValue="43.33" />
+								<Variable Name="Longitude" Type="double" VariationFlag="false" Min="-3.24" Max="-2.46" InitialValue="-2.59" />
+								<Variable Name="PanelPower" Type="double" VariationFlag="true" Min="200" Max="500" InitialValue="200" />
+								<Variable Name="PanelVoltage" Type="double" VariationFlag="true" Min="12" Max="24" InitialValue="0" />
+								<Variable Name="PanelCurrent" Type="double" VariationFlag="true" Min="3" Max="5" InitialValue="0" />
+								<Variable Name="TemperaturePort" Type="double" VariationFlag="true" Min="15" Max="35" InitialValue="15" />
+							</Variables>
+						</DeviceID>
+					</DeviceIDs>
+				</NodeID>
+				<NodeID Name="Madrid">
+					<DeviceIDs>
+						<DeviceID Name="Panel_1">
+							<Variables>
+								<Variable Name="Name" Type="string" VariationFlag="false" Min="" Max="10" InitialValue="Madrid - Panel_1" />
+								<Variable Name="State" Type="boolean" VariationFlag="true" Min="" Max="" InitialValue="False" />
+								<Variable Name="Latitude" Type="double" VariationFlag="false" Min="40.22" Max="40.61" InitialValue="40.22" />
+								<Variable Name="Longitude" Type="double" VariationFlag="false" Min="-3.99" Max="-3.35" InitialValue="-3.99" />
+								<Variable Name="PanelPower" Type="double" VariationFlag="true" Min="200" Max="500" InitialValue="200" />
+								<Variable Name="PanelVoltage" Type="double" VariationFlag="true" Min="12" Max="24" InitialValue="0" />
+								<Variable Name="PanelCurrent" Type="double" VariationFlag="true" Min="3" Max="5" InitialValue="0" />
+								<Variable Name="TemperaturePort" Type="double" VariationFlag="true" Min="15" Max="35" InitialValue="15" />
+							</Variables>
+						</DeviceID>
+						<DeviceID Name="Panel_2">
+							<Variables>
+								<Variable Name="Name" Type="string" VariationFlag="false" Min="" Max="10" InitialValue="Madrid - Panel_2" />
+								<Variable Name="State" Type="boolean" VariationFlag="true" Min="" Max="" InitialValue="False" />
+								<Variable Name="Latitude" Type="double" VariationFlag="false" Min="40.22" Max="40.61" InitialValue="40.51" />
+								<Variable Name="Longitude" Type="double" VariationFlag="false" Min="-3.99" Max="-3.35" InitialValue="-3.45" />
+								<Variable Name="PanelPower" Type="double" VariationFlag="true" Min="200" Max="500" InitialValue="200" />
+								<Variable Name="PanelVoltage" Type="double" VariationFlag="true" Min="12" Max="24" InitialValue="0" />
+								<Variable Name="PanelCurrent" Type="double" VariationFlag="true" Min="3" Max="5" InitialValue="0" />
+								<Variable Name="TemperaturePort" Type="double" VariationFlag="true" Min="15" Max="35" InitialValue="15" />
+							</Variables>
+						</DeviceID>
+						<DeviceID Name="Panel_3">
+							<Variables>
+								<Variable Name="Name" Type="string" VariationFlag="false" Min="" Max="10" InitialValue="Madrid - Panel_3" />
+								<Variable Name="State" Type="boolean" VariationFlag="true" Min="" Max="" InitialValue="False" />
+								<Variable Name="Latitude" Type="double" VariationFlag="false" Min="40.22" Max="40.61" InitialValue="40.60" />
+								<Variable Name="Longitude" Type="double" VariationFlag="false" Min="-3.99" Max="-3.35" InitialValue="-3.35" />
+								<Variable Name="PanelPower" Type="double" VariationFlag="true" Min="200" Max="500" InitialValue="200" />
+								<Variable Name="PanelVoltage" Type="double" VariationFlag="true" Min="12" Max="24" InitialValue="0" />
+								<Variable Name="PanelCurrent" Type="double" VariationFlag="true" Min="3" Max="5" InitialValue="0" />
+								<Variable Name="TemperaturePort" Type="double" VariationFlag="true" Min="15" Max="35" InitialValue="15" />
+							</Variables>
+						</DeviceID>
+						<DeviceID Name="Panel_4">
+							<Variables>
+								<Variable Name="Name" Type="string" VariationFlag="false" Min="" Max="10" InitialValue="Madrid - Panel_4" />
+								<Variable Name="State" Type="boolean" VariationFlag="true" Min="" Max="" InitialValue="False" />
+								<Variable Name="Latitude" Type="double" VariationFlag="false" Min="40.22" Max="40.61" InitialValue="40.34" />
+								<Variable Name="Longitude" Type="double" VariationFlag="false" Min="-3.99" Max="-3.35" InitialValue="-3.74" />
+								<Variable Name="PanelPower" Type="double" VariationFlag="true" Min="200" Max="500" InitialValue="200" />
+								<Variable Name="PanelVoltage" Type="double" VariationFlag="true" Min="12" Max="24" InitialValue="0" />
+								<Variable Name="PanelCurrent" Type="double" VariationFlag="true" Min="3" Max="5" InitialValue="0" />
+								<Variable Name="TemperaturePort" Type="double" VariationFlag="true" Min="15" Max="35" InitialValue="15" />
+							</Variables>
+						</DeviceID>
+						<DeviceID Name="Panel_5">
+							<Variables>
+								<Variable Name="Name" Type="string" VariationFlag="false" Min="" Max="10" InitialValue="Madrid - Panel_5" />
+								<Variable Name="State" Type="boolean" VariationFlag="true" Min="" Max="" InitialValue="False" />
+								<Variable Name="Latitude" Type="double" VariationFlag="false" Min="40.22" Max="40.61" InitialValue="40.28" />
+								<Variable Name="Longitude" Type="double" VariationFlag="false" Min="-3.99" Max="-3.35" InitialValue="-3.62" />
+								<Variable Name="PanelPower" Type="double" VariationFlag="true" Min="200" Max="500" InitialValue="200" />
+								<Variable Name="PanelVoltage" Type="double" VariationFlag="true" Min="12" Max="24" InitialValue="0" />
+								<Variable Name="PanelCurrent" Type="double" VariationFlag="true" Min="3" Max="5" InitialValue="0" />
+								<Variable Name="TemperaturePort" Type="double" VariationFlag="true" Min="15" Max="35" InitialValue="15" />
+							</Variables>
+						</DeviceID>
+					</DeviceIDs>
+				</NodeID>
+				<NodeID Name="Sevilha">
+					<DeviceIDs>
+						<DeviceID Name="Panel_1">
+							<Variables>
+								<Variable Name="Name" Type="string" VariationFlag="false" Min="" Max="10" InitialValue="Sevilha - Panel_1" />
+								<Variable Name="State" Type="boolean" VariationFlag="true" Min="" Max="" InitialValue="False" />
+								<Variable Name="Latitude" Type="double" VariationFlag="false" Min="37.33" Max="37.42" InitialValue="37.33" />
+								<Variable Name="Longitude" Type="double" VariationFlag="false" Min="-6.26" Max="-5.75" InitialValue="-6.26" />
+								<Variable Name="PanelPower" Type="double" VariationFlag="true" Min="200" Max="500" InitialValue="200" />
+								<Variable Name="PanelVoltage" Type="double" VariationFlag="true" Min="12" Max="24" InitialValue="0" />
+								<Variable Name="PanelCurrent" Type="double" VariationFlag="true" Min="3" Max="5" InitialValue="0" />
+								<Variable Name="TemperaturePort" Type="double" VariationFlag="true" Min="15" Max="35" InitialValue="15" />
+							</Variables>
+						</DeviceID>
+						<DeviceID Name="Panel_2">
+							<Variables>
+								<Variable Name="Name" Type="string" VariationFlag="false" Min="" Max="10" InitialValue="Sevilha - Panel_2" />
+								<Variable Name="State" Type="boolean" VariationFlag="true" Min="" Max="" InitialValue="False" />
+								<Variable Name="Latitude" Type="double" VariationFlag="false" Min="37.33" Max="37.42" InitialValue="37.40" />
+								<Variable Name="Longitude" Type="double" VariationFlag="false" Min="-6.26" Max="-5.75" InitialValue="-6.01" />
+								<Variable Name="PanelPower" Type="double" VariationFlag="true" Min="200" Max="500" InitialValue="200" />
+								<Variable Name="PanelVoltage" Type="double" VariationFlag="true" Min="12" Max="24" InitialValue="0" />
+								<Variable Name="PanelCurrent" Type="double" VariationFlag="true" Min="3" Max="5" InitialValue="0" />
+								<Variable Name="TemperaturePort" Type="double" VariationFlag="true" Min="15" Max="35" InitialValue="15" />
+							</Variables>
+						</DeviceID>
+						<DeviceID Name="Panel_3">
+							<Variables>
+								<Variable Name="Name" Type="string" VariationFlag="false" Min="" Max="10" InitialValue="Sevilha - Panel_3" />
+								<Variable Name="State" Type="boolean" VariationFlag="true" Min="" Max="" InitialValue="False" />
+								<Variable Name="Latitude" Type="double" VariationFlag="false" Min="37.33" Max="37.42" InitialValue="37.36" />
+								<Variable Name="Longitude" Type="double" VariationFlag="false" Min="-6.26" Max="-5.75" InitialValue="-5.85" />
+								<Variable Name="PanelPower" Type="double" VariationFlag="true" Min="200" Max="500" InitialValue="200" />
+								<Variable Name="PanelVoltage" Type="double" VariationFlag="true" Min="12" Max="24" InitialValue="0" />
+								<Variable Name="PanelCurrent" Type="double" VariationFlag="true" Min="3" Max="5" InitialValue="0" />
+								<Variable Name="TemperaturePort" Type="double" VariationFlag="true" Min="15" Max="35" InitialValue="15" />
+							</Variables>
+						</DeviceID>
+					</DeviceIDs>
+				</NodeID>
+			</NodeIDs>
+		</GroupID>
+	</PayloadSettings>
+	<SimulatorControl>
+		<ConnectOnStartup>true</ConnectOnStartup>
+		<PublishDatanStartup>true</PublishDatanStartup>
+		<Minimized>true</Minimized>
+		<BlockConfigurationFields>true</BlockConfigurationFields>
+	</SimulatorControl>
+</MQTTspBSimulator>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>LabView</Description>
+	<AssemblyName>T.ProtocolDriver.LabView</AssemblyName>
+	<AssemblyVersion>"1.0.0.0"</AssemblyVersion>
+	<CustomInterface>Custom</CustomInterface>
+	<ProtocolOptions>
+		<!--<ProtocolOptions>
+      <Names P1="BlockSize" P2="StartChar" P3="EndChar"/>
+      <EditTypes P1="int" P2="int=0-255" P3="int=0-255"/>
+      <DefaultValues P1="250" P2="" P3="" />
+      <EditModes P1="Enable" P2="Enable" P3="Enable"/>
+      <Hint P1="Max message size" P2="Start Char (decimal code)" P3="End Char(decimal code)"/>
+      <GridProperties G1="PopUpWidth"  />
+      <GridValues G1="290"  />
+    </ProtocolOptions>
+	-->
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<Custom>
+		</Custom>
+	</Settings>
+	<Station>
+		<Custom>
+			<AssemblyName>T.ProtocolDriver.LabView.CellEditor.dll</AssemblyName>
+			<TypeName>T.ProtocolDriver.LabView.StationCellEditor</TypeName>
+		</Custom>
+	</Station>
+	<Points>
+		<!--
+    <Address AllowConfigDataType="false" >
+      <Names P1="SequenceID" P2="separator1" P3="SizeOf" />
+      <DefaultValues P1="0" P2=":" P3="30"/>
+      <EditTypes P1="int" P2="separator" P3="int"/>
+      <EditModes P1="Hidden" P2="Hidden" P3="Hidden"/>
+      <Hint 
+			P1="Sequence ID"
+			P2=""	
+			P3="Amount of characters from configured TAG"			
+			/>
+    </Address>
+	-->
+	</Points>
+</Protocol>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>GeFanuc Ethernet using SRTP protocol</Description>
+	<AssemblyName>T.ProtocolDriver.GeFanucEthernet</AssemblyName>
+	<AssemblyVersion>1.1.7.0</AssemblyVersion>
+	<ShouldCloseCommAPIAfterErrors>true</ShouldCloseCommAPIAfterErrors>
+	<Multiplatform>true</Multiplatform>
+	<ProtocolOptions>
+		<ProtocolOptions>
+			<Names P1="BlockSize"/>
+			<EditTypes P1="int"/>
+			<EditModes P1="Enable"/>
+			<DefaultValues P1="3"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="220" G2="90"/>
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<TCPIP>
+		</TCPIP>
+	</Settings>
+	<Station>
+		<TCPIP>
+			<Names P1="IP Address" P2="Port" />
+			<DefaultValues P1 ="192.168.1.1" P2="18245" />
+			<EditModes P1="Enable" P2="Enable"/>
+			<EditTypes P1="ip" P2="int" />
+			<Hint P1="IP Address of the Device" P2="TCP Port of the Device"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="220" G2="100" />
+		</TCPIP>
+	</Station>
+
+	<Points>
+		<Address AllowConfigDataType="true">
+			<Names P1="RegisterType" P2="Address"/>
+			<DefaultValues P1="%R" P2="1"/>
+			<EditTypes P1="ComboBox=%I:Discrete Input;%Q:Discrete Outupt;%M:Discrete Internal;%T:Discrete Temporary;%AI:Analog Input;%AQ:Analog Output;%R:Internal Register;%G:Global Genius Data;%W:Bulk Memory;"
+					   P2="int"/>
+			<EditModes P1="Enable" P2="Enable"/>
+			<Hint P1="%I 	Discrete Input
+%Q	Discrete Outupt
+%M	Discrete Internal
+%T	Discrete Temporary
+%AI	Analog Input
+%AQ	Analog Output
+%R	Internal Register
+%G	Global Genius Data
+%W  Bulk Memory
+"
+				  P2="Address"/>
+
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="300" G2="135" />
+			/>
+		</Address>
+	</Points>
+</Protocol>

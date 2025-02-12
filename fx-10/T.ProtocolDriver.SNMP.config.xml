@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>SNMP Simple Network Management Protocol</Description>
+	<AssemblyName>T.ProtocolDriver.SNMP</AssemblyName>
+	<AssemblyVersion>2.5.0.7</AssemblyVersion>
+	<Import>true</Import>
+	<CustomInterface>Custom</CustomInterface>
+	<ShouldCloseCommAPIAfterErrors>true</ShouldCloseCommAPIAfterErrors>
+	<Multiplatform>true</Multiplatform>
+	<ProtocolOptions>
+		<ProtocolOptions>
+			<Names P1="ReadGroupSize" />
+			<EditTypes P1="int=1-250" />
+			<DefaultValues P1="1" />
+			<EditModes P1="Enable" />
+			<Hint P1="Maximum Read Group size" />
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="390" G2="180" />
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<TCPIP>
+		</TCPIP>
+		<UDP>
+		</UDP>
+	</Settings>
+	<Station>
+		<Custom>
+			<AssemblyName>T.ProtocolDriver.SNMP.Editors.dll</AssemblyName>
+			<TypeName>T.ProtocolDriver.SNMP.Editors.StationEditor</TypeName>
+		</Custom>
+	</Station>
+
+	<Points>
+		<Address AllowConfigDataType="true">
+			<AssemblyName>T.ProtocolDriver.SNMP.Editors.dll</AssemblyName>
+			<TypeName>T.ProtocolDriver.SNMP.Editors.AddressEditor</TypeName>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="700" G2="500" />
+		</Address>
+	</Points>
+</Protocol>

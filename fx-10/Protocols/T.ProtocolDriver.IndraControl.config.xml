@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<ShouldCloseCommAPIAfterErrors>true</ShouldCloseCommAPIAfterErrors>
+	<Description>Bosch Rexroth IndraControl</Description>
+	<AssemblyName>T.ProtocolDriver.IndraControl</AssemblyName>
+	<AssemblyVersion>1.0.0.0</AssemblyVersion>
+	<AllowUserTypes>true</AllowUserTypes>
+	<Multiplatform>true</Multiplatform>
+	<ProtocolOptions>
+		<ProtocolOptions>
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<TCPIP>
+			<DefaultValues P1="false" P2="false" P3="1000" P4="1"/>
+			<EditModes P1="Hidden" P2="Enable" P3="Enable" P4="Enable" />
+		</TCPIP>
+	</Settings>
+	<Station>
+		<TCPIP>
+			<Names P1="IP" P2="Port"/>
+			<DefaultValues P1 ="192.168.1.1" P2="44818"/>
+			<EditModes P1="Enable" P2="Enable"/>
+			<EditTypes P1="ip" P2="int"/>
+			<Hint P1="IP Address of the slave" P2="TCP/IP Port of the slave"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="230" G2="90" />
+		</TCPIP>
+	</Station>
+	<Points>
+		<Address AllowConfigDataType="false" >
+			<Names P1="Input/Output" P2="Address" />
+			<DefaultValues P1="%QB" P2="1"/>
+			<EditTypes P1="ComboBox=%QB:Outputs;%IB:Inputs;" P2="1-128"/>
+			<EditModes P1="Enable" P2="Enable"/>
+			<Hint
+				  P1="%QB	EtherNet/IP Outputs
+%IB	EtherNet/IP Inputs"
+				  P2="Address from 1 to 128"
+			/>
+		</Address>
+	</Points>
+</Protocol>

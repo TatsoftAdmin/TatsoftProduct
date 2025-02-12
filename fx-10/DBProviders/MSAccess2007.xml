@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Provider>
+  <Description>Microsoft Access 2007 Database</Description>
+  <ConnectionString>
+    <System.Data.OleDb>
+      <Names P1="Provider" P2="Data Source" P3="Persist Security Info" P4="Additional Parameters"/>
+      <EditTypes P1="string"  P2="string" P3="string" P4="string"/>
+      <DefaultValues P1="Microsoft.ACE.OLEDB.12.0" P2="c:\" P3="false" P4=""/>
+      <EditModes P1="Disable"  P2="Enable" P3="Disable" P4="Enable"/>
+      <Hint P1="Provider Name" P2="Path and fileName of dataSource" P3="" P4="Aditional parameters to be added to the ConnectionString, separated by ',' (comma)"/>
+	  <GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+	  <GridValues G1="420" G2="170" />
+    </System.Data.OleDb>
+  </ConnectionString>
+  <Advanced>
+    <Advanced>
+      <Names P1="Access Permissions" P2="Assembly" P3="Connection" P4="DataAdapter" P5="CommandBuilder"/>
+      <EditTypes P1="LabelBox=Read;Read;Write;Share Deny None;Share Deny Read;Share Deny Write;Share Exclusive;Write" P2="None" P3="None" P4="None" P5="None"/>
+      <DefaultValues P1="Share Deny None" P2="System.Data" P3="System.Data.OleDb.OleDbConnection" P4="System.Data.OleDb.OleDbDataAdapter" P5="System.Data.OleDb.OleDbCommandBuilder"/>
+      <EditModes P1="Enable" P2="Hidden" P3="Hidden" P4="Hidden" P5="Hidden"/>
+      <Hint P1="Access Permissions configuration"/>
+    </Advanced>
+  </Advanced>
+</Provider>

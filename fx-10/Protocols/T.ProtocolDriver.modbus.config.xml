@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+  <ShouldCloseCommAPIAfterErrors>true</ShouldCloseCommAPIAfterErrors>
+  <Description>Modbus Master Protocol</Description>
+  <AssemblyName>T.ProtocolDriver.Modbus</AssemblyName>
+  <AssemblyVersion>1.11.0.7</AssemblyVersion>
+  <AllowUserTypes>true</AllowUserTypes>
+  <AllowNoArrayIndexesForArray>true</AllowNoArrayIndexesForArray>
+  <Multiplatform>true</Multiplatform>
+  <EnableWriteGroup>true</EnableWriteGroup>
+  <ProtocolOptions>
+    <ProtocolOptions>
+      <Names P1="BlockSize" P2="Encoding" P3="SingleWrite" P4="SlaveID" P5="CoilWriteValue" P6="Offset address"/>
+      <EditTypes P1="int=0-250" P2="ComboBox=ASCII;RTU;RTU TCP;" P3="ComboBox=Use block write;Use single write;" P4="int=1-247" P5="ComboBox=01;FF;" P6="CheckBox" />
+      <DefaultValues P1="250" P2="RTU TCP" P3="Use single write" P4="2" P5="FF" P6="false"/>
+      <EditModes P1="Enable" P2="Enable" P3="Enable" P4="Enable" P5="Enable" P6="Enable"/>
+      <Hint P1="Maximum size of the read blocks\r\nRange: 0-250 bytes" P2="Message format" P3="Always use block command for writings\r\nor use single writing command for single writings" P4="Own slave address used for unsolicited requests \r\nRange: 1-247" P5="Value to send when writing COILs" P6="Zero Based address" />
+      <GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+      <GridValues G1="290" G2="150" />
+    </ProtocolOptions>
+  </ProtocolOptions>  
+  <Settings AllowCustomTypes="false">
+    <Serial>
+      <DefaultValues P1="false" P2="false" P3="com1" P4="9600" P5="8" P6="1" P7="even" />
+      <EditModes P1="Hidden" P2="Enable" P3="Enable" P4="Enable" P5="Enable" P6="Enable" P7="Enable" /> 
+    </Serial>
+    <MultiSerial>
+      <DefaultValues P1="false" P2="false" P3="2" P4="9600" P5="8" P6="1" P7="even" />
+      <EditModes P1="Hidden" P2="Hidden" P3="Enable" P4="Enable" P5="Enable" P6="Enable" P7="Enable"/>
+    </MultiSerial>
+    <TCPIP>
+      <DefaultValues P1="false" P2="false" P3="502" P4="1"/>
+      <EditModes P1="Hidden" P2="Enable" P3="Enable" P4="Enable" />	  
+    </TCPIP>
+  </Settings>
+
+  <Station>
+    <Serial>
+      <Names P1="SlaveID" />
+      <EditTypes P1="int=0-247" />
+      <DefaultValues P1="1" />
+      <EditModes P1="Enable" />
+      <Hint P1="Destination slave address"/>
+	  <GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+	  <GridValues G1="175" G2="80" />
+    </Serial>
+    <MultiSerial>
+      <Names P1="ComPort" P2="SlaveID" />
+      <DefaultValues P1="com1" P2="1" />
+      <EditModes P1="Enable" P2="Enable"/>
+      <EditTypes P1="LabelBox=com1;com2;com3;com4;com5;com6;com7;com8;" P2="int=0-247"/>
+      <Hint P1="Serial port identification" P2="Destination slave address"/>
+    </MultiSerial>
+    <TCPIP>
+      <Names P1="IP" P2="Port" P3="SlaveID" />
+      <DefaultValues P1 ="192.168.1.1" P2="502" P3="1" />
+      <EditModes P1="Enable" P2="Enable" P3="Enable"/>
+      <EditTypes P1="ip" P2="int" P3="int=0-255" />
+	  <Hint P1="IP Address of the slave" P2="TCP/IP Port of the slave" P3="Destination slave address"/>
+	  <GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+	  <GridValues G1="230" G2="90" />
+	</TCPIP>
+  </Station>
+  <Points>
+    <Address AllowConfigDataType="true" >
+      <Names P1="Operand" P2="Address" />
+      <CommTest Address="400001"/>
+      <DefaultValues P1="4" P2="00001"/>
+      <EditTypes P1="ComboBox=0: - Coils;1: - Input Status;3: - Input Registers;4: - Holding Registers;%Q: - Coils;%M: - Coils;%I: - Input Status;%IW: - Input Registers;%MW: - Holding Registers;%QW: - Holding Registers;" P2="intpad5=0-65535"/>
+      <EditModes P1="Enable" P2="Enable"/>
+      <Hint
+P1="
+0	 - Coil
+1	 - Input Status
+3	 - Input Registers
+4	 - Holding Registers
+%Q	 - Coil
+%M	 - Coil
+%I	 - Input Status
+%IW	 - Input Registers
+%MW	 - Holding Registers
+%QW	 - Holding Registers
+"
+			P2="Address from 0 to 65535"
+			/>
+	
+    </Address>
+  </Points>  
+</Protocol>

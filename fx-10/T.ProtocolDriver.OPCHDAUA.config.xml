@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>OPC HDA UA Client _Legacy</Description>
+	<AssemblyName>T.ProtocolDriver.OPCHDAUA</AssemblyName>
+	<AssemblyVersion>1.0.0.0</AssemblyVersion>
+	<Multiplatform>false</Multiplatform>
+	<Settings AllowCustomTypes="false">
+		<OPC>
+		</OPC>
+	</Settings>
+
+	<Station>
+		<OPC>
+			<Names P1="Service URL" P2="Domain" P3="UserName" P4="Password" P5="WindowsAuthentication" P6="DisableSecurity" />
+			<DefaultValues P1="" P2="" P3="" P4="" P5="False" P6="False" />
+			<EditModes P1="Enable" P2="Enable" P3="Enable" P4="Enable" P5="Enable" P6="Enable" />
+			<EditTypes P1="String" P2="String" P3="String" P4="String" P5="CheckBox" P6="CheckBox" />
+			<Hint P1="UA Server" P2="Domain"  P3="Name of the user"
+				  P4="Password" P5="Use windows authentication" P6="Disable Security" />
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="550" G2="200" />
+		</OPC>
+	</Station>
+	<Points>
+		<Address AllowConfigDataType="false">
+			<Names P1="Operand" P2="Address" />
+			<DefaultValues P1="4" P2="00001" />
+			<EditTypes P1="string" P2="string" />
+			<EditModes P1="Enable" P2="Enable" />
+			<Hint P1="" P2="" />
+		</Address>
+		<Modifiers>
+			<EditModes P1="Optional" P2="Hidden" P3="Hidden" P4="Hidden" P5="Optional" />
+		</Modifiers>
+	</Points>
+</Protocol>

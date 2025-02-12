@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="TSmartClient.exe" version="2020.0.1.405" publicKeyToken="14764dc5c2fddedd" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="TSmartClient" version="2020.0.1.1" language="neutral" processorArchitecture="msil" />
+    <commandLine file="TSmartClient.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TSmartClient.exe" size="36352">
+      <assemblyIdentity name="TSmartClient" version="2020.0.1.1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Zd4rifayVYvXtLZqN602wZjMx8U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="TSmartClient.tzip" size="75389261">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Uifeti5VQeS0ZGneLANCK1sRAgs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TSmartClientOEMFiles.tzip" size="3">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>GHzbG9bRIHf23s1QrpZMrCY0tkI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Tatsoft LLC, O=Tatsoft LLC, L=Houston, S=Texas, C=US" issuerKeyHash="6837e0ebb63bf85f1186fbfe617b088865f44e42" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>CB9Tv76PoJPx9qShhCNoCYW+ZC+Zgv/M57JA/04b9zY=</DigestValue></Reference></SignedInfo><SignatureValue>oixgMrp5aIr8+ahY4zvv9aokx1aOREJCUeC0M/A79/7tAnMZhq/oY2KZTqvMrkLEuVzJjK95R+nAqpLvFdH4IhL5ZPGkPzycHf2P8WlX49Bh3pMa+r0bx1f2B3dsw8PpjW1l0thMuDOxeM+eCohwfYF+v76DK1HMNwH770Ww2nienK7ZpjJSlBxcOout7vGaWBQ2XT1TWNLBl9/3bls6e13WCc484A1Y5Ehm3ez02qwcwxmFdS00+uo1J4guneRk+xDN30wASe51FM8OkyQF6nw/qgXugGtknr66OcV0UzVM/SeKL5GL/vlIQvMC5QmQtIvPN+RHo+tyXdoFARvTASOr8LEivu5MnTcdyzvQwY8pPQuXEmkgh8FCMvcXv4UWpqofdD1QJscjj8lGxdHg5oGAjMTFjYxMBbSeavMyt/OPtrF3JcG5vGMFNKed6KqSLQJwTc694w95zw0Wdv1VfGyga+rQD0je70eMqSnHTNA0cOQ9p7Fb3RXgFK3OFsdW</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uvwVOAoKRQZCrJ46SWHOfTpCkAwj2wgfhkxAj/BvRIV/6yARaADq26txj68rZNd/aD2vPEd2da7gnAwOQqqMZpqt5LheInHUzTYuUWl5gOtkrh3g+V5stV1p9zlNAv3syXaG+p/6sLdGHRyRLemn9I007RJmaxYpPiFmW2aqjPVQNj467aCfWARZ/0D0bF2uT7rrv9U8EOIjqSBpOZmVk6A2tNHrQJGynOX8egn0M38l1NG8HILQRZzXBu7ECOZ1Vq/iDadH+Q3mNOq8g7G85Cef7obNuaKFdTRdwhYrI+JSDueStsIwUVYZ7hw2uBWXsRfHm4dzAu6LmuHCknkFyPmKBadBR3VcNqwNl35SdFi54o759aXjIK5MXqHzIK87/DCE1Y2W++v14JgWGqHdK9rBV5W/C4keo67oalAYc87XpAuFGEW/ZJJqxRxd0Bx6akyzIKSS9YwZC2sDfSeJD1U//nYVo+RUU2R0giajHH1R4a7lZEFJS57C0UIf1MFd</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="36f71b4eff40b2e7ccff82992f64be8509682384a1a4f6f193a08fbebf531f08" Description="" Url=""><as:assemblyIdentity name="TSmartClient.exe" version="2020.0.1.405" publicKeyToken="14764dc5c2fddedd" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Tatsoft LLC, O=Tatsoft LLC, L=Houston, S=Texas, C=US</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>x8MsnBz8PQe/Dw6aAGKyYMAU1JrPYG4Tdk7JIpj4MP8=</DigestValue></Reference></SignedInfo><SignatureValue>RznOKtGFnzfogy+MVfNAMh0Fab3haY98Pr9bamvo5jrBN0MfE37tTLnsbhZWoRhlIrOGWfwWgIja5s4Mb475k19XFwwjUw+izdimmw2QQrZcuOyVnXjn/+1o4d31L52STSJPPQ1GYsS6T6QXzjcmlPK/Nio3uwZC7UxzGNUVfURdWH+OBGPafh4CgUJMpQ5PCSXGC4GIa+Rx5qX00HS+6bGmMAkPJMvPPoPHal0z9MD02hUFrKR0qyhK0ujGszOrhzA65eagbKE7JhaECo8eRWaBrvSsXh5D0SiBYOezPkbiiEiSZG3HPizvVRA92Axxdd2gJ++D6BoU/gf8mFs8XDQsDsHVpELSFBSTuTK/v0E1uzuY+kzcPR7fAI0eURckih79QtfppVHsiXcInNHztv5QHgn+YAxbaOWHX6CHJuCktEDrUlnpt4JEt5FhIHao30zx9DXOLl6S7sN4WUVtdSYn0/OsGKdpVBxcqVv2Uzp+te+6JR+DwrqnITHp20a4</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uvwVOAoKRQZCrJ46SWHOfTpCkAwj2wgfhkxAj/BvRIV/6yARaADq26txj68rZNd/aD2vPEd2da7gnAwOQqqMZpqt5LheInHUzTYuUWl5gOtkrh3g+V5stV1p9zlNAv3syXaG+p/6sLdGHRyRLemn9I007RJmaxYpPiFmW2aqjPVQNj467aCfWARZ/0D0bF2uT7rrv9U8EOIjqSBpOZmVk6A2tNHrQJGynOX8egn0M38l1NG8HILQRZzXBu7ECOZ1Vq/iDadH+Q3mNOq8g7G85Cef7obNuaKFdTRdwhYrI+JSDueStsIwUVYZ7hw2uBWXsRfHm4dzAu6LmuHCknkFyPmKBadBR3VcNqwNl35SdFi54o759aXjIK5MXqHzIK87/DCE1Y2W++v14JgWGqHdK9rBV5W/C4keo67oalAYc87XpAuFGEW/ZJJqxRxd0Bx6akyzIKSS9YwZC2sDfSeJD1U//nYVo+RUU2R0giajHH1R4a7lZEFJS57C0UIf1MFd</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>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</X509Certificate><X509Certificate>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</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

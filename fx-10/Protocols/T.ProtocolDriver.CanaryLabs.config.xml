@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>Canary Labs Driver</Description>
+	<AssemblyName>T.ProtocolDriver.CanaryLabs</AssemblyName>
+	<AssemblyVersion>1.0.0.8</AssemblyVersion>
+	<DefaultName>CanaryHistorian</DefaultName>
+	<AllowUserTypes>true</AllowUserTypes>
+	<AllowNoArrayIndexesForArray>true</AllowNoArrayIndexesForArray>
+	<CustomInterface>Custom</CustomInterface>
+	<EnableWriteGroup>true</EnableWriteGroup>
+	<UseLastArrayPosition>true</UseLastArrayPosition>
+	<Multiplatform>false</Multiplatform>
+	<TagProvider Enable="true" BranchSeparator="." AttributeSeparator="." Access="ReadWrite" IsHistorian="true" />
+	<ProtocolOptions>
+		<ProtocolOptions>
+			<Names P1="TagPropertiesCommunication"></Names>
+			<EditTypes P1 ="CheckBox"></EditTypes>
+			<DefaultValues P1="false"></DefaultValues>
+			<EditModes P1="Enable"></EditModes>
+			<Hint P1="Sync Tag 'Min', 'Max', 'EngUnits' and 'Description' properties"></Hint>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="250" G2="200" />
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<Custom>
+		</Custom>
+	</Settings>
+	<Station>
+		<Custom>
+			<AssemblyName>T.ProtocolDriver.CanaryLabs.Editors.dll</AssemblyName>
+			<TypeName>T.ProtocolDriver.CanaryLabs.Editors.StationEditor</TypeName>
+		</Custom>
+	</Station>
+	<Points>
+		<Address AllowConfigDataType="false">
+			<AssemblyName>T.ProtocolDriver.CanaryLabs.Editors.dll</AssemblyName>
+			<TypeName>T.ProtocolDriver.CanaryLabs.Editors.AddressEditor;Static</TypeName>
+		</Address>
+		<Modifiers>
+			<EditModes P1="Optional" P2="Hidden" P3="Hidden" P4="Hidden" />
+		</Modifiers>
+	</Points>
+</Protocol>

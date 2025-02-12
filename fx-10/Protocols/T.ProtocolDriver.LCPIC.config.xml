@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>LCP IC - Local Control Panel Interface Control</Description>
+	<AssemblyName>T.ProtocolDriver.LCPIC</AssemblyName>
+	<AssemblyVersion>1.0.0.0</AssemblyVersion>
+	<LocalPortEqualToRemotePort>true</LocalPortEqualToRemotePort>
+	<EnableWriteGroup>true</EnableWriteGroup>
+	<Multiplatform>true</Multiplatform>
+	<ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<Serial>
+			<DefaultValues P1="false" P2="true" P3="com1" P4="1200" P5="8" P6="1" P7="even" P8="DtrOff" P9="RtsOff" P10="false"/>
+			<EditModes P1="Hidden" P2="Enable" P3="Enable" P4="Disable" P5="Disable" P6="Disable" P7="Disable" P8="Disable" P9="Disable" P10="Disable" />
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues P1="210" P2="120" />
+		</Serial>
+	</Settings>
+	<Station>
+		<Serial>
+		</Serial>
+	</Station>
+	<Points>
+		<Address>
+			<Names P1="Type" P2="Address" />
+			<DefaultValues P1="I" P2="1" />
+			<EditTypes P1="ComboBox=I:Indicator;C:Control;U:Update;"  P2="int=1-128" />
+			<EditModes P1="Enable" P2="Enable" />
+			<Hint P1="Indicator(Read); Control(Write); Update(WriteUpdate)" 
+				  P2="Address Identification (1-128)" />
+		</Address>
+	</Points>
+</Protocol>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>MQTT for Azure IoT Hub</Description>
+	<AssemblyName>T.ProtocolDriver.MQTTAzure</AssemblyName>
+	<AssemblyVersion>1.0.0.4</AssemblyVersion>
+	<CustomInterface>Custom</CustomInterface>
+	<AllowUserTypes>true</AllowUserTypes>
+	<Multiplatform>true</Multiplatform>
+	<AllowNoArrayIndexesForArray>true</AllowNoArrayIndexesForArray>
+	<EnableQualityEvent>true</EnableQualityEvent>
+	<ProtocolOptions>
+		<ProtocolOptions>
+			<Names P1="Type" P2="TagProperties" P3="TimePublishRate"/>
+			<EditTypes P1="ComboBox=Application Node;EoN Node;" P2="String"  P3="int"/>
+			<DefaultValues P1="EoN Node" P2="" P3="500" />
+			<EditModes P1="Disable" P2="Enable" P3="Enable"/>
+			<Hint P1="Choose what is the type of MQTT client" P2="Type here tag properties separated by ','" P3="Time for publishing in ms" />
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="390" G2="180" />
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<TCPIP>
+			<EditModes P1="Hidden" P2="Hidden" P3="Hidden" P4="Hidden" P5="Hidden" />
+		</TCPIP>
+	</Settings>
+	<Station>
+		<TCPIP>
+			<Names P1="URL" P2="Port" P3="DeviceID" P4="Username" P5="Password" P6="SslProtocols" P7="X509Certificate" P8="PayloadFormat" />
+			<DefaultValues P1 ="" P2="8883" P3="" P4="" P5="" P6="None" P7="" P8="JSON/SparkplugB"/>
+			<EditModes P1="Enable" P2="Enable" P3="Enable" P4="Enable" P5="Enable" P6="Enable" P7="Enable" P8="Enable"/>
+			<EditTypes P1="string" P2="int" P3="string" P4="string" P5="password" P6="ComboBox=Tls;Tls11;Tls12;" P7="string" P8="ComboBox=JSON/SparkplugB;" />
+			<Hint P1="URL" P2="Port" P3="Device ID on Azure IoT Hub" P4="Username" P5="Password" P6="TLS Version" P7="X509Certificate Path" P8="Payload format"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="350" G2="130" />
+		</TCPIP>
+	</Station>
+
+	<Points>
+		<Address AllowConfigDataType="false">
+			<Names P1="" P2="separator" P3="Group" P4="separator" P5="Node" P6="separator" P7="Device" />
+			<EditTypes P1="string" P2="separator" P3="string" P4="separator" P5="string" P6="separator" P7="string" P8="separator" />
+			<EditModes P1="Disable" P2="Hidden" P3="Enable" P4="Hidden" P5="Enable" P6="Hidden" P7="Enable" P8="Hidden"/>
+			<DefaultValues P1="Payload" P2=":" P3="" P4=";" P5="" P6=";" P7="" P8=";" />
+			<Hint P3="Group Name" P5="Node Name" P7="Device Name" />
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="350" G2="140"/>
+		</Address>
+	</Points>
+</Protocol>
+

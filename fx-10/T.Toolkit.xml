@@ -1,0 +1,2130 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>T.Toolkit</name>
+    </assembly>
+    <members>
+        <member name="T:T.Toolkit.eMemberColumnTk">
+            <summary>
+            Column contents on Runtime Objects members definition
+            </summary>
+        </member>
+        <member name="T:T.Toolkit.eFieldTypeTk">
+            <summary>
+            Define the availble contents for an input field
+            </summary>
+        </member>
+        <member name="T:T.Toolkit.eEditDomainTk">
+            <summary>
+            Define Domain (Server or Client)
+            </summary>
+        </member>
+        <member name="T:T.Toolkit.eBindingModeTk">
+            <summary>
+            Direction on Tag Bindings
+            </summary>
+        </member>
+        <member name="T:T.Toolkit.eColorChangeTypeTk">
+            <summary>
+            The type of color change of the object.
+            </summary>
+        </member>
+        <member name="T:T.Toolkit.DataAccess">
+            <summary>
+            Runtime objects Data Access API
+            </summary>
+        </member>
+        <member name="P:T.Toolkit.DataAccess.ConnectionTimeout">
+            <summary>
+            Connection timeout
+            </summary>
+        </member>
+        <member name="P:T.Toolkit.DataAccess.IsFallback">
+            <summary>
+            Internal use
+            </summary>
+        </member>
+        <member name="P:T.Toolkit.DataAccess.WaitReceiveInitialValue">
+            <summary>
+            Wait receive initial value from Server
+            </summary>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.SetServer(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Set the default server to the specified server for subsequent function calls that do not specify a server.
+            </summary>
+            <param name="serverName">IP address or server name</param>
+            <param name="userName">User name</param>
+            <param name="password">User password </param>
+            <param name="useWindowsAuthentication">Flag indicating whether connection must use Windows Authentication</param>
+            <returns>String containg error message or null (success)</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.SetServer(System.String,System.String,System.String,System.Object@)">
+            <summary>
+            Set the default server to the specified server for subsequent function calls that do not specify a server.
+            </summary>
+            <param name="serverName">IP address or server name</param>
+            <param name="userName">User name</param>
+            <param name="password">User password </param>
+            <param name="server">Reference to server </param>
+            <returns>String containg error message or null (success)</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.SetServer(System.String,System.String,System.String,System.Boolean,System.Object@)">
+            <summary>
+            Set the default server to the specified server for subsequent function calls that do not specify a server.
+            </summary>
+            <param name="serverName">IP address or server name</param>
+            <param name="userName">User name</param>
+            <param name="password">User password </param>
+            <param name="useWindowsAuthentication">Flag indicating whether connection must use Windows Authentication</param>
+            <param name="server">Reference to server </param>
+            <returns>String containg error message or null (success)</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.SetServer(System.String,System.String,System.String,System.String,System.Boolean,System.Object@)">
+            <summary>
+            Set the default server to the specified server for subsequent function calls that do not specify a server.
+            </summary>
+            <param name="serverName">IP address or server name</param>
+            <param name="serverName2">Secondary IP address or server name</param>
+            <param name="userName">User name</param>
+            <param name="password">User password </param>
+            <param name="useWindowsAuthentication">Flag indicating whether connection must use Windows Authentication</param>
+            <param name="server">Reference to server </param>
+            <returns>String containg error message or null (success)</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.SetServerAsync(System.String,System.String,System.String,System.String,System.Boolean,T.Library.TRef{System.Object})">
+            <summary>
+            Set the default server to the specified server for subsequent function calls that do not specify a server.
+            </summary>
+            <param name="serverName">IP address or server name</param>
+            <param name="serverName2">Secondary IP address or server name</param>
+            <param name="userName">User name</param>
+            <param name="password">User password </param>
+            <param name="useWindowsAuthentication">Flag indicating whether connection must use Windows Authentication</param>
+            <param name="server">Reference to server </param>
+            <returns>String containg error message or null (success)</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.CloseServer">
+            <summary>
+            Close connection to server
+            </summary>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.CloseServer(System.Object)">
+            <summary>
+            Close connection to server
+            </summary>
+            <param name="server">Reference to server. This is retrieved by SetServer method</param>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.IsConnected">
+            <summary>
+            Check whether is connected to server
+            </summary>
+            <returns>Flag indicating whether is connected to server</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.IsConnected(System.Object)">
+            <summary>
+            Check whether is connected to server
+            </summary>
+            <param name="server">Reference to server. This is retrieved by SetServer method</param>
+            <returns>Flag indicating whether is connected to server</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.PrepareTK(System.Object)">
+            <summary>
+            Prepare to use TK
+            </summary>
+            <param name="server">Reference to server. This is retrieved by SetServer method</param>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.PrepareTK(System.Int32)">
+            <summary>
+            Prepare to use TK
+            </summary>
+            <param name="server">Reference to server. This is retrieved by SetServer method</param>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.DisposeTK(System.Object)">
+            <summary>
+            Dispose TK
+            </summary>
+            <param name="server">Reference to server. This is retrieved by SetServer method</param>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.DisposeTK(System.Int32)">
+            <summary>
+            Prepare to use TK
+            </summary>
+            <param name="server">Reference to server. This is retrieved by SetServer method</param>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.FindObject(System.String,System.Object@,System.Object)">
+            <summary>
+            Retrieve internal reference to object
+            </summary>
+            <param name="objectName">Object name</param>
+            <param name="obj">Internal reference to object</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <returns>Flag indicating success or error</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.FindObjectAsync(System.String,T.Library.TRef{System.Object},System.Object)">
+            <summary>
+            Retrieve internal reference to object async
+            </summary>
+            <param name="objectName">Object name</param>
+            <param name="obj">Internal reference to object</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <returns>Flag indicating success or error</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.GetTagObjectsUsed(System.Int32,System.Int32,System.Boolean,System.Object)">
+            <summary>
+            Get tags that are used on remote server
+            </summary>
+            <param name="startIndex">Start index</param>
+            <param name="maxCount">Max count</param>
+            <param name="tokenized">Flag indicating whether returns is tokenized or not</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <returns>Array containg tag names (tokenized or not)</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.GetTagObjectsUsedAsync(System.Int32,System.Int32,System.Boolean,System.Object)">
+            <summary>
+            Get tags that are used on remote server async
+            </summary>
+            <param name="startIndex">Start index</param>
+            <param name="maxCount">Max count</param>
+            <param name="tokenized">Flag indicating whether returns is tokenized or not</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <returns>Array containg tag names (tokenized or not)</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.BeginGetTagObjectsUsed(System.Int32,System.Int32,System.AsyncCallback,System.Object,System.Boolean,System.Object)">
+            <summary>
+            Start async getting tags that are used on remote server
+            </summary>
+            <param name="startIndex">Start index</param>
+            <param name="maxCount">Max count</param>
+            <param name="callback">Async callback</param>
+            <param name="state">State object</param>
+            <param name="tokenized">Flag indicating whether returns is tokenized or not</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <returns>Array containg tag names (tokenized or not)</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.GetCurrentValue(System.Object,System.Object@,System.Int32@,System.DateTime@,System.Object)">
+            <summary>
+            Retrieve current value
+            </summary>
+            <param name="obj">Object name or internal reference to object</param>
+            <param name="value">Current value</param>
+            <param name="quality">Current quality</param>
+            <param name="timestamp">Current timestamp in local time</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <returns>Flag indicating success or error</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.GetCurrentValueAsync(System.Object,T.Library.TRef{System.Object},T.Library.TRef{System.Int32},T.Library.TRef{System.DateTime},System.Object)">
+            <summary>
+            Retrieve current value async
+            </summary>
+            <param name="obj">Object name or internal reference to object</param>
+            <param name="value">Current value</param>
+            <param name="quality">Current quality</param>
+            <param name="timestamp">Current timestamp in local time</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <returns>Flag indicating success or error</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.SetCurrentValue(System.Object,System.Object,System.Int32,System.DateTime,System.Object,System.Int64,System.Boolean)">
+            <summary>
+            Set new value for an object
+            </summary>
+            <param name="obj">Object name or internal reference to object</param>
+            <param name="value">New value</param>
+            <param name="quality">New quality</param>
+            <param name="timestamp">New timestamp in local time</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <param name="protection">Optional number to protect against recursive generate event</param>
+            <param name="forced">Optional flag forced value or not</param>
+            <returns>Flag indicating success or error</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.SetCurrentValueAsync(System.Object,System.Object,System.Int32,System.DateTime,System.Object,System.Int64,System.Boolean)">
+            <summary>
+            Set new value for an object async
+            </summary>
+            <param name="obj">Object name or internal reference to object</param>
+            <param name="value">New value</param>
+            <param name="quality">New quality</param>
+            <param name="timestamp">New timestamp in local time</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <param name="protection">Optional number to protect against recursive generate event</param>
+            <param name="forced">Optional flag forced value or not</param>
+            <returns>Flag indicating success or error</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.GetAvailableAttributeNames(System.Collections.Generic.IList{System.String}@)">
+            <summary>
+            Get names of available attributes
+            </summary>
+            <param name="attributes">List containg names of available attributes</param>
+            <returns>Flag indicating success or error</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.GetAttributeValue(System.Object,System.String,System.Object@,System.Object)">
+            <summary>
+            Get attribute value
+            </summary>
+            <param name="obj">Object name or internal reference to object</param>
+            <param name="attribName">Attribute name</param>
+            <param name="attribValue">Attribute value</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <returns>Flag indicating success or error</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.GetSingleValue(System.Object,System.DateTime,System.Int32,System.Double@,System.Int32@,System.DateTime@,System.Object)">
+            <summary>
+            Get value in time
+            </summary>
+            <param name="obj">Object name or internal reference to object</param>
+            <param name="time">Time to retrieve in localtime</param>
+            <param name="mode">Mode: 0-interpolated, 1-exact time, 2-before, 3-after</param>
+            <param name="value">Value</param>
+            <param name="quality">Quality</param>
+            <param name="timestamp">Timestamp in local time</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <returns>Flag indicating success or error</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.GetSingleValueAsync(System.Object,System.DateTime,System.Int32,T.Library.TRef{System.Double},T.Library.TRef{System.Int32},T.Library.TRef{System.DateTime},System.Object)">
+            <summary>
+            Get value in time
+            </summary>
+            <param name="obj">Object name or internal reference to object</param>
+            <param name="time">Time to retrieve in localtime</param>
+            <param name="mode">Mode: 0-interpolated, 1-exact time, 2-before, 3-after</param>
+            <param name="value">Value</param>
+            <param name="quality">Quality</param>
+            <param name="timestamp">Timestamp in local time</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <returns>Flag indicating success or error</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.GetRawValues(System.Object,System.DateTime,System.DateTime,System.Int32,System.Collections.Generic.IList{System.Double}@,System.Collections.Generic.IList{System.Int32}@,System.Collections.Generic.IList{System.DateTime}@,System.Object)">
+            <summary>
+            Retrieves raw values up to max count between two timestamps
+            </summary>
+            <param name="obj">Object name or internal reference to object</param>
+            <param name="startTime">Start time in local time</param>
+            <param name="endTime">End time in local time</param>
+            <param name="maxValues">Max count between two timestamps</param>
+            <param name="values">List containg retrieved values</param>
+            <param name="qualities">List containg retrieved qualities</param>
+            <param name="timestamps">List containg retrieved timestamps in local time</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <returns>Flag indicating success or error</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.GetRawValuesAsync(System.Object,System.DateTime,System.DateTime,System.Int32,T.Library.TRef{System.Collections.Generic.IList{System.Double}},T.Library.TRef{System.Collections.Generic.IList{System.Int32}},T.Library.TRef{System.Collections.Generic.IList{System.DateTime}},System.Object)">
+            <summary>
+            Retrieves raw values up to max count between two timestamps async
+            </summary>
+            <param name="obj">Object name or internal reference to object</param>
+            <param name="startTime">Start time in local time</param>
+            <param name="endTime">End time in local time</param>
+            <param name="maxValues">Max count between two timestamps</param>
+            <param name="values">List containg retrieved values</param>
+            <param name="qualities">List containg retrieved qualities</param>
+            <param name="timestamps">List containg retrieved timestamps in local time</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <returns>Flag indicating success or error</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.GetFilterValues(System.Object,System.DateTime,System.DateTime,System.Int32,System.Collections.Generic.IList{System.Double}@,System.Collections.Generic.IList{System.Int32}@,System.Collections.Generic.IList{System.DateTime}@,System.Boolean,System.Object)">
+            <summary>
+            Retrieves filter values up to max count between two timestamps
+            </summary>
+            <param name="obj">Object name or internal reference to object</param>
+            <param name="startTime">Start time in local time</param>
+            <param name="endTime">End time in local time</param>
+            <param name="maxValues">Max count between two timestamps</param>
+            <param name="values">List containg retrieved values</param>
+            <param name="qualities">List containg retrieved qualities</param>
+            <param name="timestamps">List containg retrieved timestamps in local time</param>
+            <param name="outside">Flag before and after points</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <returns>Flag indicating success or error</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.GetFilterValuesAsync(System.Object,System.DateTime,System.DateTime,System.Int32,T.Library.TRef{System.Collections.Generic.IList{System.Double}},T.Library.TRef{System.Collections.Generic.IList{System.Int32}},T.Library.TRef{System.Collections.Generic.IList{System.DateTime}},System.Boolean,System.Object)">
+            <summary>
+            Retrieves filter values up to max count between two timestamps async
+            </summary>
+            <param name="obj">Object name or internal reference to object</param>
+            <param name="startTime">Start time in local time</param>
+            <param name="endTime">End time in local time</param>
+            <param name="maxValues">Max count between two timestamps</param>
+            <param name="values">List containg retrieved values</param>
+            <param name="qualities">List containg retrieved qualities</param>
+            <param name="timestamps">List containg retrieved timestamps in local time</param>
+            <param name="outside">Flag before and after points</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <returns>Flag indicating success or error</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.GetInterpolatedValues(System.Object,System.DateTime,System.DateTime,System.TimeSpan,System.Collections.Generic.IList{System.Double}@,System.Collections.Generic.IList{System.Int32}@,System.Collections.Generic.IList{System.DateTime}@,System.Object)">
+            <summary>
+            Retrieves interpolated values
+            </summary>
+            <param name="obj">Object name or internal reference to object</param>
+            <param name="startTime">Start time in local time</param>
+            <param name="endTime">End time in local time</param>
+            <param name="stepInterval">Step interval</param>
+            <param name="values">List containg retrieved values</param>
+            <param name="qualities">List containg retrieved qualities</param>
+            <param name="timestamps">List containg retrieved timestamps in local time</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <returns>Flag indicating success or error</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.GetInterpolatedValuesAsync(System.Object,System.DateTime,System.DateTime,System.TimeSpan,T.Library.TRef{System.Collections.Generic.IList{System.Double}},T.Library.TRef{System.Collections.Generic.IList{System.Int32}},T.Library.TRef{System.Collections.Generic.IList{System.DateTime}},System.Object)">
+            <summary>
+            Retrieves interpolated values
+            </summary>
+            <param name="obj">Object name or internal reference to object</param>
+            <param name="startTime">Start time in local time</param>
+            <param name="endTime">End time in local time</param>
+            <param name="stepInterval">Step interval</param>
+            <param name="values">List containg retrieved values</param>
+            <param name="qualities">List containg retrieved qualities</param>
+            <param name="timestamps">List containg retrieved timestamps in local time</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <returns>Flag indicating success or error</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.InsertValues(System.Object[],System.Collections.Generic.IList{System.Double}[],System.Collections.Generic.IList{System.Int32}[],System.Collections.Generic.IList{System.DateTime}[],System.Object)">
+            <summary>
+            Insert new values of an array of objects
+            </summary>
+            <param name="objs">Array containg objects to insert</param>
+            <param name="values">Array containg list of values to insert to each object</param>
+            <param name="qualities">Array containg list of qualities to insert to each object</param>
+            <param name="timestamps">Array containg list of timestamps in localtime to insert</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <returns>Array containg flags indicating success or error to each object</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.InsertValuesAsync(System.Object[],System.Collections.Generic.IList{System.Double}[],System.Collections.Generic.IList{System.Int32}[],System.Collections.Generic.IList{System.DateTime}[],System.Object)">
+            <summary>
+            Insert new values of an array of objects async
+            </summary>
+            <param name="objs">Array containg objects to insert</param>
+            <param name="values">Array containg list of values to insert to each object</param>
+            <param name="qualities">Array containg list of qualities to insert to each object</param>
+            <param name="timestamps">Array containg list of timestamps in localtime to insert</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <returns>Array containg flags indicating success or error to each object</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.DeleteValues(System.Object[],System.Collections.Generic.IList{System.DateTime},System.Object)">
+            <summary>
+            Delete values of an array of objects
+            </summary>
+            <param name="objs">Array containg objects to delete</param>
+            <param name="timestamps">List of timestamps in localtime to delete</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <returns>Array containg flags indicating success or error to each object</returns>
+        </member>
+        <member name="M:T.Toolkit.DataAccess.DeleteValuesAsync(System.Object[],System.Collections.Generic.IList{System.DateTime},System.Object)">
+            <summary>
+            Delete values of an array of objects async
+            </summary>
+            <param name="objs">Array containg objects to delete</param>
+            <param name="timestamps">List of timestamps in localtime to delete</param>
+            <param name="server">Optional reference to server. This is retrieved by SetServer method</param>
+            <returns>Array containg flags indicating success or error to each object</returns>
+        </member>
+        <member name="T:T.Toolkit.IDataAccess">
+            <summary>
+            Interface of DataAccess API
+            </summary>
+        </member>
+        <member name="T:T.Toolkit.TKEventArgs">
+            <summary>
+            TK event arguments
+            </summary>
+        </member>
+        <member name="F:T.Toolkit.TKEventArgs.ObjectRef">
+            <summary>
+            Object name
+            </summary>
+        </member>
+        <member name="F:T.Toolkit.TKEventArgs.State">
+            <summary>
+            State
+            </summary>
+        </member>
+        <member name="F:T.Toolkit.TKEventArgs.Value">
+            <summary>
+            Get Value
+            </summary>
+        </member>
+        <member name="F:T.Toolkit.TKEventArgs.Quality">
+            <summary>
+            Get quality
+            </summary>
+        </member>
+        <member name="F:T.Toolkit.TKEventArgs.Timestamp">
+            <summary>
+            Get time stamp
+            </summary>
+        </member>
+        <member name="T:T.Toolkit.eDisplayEngine">
+            <summary>
+            eEngine
+            </summary>
+        </member>
+        <member name="T:T.Toolkit.IOnOK">
+            <summary>
+            Interface implemented by the toplevel container to manage the changing areas of the 
+            project manager.
+            </summary>
+        </member>
+        <member name="T:T.Toolkit.IPortableControl">
+            <summary>
+            Interface for all components that receive tag events from the binding.
+            </summary>
+        </member>
+        <member name="M:T.Toolkit.PortableSerializer.Serialize(System.Object,System.Type)">
+            <summary>
+            Serializes the object of specified type to XML
+            </summary>
+            <param name="obj"></param>
+            <param name="objectType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:T.Toolkit.PortableSerializer.Deserialize(System.String,System.Type)">
+            <summary>
+            Deserializes the given XML to object of specified type
+            </summary>
+            <param name="xml"></param>
+            <param name="objectType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:T.Toolkit.MemberInfo">
+            <summary>
+            Contents of Runtime Object Member Information
+            </summary>
+        </member>
+        <member name="T:T.Toolkit.ObjectReference">
+            <summary>
+            Reference to Runtime Object
+            </summary>
+        </member>
+        <member name="T:T.Toolkit.ProjectDB">
+            <summary>
+             Access to Solution Project Configuration Tables
+            </summary>
+        </member>
+        <member name="M:T.Toolkit.ProjectDB.GetEnumerationSets">
+            <summary>
+            Gets array containg enumration names
+            </summary>
+            <returns>Array containg enumration names</returns>
+        </member>
+        <member name="M:T.Toolkit.ProjectDB.GetEnumerationSetsAsync">
+            <summary>
+            Gets array containg enumration names async
+            </summary>
+            <returns>Array containg enumration names</returns>
+        </member>
+        <member name="M:T.Toolkit.ProjectDB.GetUserTemplates">
+            <summary>
+            Gets array containg user templates names
+            </summary>
+            <returns>Array containg user templates names</returns>
+        </member>
+        <member name="M:T.Toolkit.ProjectDB.GetUserTemplatesAsync">
+            <summary>
+            Gets array containg user templates names async
+            </summary>
+            <returns>Array containg user templates names</returns>
+        </member>
+        <member name="M:T.Toolkit.ProjectDB.GetUserTemplate(System.String)">
+            <summary>
+            Gets table containg user template
+            </summary>
+            <param name="userTemplateName">User template name</param>
+            <returns>Reference to table</returns>
+        </member>
+        <member name="M:T.Toolkit.ProjectDB.GetUserTemplateAsync(System.String)">
+            <summary>
+            Gets table containg user template async
+            </summary>
+            <param name="userTemplateName">User template name</param>
+            <returns>Reference to table</returns>
+        </member>
+        <member name="M:T.Toolkit.ProjectDB.GetDataTable(System.String,System.String)">
+            <summary>
+            Gets table
+            </summary>
+            <param name="tableName">Table name</param>
+            <param name="condition">[Optional] Where condition</param>
+            <returns>Reference to table</returns>
+        </member>
+        <member name="M:T.Toolkit.ProjectDB.GetDataTableAsync(System.String,System.String)">
+            <summary>
+            Gets table async
+            </summary>
+            <param name="tableName">Table name</param>
+            <param name="condition">[Optional] Where condition</param>
+            <returns>Reference to table</returns>
+        </member>
+        <member name="M:T.Toolkit.ProjectDB.GetDataRow(System.String,System.String)">
+            <summary>
+            Gets a row from table
+            </summary>
+            <param name="tableName">Table name</param>
+            <param name="name">Name</param>
+            <returns>Reference to DataRow</returns>
+        </member>
+        <member name="M:T.Toolkit.ProjectDB.GetDataRowAsync(System.String,System.String)">
+            <summary>
+            Gets a row from table async
+            </summary>
+            <param name="tableName">Table name</param>
+            <param name="name">Name</param>
+            <returns>Reference to DataRow</returns>
+        </member>
+        <member name="M:T.Toolkit.ProjectDB.NewDataRows(System.String,System.Int32)">
+            <summary>
+            Pre create new rows from a table
+            </summary>
+            <param name="tableName">Table name</param>
+            <param name="count">Count of rows to create</param>
+            <returns>Array of rows</returns>
+        </member>
+        <member name="M:T.Toolkit.ProjectDB.NewDataRowsAsync(System.String,System.Int32)">
+            <summary>
+            Pre create new rows from a table async
+            </summary>
+            <param name="tableName">Table name</param>
+            <param name="count">Count of rows to create</param>
+            <returns>Array of rows</returns>
+        </member>
+        <member name="M:T.Toolkit.ProjectDB.UpdateDataRows(System.String,System.Data.DataRow[],System.String@)">
+            <summary>
+            Update data rows
+            </summary>
+            <param name="tableName">Table name</param>
+            <param name="rows">Array of rows for updating</param>
+            <param name="error">[Output] Error on failure</param>
+            <returns>Dictionary containg errors by row ID (on failure)</returns>
+        </member>
+        <member name="M:T.Toolkit.ProjectDB.UpdateDataRowsAsync(System.String,System.Data.DataRow[],T.Library.TRef{System.String})">
+            <summary>
+            Update data rows async
+            </summary>
+            <param name="tableName">Table name</param>
+            <param name="rows">Array of rows for updating</param>
+            <param name="error">[Output] Error on failure</param>
+            <returns>Dictionary containg errors by row ID (on failure)</returns>
+        </member>
+        <member name="M:T.Toolkit.ProjectDB.ApplySolutionChanges">
+            <summary>
+            Apply project changes, restarting processes fully
+            </summary>
+            <returns>Flag indicating success or fail</returns>
+        </member>
+        <member name="M:T.Toolkit.ProjectDB.ApplySolutionChangesAsync">
+            <summary>
+            Apply project changes, restarting processes fully async
+            </summary>
+            <returns>Flag indicating success or fail</returns>
+        </member>
+        <member name="M:T.Toolkit.ProjectDB.ApplySolutionChanges(System.Boolean)">
+            <summary>
+            Apply project changes
+            </summary>
+            <param name="restartProcesses">Flag indicating wheter processes should restart fully (true) or only recreate internal tables (false).</param>
+            <returns>Flag indicating success or fail</returns>
+        </member>
+        <member name="M:T.Toolkit.ProjectDB.ApplySolutionChangesAsync(System.Boolean)">
+            <summary>
+            Apply project changes async
+            </summary>
+            <param name="restartProcesses">Flag indicating wheter processes should restart fully (true) or only recreate internal tables (false).</param>
+            <returns>Flag indicating success or fail</returns>
+        </member>
+        <member name="M:T.Toolkit.ProjectDB.CreateTableFromTag(System.String,System.Boolean)">
+            <summary>
+            Create a table containg full tag name (flat) from 'tagName' parameter. Columns: Name and Type
+            </summary>
+            <param name="tagName">Initial tag name</param>
+            <param name="includeMainTagProperties">Flag indicating whether should include also columns Value, Quality and Timestamp (LocalTime)</param>
+            <returns>Reference to table</returns>
+        </member>
+        <member name="M:T.Toolkit.Python.ExecutePyFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Boolean)">
+            <summary>
+            Run a .py file using Python for .NET (http://pythonnet.github.io/). To install: https://pypi.org/project/pythonnet/. Disabled for Mono project and HTML5 displays.
+            </summary>
+            <param name="pyFileName">Python file name</param>
+            <param name="locals">Local variables inside Python code. Default is null</param>
+            <param name="keepValuesAsPython">Keep retuned values as Python objects or convert to .NET objects. Default is false</param>
+            <returns>If success return null else string containg error</returns>
+        </member>
+        <member name="M:T.Toolkit.Python.ExecuteCode(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Boolean)">
+            <summary>
+            Run a Python code using Python for .NET (http://pythonnet.github.io/). To install: https://pypi.org/project/pythonnet/. Disabled for Mono project and HTML5 displays.
+            </summary>
+            <param name="code">py file name</param>
+            <param name="workingDirectory">Working directory. It will be added in 'sys.path'.</param>
+            <param name="locals">Local variables inside Python code. Default is null</param>
+            <param name="keepValuesAsPython">Keep retuned values as Python objects or convert to .NET objects. Default is false</param>
+            <returns>If success return null else string containg error</returns>
+        </member>
+        <member name="M:T.Toolkit.Python.EvaluateCode(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Boolean)">
+            <summary>
+            Evaluate a Python code using Python for .NET (http://pythonnet.github.io/). To install: https://pypi.org/project/pythonnet/. Disabled for Mono project and HTML5 displays.
+            </summary>
+            <param name="code">py file name</param>
+            <param name="workingDirectory">Working directory. It will be added in 'sys.path'.</param>
+            <param name="locals">Local variables inside Python code. Default is null</param>
+            <param name="keepValuesAsPython">Keep retuned values as Python objects or convert to .NET objects. Default is false</param>
+            <returns>Returned value</returns>
+        </member>
+        <member name="M:T.Toolkit.Python.ToPython(System.Object)">
+            <summary>
+            Convert .NET value to Python value. Disabled for Mono project and HTML5 displays.
+            </summary>
+            <param name="value">.NET value</param>
+            <returns>Reference to Python object. You should call ReleasePythonObject method.</returns>
+        </member>
+        <member name="M:T.Toolkit.Python.FromPython(System.Object)">
+            <summary>
+            Convert Python value to .NET value. Disabled for Mono project and HTML5 displays.
+            </summary>
+            <param name="value">Python value</param>
+            <returns>.NET value</returns>
+        </member>
+        <member name="M:T.Toolkit.Python.FromPython``1(System.Object)">
+            <summary>
+            Convert Python value to .NET value. Disabled for Mono project and HTML5 displays.
+            </summary>
+            <typeparam name="T">Target type</typeparam>
+            <param name="value">Python value</param>
+            <returns>.NET value</returns>
+        </member>
+        <member name="M:T.Toolkit.Python.ReleasePythonObject(System.Object)">
+            <summary>
+            Release Python object. Disabled for Mono project and HTML5 displays.
+            </summary>
+            <param name="pythonObject">Python object</param>
+        </member>
+        <member name="M:T.Toolkit.Python.CopyPythonObjectToTag(System.Object,System.String)">
+            <summary>
+            Copy Python object to tag (Array or User Template). Disabled for Mono project and HTML5 displays.
+            </summary>
+            <param name="source">Python object</param>
+            <param name="tagName">Tag Array or User Template</param>
+        </member>
+        <member name="M:T.Toolkit.Python.CopyTagToPythonObject(System.String,System.Object)">
+            <summary>
+            Copy tag (Array or User Template) to Python object. Disabled for Mono project and HTML5 displays.
+            </summary>
+            <param name="tagName">Tag Array or User Template</param>
+            <param name="target">Python object</param>
+        </member>
+        <member name="M:T.Toolkit.Python.CreatePythonObjectFromPyFile(System.String,System.String,System.Object[],System.String)">
+            <summary>
+            Create Python object from Python class. Disabled for Mono project and HTML5 displays.
+            </summary>
+            <param name="pyFileName">Python file name containg the definition of Python class</param>
+            <param name="className">Python class name.</param>
+            <param name="parameters">Parameters for Python class while creating Python object</param>
+            <param name="tagName">Tag name (Optional, Tag Array or User Template). If tag exists then copy all values to new Python object</param>
+            <returns>Reference to new Python object</returns>
+        </member>
+        <member name="M:T.Toolkit.Python.GetAttributesPythonObject(System.Object,System.Boolean)">
+            <summary>
+            Get all attributes of Python object. Disabled for Mono project and HTML5 displays
+            </summary>
+            <param name="pythonObject">Python object</param>
+            <param name="keepValuesAsPython">Keep retuned values as Python objects or convert to .NET objects. Default is false</param>
+            <returns>Dictionary containg attributes (name and value)</returns>
+        </member>
+        <member name="M:T.Toolkit.Python.SetAttributesPythonObject(System.Object,System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            Set new value for attributes of Python object. Disabled for Mono project and HTML5 displays
+            </summary>
+            <param name="pythonObject">Python object</param>
+            <param name="dict">Dictionary containg attributes (name and value) for setting</param>
+        </member>
+        <member name="M:T.Toolkit.Python.InvokeMethod(System.Object,System.String,System.Object[])">
+            <summary>
+            Invoke the method.
+            </summary>
+            <param name="pythonObject">Python object</param>
+            <param name="name">Method name</param>
+            <param name="parameters">Parameters</param>
+            <returns>Result</returns>
+        </member>
+        <member name="M:T.Toolkit.Python.DumpPythonObjectToString(System.Object)">
+            <summary>
+            Dump python object to string
+            </summary>
+            <param name="pythonObject">Python object</param>
+            <returns>String</returns>
+        </member>
+        <member name="M:T.Toolkit.Python.ExecutePythonShell(System.String,System.Object[])">
+            <summary>
+            Execute py filename using shell (python.exe)
+            </summary>
+            <param name="pyFileName">Py filename</param>
+            <param name="args">Arguments. Can be null</param>
+            <returns>Output result</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="T:T.Toolkit.TK">
+            <summary>
+            Script Toolkit
+            </summary>
+        </member>
+        <member name="T:T.Toolkit.TK.eTkTraceType">
+            <summary>
+            Enum trace type
+            </summary>
+        </member>
+        <member name="T:T.Toolkit.TK.eTkElementType">
+            <summary>
+            Enum element type
+            </summary>
+        </member>
+        <member name="M:T.Toolkit.TK.PrepareTK(T.Kernel.Core.ObjectServer)">
+            <summary>
+            Internal Use
+            </summary>
+        </member>
+        <member name="P:T.Toolkit.TK.ObjServer">
+            <summary>
+            Internal Use
+            </summary>
+        </member>
+        <member name="F:T.Toolkit.TK.ProjectDB">
+            <summary>
+            Used to access table and rows of project
+            </summary>
+        </member>
+        <member name="M:T.Toolkit.TK.NormalizeObjectName(System.String,System.Boolean)">
+            <summary>
+            Normalize object name
+            </summary>
+            <param name="name">Name</param>
+            <param name="concatenateSpaces">Flag: concate spaces</param>
+            <returns>Name normalized</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.LogException(System.Exception,System.String)">
+            <summary>
+            Log exception on TraceWindow
+            </summary>
+            <param name="ex">Exception</param>
+            <param name="methodName">Method name</param>
+        </member>
+        <member name="M:T.Toolkit.TK.GetImage(System.Int32)">
+            <summary>
+            Retrieves the image stream based on the provided image ID.
+            </summary>
+            <param name="imageID">The unique identifier of the image to retrieve.</param>
+            <returns>A stream containing the image data corresponding to the provided ID.</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetImageAsync(System.Int32)">
+            <summary>
+            Retrieves the image stream based on the provided image ID (Async).
+            </summary>
+            <param name="imageID">The unique identifier of the image to retrieve.</param>
+            <returns>A stream containing the image data corresponding to the provided ID.</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetImageIDFromName(System.String)">
+            <summary>
+            Retrieves the image ID based on the provided image name.
+            </summary>
+            <param name="name">The name of the image to look up.</param>
+            <returns>The ID of the image that matches the provided name.</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetImageIDFromNameAsync(System.String)">
+            <summary>
+            Retrieves the image ID based on the provided image name (Async).
+            </summary>
+            <param name="name">The name of the image to look up.</param>
+            <returns>The ID of the image that matches the provided name.</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetTagHistorian(System.String,System.DateTimeOffset,System.Object,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String)">
+            <summary>
+            Get historical from tag
+            </summary>
+            <param name="tagName">Tag name</param>
+            <param name="start">Start in local time</param>
+            <param name="duration">Duration</param>
+            <param name="getSamplesMode">Optional string mode used to get samples. Default is null (Normal mode). Each provider has your format. To CanaryHistorian: "Aggregate;Interval"</param>
+            <param name="getRawData">>Optional flag indicating whether should getting raw data. Default is true</param>
+            <param name="isDrillingChart">Optional flag indicating whether should get samples for Drilling chart. Default is false</param>
+            <param name="isDepthChart">>Optional flag indicating whether should get samples by depth for Drilling chart. Default is false</param>
+            <param name="boundaryOutside">>Optional flag indicating whether should get samples on the outside (true) or inside(false) of the requested start time and duration. Default is true</param>
+            <param name="filterExpression">>Optional SQL filter expression. Default is null</param>
+            <returns>Reference to table containg historical data. Column "Timestamp" is in UTC time when running on script class/task server or in Local time when running on clients</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetTagHistorianAsync(System.String,System.DateTimeOffset,System.Object,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String)">
+            <summary>
+            Get historical from tag async
+            </summary>
+            <param name="tagName">Tag name</param>
+            <param name="start">Start in local time</param>
+            <param name="duration">Duration</param>
+            <param name="getSamplesMode">Optional string mode used to get samples. Default is null (Normal mode). Each provider has your format. To CanaryHistorian: "Aggregate;Interval"</param>
+            <param name="getRawData">>Optional flag indicating whether should getting raw data. Default is true</param>
+            <param name="isDrillingChart">Optional flag indicating whether should get samples for Drilling chart. Default is false</param>
+            <param name="isDepthChart">>Optional flag indicating whether should get samples by depth for Drilling chart. Default is false</param>
+            <param name="boundaryOutside">>Optional flag indicating whether should get samples on the outside (true) or inside(false) of the requested start time and duration. Default is true</param>
+            <param name="filterExpression">>Optional SQL filter expression. Default is null</param>
+            <returns>Reference to table containg historical data. Column "Timestamp" is in UTC time when running on script class/task server or in Local time when running on clients</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetTagsHistorian(System.String[],System.DateTimeOffset,System.Object,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String)">
+            <summary>
+            Get historical from array of tag
+            </summary>
+            <param name="tagNames">Array containg tag names</param>
+            <param name="start">Start in local time</param>
+            <param name="duration">Duration</param>
+            <param name="getSamplesMode">Optional string mode used to get samples. Default is null (Normal mode). Each provider has your format. To CanaryHistorian: "Aggregate;Interval"</param>
+            <param name="getRawData">>Optional flag indicating whether should getting raw data. Default is true</param>
+            <param name="isDrillingChart">Optional flag indicating whether should get samples for Drilling chart. Default is false</param>
+            <param name="isDepthChart">>Optional flag indicating whether should get samples by depth for Drilling chart. Default is false</param>
+            <param name="boundaryOutside">>Optional flag indicating whether should get samples on the outside (true) or inside(false) of the requested start time and duration. Default is true</param>
+            <param name="filterExpression">>Optional SQL filter expression. Default is null</param>
+            <returns>Reference to dataset containg historical data. Column "Timestamp" is in UTC time when running on script class/task server or in Local time when running on client</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetTagsHistorianAsync(System.String[],System.DateTimeOffset,System.Object,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String)">
+            <summary>
+            Get historical from array of tag async
+            </summary>
+            <param name="tagNames">Array containg tag names</param>
+            <param name="start">Start in local time</param>
+            <param name="duration">Duration</param>
+            <param name="getSamplesMode">Optional string mode used to get samples. Default is null (Normal mode). Each provider has your format. To CanaryHistorian: "Aggregate;Interval"</param>
+            <param name="getRawData">>Optional flag indicating whether should getting raw data. Default is true</param>
+            <param name="isDrillingChart">Optional flag indicating whether should get samples for Drilling chart. Default is false</param>
+            <param name="isDepthChart">>Optional flag indicating whether should get samples by depth for Drilling chart. Default is false</param>
+            <param name="boundaryOutside">>Optional flag indicating whether should get samples on the outside (true) or inside(false) of the requested start time and duration. Default is true</param>
+            <param name="filterExpression">>Optional SQL filter expression. Default is null</param>
+            <returns>Reference to dataset containg historical data. Column "Timestamp" is in UTC time when running on script class/task server or in Local time when running on client</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetTagHistorian(System.String,System.Double,System.Double,System.String,System.Int64,System.Boolean,System.String)">
+            <summary>
+            Get historical from tag
+            </summary>
+            <param name="tagName">Tag name</param>
+            <param name="beginDepth">Initial depth</param>
+            <param name="endDepth">Final depth</param>
+            <param name="holeDepthName">Hole depth tag name for searching</param>
+            <param name="startedDrillingUTC">Started drilling UTC ticks</param>
+            <param name="boundaryOutside">>Optional flag indicating whether should get samples on the outside (true) or inside(false) of the requested start time and duration. Default is true</param>
+            <param name="filterExpression">>Optional SQL filter expression. Default is null</param>
+            <returns>Reference to table containg historical data</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetTagHistorianAsync(System.String,System.Double,System.Double,System.String,System.Int64,System.Boolean,System.String)">
+            <summary>
+            Get historical from tag async
+            </summary>
+            <param name="tagName">Tag name</param>
+            <param name="beginDepth">Initial depth</param>
+            <param name="endDepth">Final depth</param>
+            <param name="holeDepthName">Hole depth tag name for searching</param>
+            <param name="startedDrillingUTC">Started drilling UTC ticks</param>
+            <param name="boundaryOutside">>Optional flag indicating whether should get samples on the outside (true) or inside(false) of the requested start time and duration. Default is true</param>
+            <param name="filterExpression">>Optional SQL filter expression. Default is null</param>
+            <returns>Reference to table containg historical data</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.AddValuesToTagHistorian(System.String[],System.Collections.Generic.IList{System.Double}[],System.Collections.Generic.IList{System.Int32}[],System.Collections.Generic.IList{System.DateTime}[])">
+            <summary>
+            Add new values to tag historian
+            </summary>
+            <param name="tagNames">Array containg objects to insert</param>
+            <param name="values">Array containg list of values to insert to each object</param>
+            <param name="qualities">Array containg list of qualities to insert to each object</param>
+            <param name="timestamps">Array containg list of timestamps in localtime to insert</param>
+            <returns>Array containg flags indicating success or error to each object</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.AddValuesToTagHistorianAsync(System.String[],System.Collections.Generic.IList{System.Double}[],System.Collections.Generic.IList{System.Int32}[],System.Collections.Generic.IList{System.DateTime}[])">
+            <summary>
+            Add new values to tag historian async
+            </summary>
+            <param name="tagNames">Array containg objects to insert</param>
+            <param name="values">Array containg list of values to insert to each object</param>
+            <param name="qualities">Array containg list of qualities to insert to each object</param>
+            <param name="timestamps">Array containg list of timestamps in localtime to insert</param>
+            <returns>Array containg flags indicating success or error to each object</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.BulkTreatAlarm(System.String,System.Object[],System.Int32[],System.DateTime[])">
+            <summary>
+            Bulk treat alarms of a tag
+            </summary>
+            <param name="tagName">Array containg objects to insert</param>
+            <param name="values">Array containg list of values</param>
+            <param name="qualities">Array containg list of qualities</param>
+            <param name="timestamps">Array containg list of timestamps in localtime</param>
+            <returns>If success then returns null else error (string)</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetMembersAsDataRow(System.String,T.Toolkit.EditInfo)">
+            <summary>
+            Gets members from object name
+            </summary>
+            <param name="name">Object name</param>
+            <param name="filter">Filter of search</param>
+            <returns>Reference to members</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetMembersInfo(System.String,T.Toolkit.EditInfo)">
+            <summary>
+            Gets info from object name
+            </summary>
+            <param name="name">Object name</param>
+            <param name="filter">Filter of search</param>
+            <returns>Info of object name</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetMembers(System.String,T.Toolkit.EditInfo)">
+            <summary>
+            Get name of each member from object name
+            </summary>
+            <param name="name">Object name</param>
+            <param name="filter">Filter of search</param>
+            <returns>Array containg names</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetTagChildren(System.String,System.Boolean)">
+            <summary>
+            Get children from object name
+            </summary>
+            <param name="name">Object name</param>
+            <param name="isDomainClient">Flag indicating whether domain of object is client</param>
+            <returns>Array containg names</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetTagChildrenInfo(System.Boolean,System.String)">
+            <summary>
+            Get children from object name
+            </summary>
+            <param name="isDomainClient">Flag indicating whether domain of object is client</param>
+            <param name="name">Object name</param>
+            <returns>Array containg information</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetTagChildrenAsDataRow(System.String,System.Boolean)">
+            <summary>
+            Get children from object name
+            </summary>
+            <param name="name">Object name</param>
+            <param name="isDomainClient">Flag indicating whether domain of object is client</param>
+            <returns>Array information as DataRow's</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetTagChildrenAsDataRow(System.Boolean,System.String)">
+            <summary>
+            Get children from object name
+            </summary>
+            <param name="isDomainClient">Flag indicating whether domain of object is client</param>
+            <param name="name">Object name</param>
+            <returns>Array information as DataRow's</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.PreloadObject(System.String)">
+            <summary>
+            Preload main properties from object name. Used to improvement performance while getting object by first ime
+            </summary>
+            <param name="objectName">Object name</param>
+        </member>
+        <member name="M:T.Toolkit.TK.PreloadObject(System.String,System.String[])">
+            <summary>
+            Preload main properties from object name. Used to improvement performance while getting object by first ime
+            </summary>
+            <param name="objectName">Object name</param>
+            /// <param name="properties">Optional extra tag property names (beyond the standard properties: Value, Quality, Timestamp, Visibility, Locked, Disable, ReadSecurity, WriteSecurity, Min, Max, Deadband)</param>
+        </member>
+        <member name="M:T.Toolkit.TK.InternalGetObjectValue(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Internal Use
+            </summary>
+        </member>
+        <member name="M:T.Toolkit.TK.GetObjectValue(System.String)">
+            <summary>
+            Gets object value
+            </summary>
+            <param name="objectName">Object name</param>
+            <returns>Value</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.Asset(System.String)">
+            <summary>
+            Get reference to asset
+            </summary>
+            <param name="name">Asset name</param>
+            <returns>Reference to asset</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.SetAsset(System.String,System.Object)">
+            <summary>
+            Set new value to asset
+            </summary>
+            <param name="name">Asset name</param>
+            <param name="newValue">New value</param>
+            <returns>Flag success</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetAssetDouble(System.String)">
+            <summary>
+            Get value to asset converted to double
+            </summary>
+            <param name="name">Asset name</param>
+            <returns>Value (double)</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.AddElementToAsset(System.String,System.String,System.Boolean)">
+            <summary>
+            Add element name to asset
+            </summary>
+            <param name="name">Asset name</param>
+            <param name="element">Element name</param>
+            <param name="isAttribute">Flag indicating whether should add as attribute or not</param>
+            <returns>Final asset name</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.AddElementToAssetAsync(System.String,System.String,System.Boolean)">
+            <summary>
+            Add element name to asset
+            </summary>
+            <param name="name">Asset name</param>
+            <param name="element">Element name</param>
+            <param name="isAttribute">Flag indicating whether should add as attribute or not</param>
+            <returns>Final asset name</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.SplitAsset(System.String)">
+            <summary>
+            Split asset
+            </summary>
+            <param name="asset">Asset name</param>
+            <returns>Array of strings</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.SetObjectValue(System.String,System.Object,System.Int32,System.DateTimeOffset,System.Boolean)">
+            <summary>
+            Sets new value for object
+            </summary>
+            <param name="objectName">Object name</param>
+            <param name="newValue">New value</param>
+            <param name="quality">New quality</param>
+            <param name="timestamp">New timestamp</param>
+            <param name="forced">Flag: forced</param>
+            <returns>Flag indicating success (true) or fail (false)</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.SetObjectValue(System.String,System.Object)">
+            <summary>
+            Sets new value for object
+            </summary>
+            <param name="objectName">Object name</param>
+            <param name="newValue">New value</param>
+            <returns>Flag indicating success (true) or fail (false)</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.CopyNetObjectToTag(System.Object,T.Kernel.Core.IArrayObj,System.Boolean)">
+            <summary>
+            Copy .NET object to tag
+            </summary>
+            <param name="source">.NET object</param>
+            <param name="tagTarget">Tag array</param>
+            <param name="onlyPublicProperties">Flag indicating whether should copy only public properties or not</param>
+        </member>
+        <member name="M:T.Toolkit.TK.CopyNetObjectToTag(System.Object,T.Kernel.Tags.UserType,System.Boolean)">
+            <summary>
+            Copy .NET object to tag
+            </summary>
+            <param name="source">.NET object</param>
+            <param name="tagTarget">Tag template</param>
+            <param name="onlyPublicProperties">Flag indicating whether should copy only public properties or not</param>
+        </member>
+        <member name="M:T.Toolkit.TK.CopyNetObjectToTag(System.Object,System.String,System.Boolean)">
+            <summary>
+            Copy .NET object to tag
+            </summary>
+            <param name="source">.NET object</param>
+            <param name="tagNameTarget">Tag name</param>
+            <param name="onlyPublicProperties">Flag indicating whether should copy only public properties or not</param>
+        </member>
+        <member name="M:T.Toolkit.TK.CopyTagToNetObject(T.Kernel.Core.IArrayObj,System.Object,System.Boolean,System.Boolean)">
+            <summary>
+            Copy tag values to .NET object
+            </summary>
+            <param name="tagSource">Source tag array</param>
+            <param name="target">Target .NET object</param>
+            <param name="onlyPublicProperties">Flag indicating whether should copy only public properties or not</param>
+            <param name="canCreateInstance">Flag indicating whether can create instance of children of main .NET object or not</param>
+        </member>
+        <member name="M:T.Toolkit.TK.CopyTagToNetObject(T.Kernel.Tags.UserType,System.Object,System.Boolean,System.Boolean)">
+            <summary>
+            Copy tag values to .NET object
+            </summary>
+            <param name="tagSource">Source tag template</param>
+            <param name="target">Target .NET object</param>
+            <param name="onlyPublicProperties">Flag indicating whether should copy only public properties or not</param>
+            <param name="canCreateInstance">Flag indicating whether can create instance of children of main .NET object or not</param>
+        </member>
+        <member name="M:T.Toolkit.TK.CopyTagToNetObject(System.String,System.Object,System.Boolean,System.Boolean)">
+            <summary>
+            Copy tag values to .NET object
+            </summary>
+            <param name="tagNameSource">Source tag name</param>
+            <param name="target">Target .NET object</param>
+            <param name="onlyPublicProperties">Flag indicating whether should copy only public properties or not</param>
+            <param name="canCreateInstance">Flag indicating whether can create instance of children of main .NET object or not</param>
+        </member>
+        <member name="M:T.Toolkit.TK.CopyTagToTag(T.Kernel.Tags.UserType,T.Kernel.Tags.UserType)">
+            <summary>
+            Copy tag values to another tag
+            </summary>
+            <param name="tagSource">Source tag</param>
+            <param name="tagTarget">Target tag</param>
+        </member>
+        <member name="M:T.Toolkit.TK.CopyTagToTag(System.String,System.String)">
+            <summary>
+            Copy tag values to another tag
+            </summary>
+            <param name="tagSource">Source tag</param>
+            <param name="tagTarget">Target tag</param>
+        </member>
+        <member name="M:T.Toolkit.TK.CompareTag(T.Kernel.Tags.UserType,T.Kernel.Tags.UserType)">
+            <summary>
+            Compare tags
+            </summary>
+            <param name="tagSource">The first tag to compare</param>
+            <param name="tagTarget">The second tag to compare</param>
+            <returns>A 32-bit signed integer that indicates the lexical relationship between the two comparands</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.CompareTag(System.String,System.String)">
+            <summary>
+            Compare tags
+            </summary>
+            <param name="tagNameSource">The first tag to compare</param>
+            <param name="tagNameTarget">The second tag to compare</param>
+            <returns>A 32-bit signed integer that indicates the lexical relationship between the two comparands</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.CopyTagToDataTable(T.Kernel.Tags.UserType)">
+            <summary>
+            Copy tag values to datatable
+            </summary>
+            <param name="tag">Source tag</param>
+            <returns>Reference to DataTable</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.CopyTagToDataTable(System.String)">
+            <summary>
+            Copy tag values to datatable
+            </summary>
+            <param name="tag">Source tag name</param>
+            <returns>Reference to DataTable</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.CopyTagToDataTableAsync(System.String)">
+            <summary>
+            Copy tag values to datatable async
+            </summary>
+            <param name="tag">Source tag name</param>
+            <returns>Reference to DataTable</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.CopyDataTableToTag(System.Data.DataTable,T.Kernel.Tags.UserType)">
+            <summary>
+            Copy datatable to tag
+            </summary>
+            <param name="table">Reference to DataTable</param>
+            <param name="tag">Target tag</param>
+        </member>
+        <member name="M:T.Toolkit.TK.CopyDataTableToTag(System.Data.DataTable,System.String)">
+            <summary>
+            Copy datatable to tag
+            </summary>
+            <param name="table">Reference to DataTable</param>
+            <param name="tag">Target tag name</param>
+        </member>
+        <member name="M:T.Toolkit.TK.ClearTag(T.Kernel.Core.ArrayObj{T.Kernel.Tags.UserType})">
+            <summary>
+            Clear tag
+            </summary>
+            <param name="tag">Tag name</param>
+        </member>
+        <member name="M:T.Toolkit.TK.ClearTag(T.Kernel.Tags.UserType)">
+            <summary>
+            Clear tag
+            </summary>
+            <param name="tag">Tag name</param>
+        </member>
+        <member name="M:T.Toolkit.TK.ClearTag(System.String)">
+            <summary>
+            Clear tag name
+            </summary>
+            <param name="tagName">Tag name</param>
+        </member>
+        <member name="M:T.Toolkit.TK.InitializeTag(T.Kernel.Core.ArrayObj{T.Kernel.Tags.UserType},System.Object)">
+            <summary>
+            Initialize tag with a value
+            </summary>
+            <param name="tag">Tag</param>
+            <param name="value">New value</param>
+        </member>
+        <member name="M:T.Toolkit.TK.InitializeTag(T.Kernel.Tags.UserType,System.Object)">
+            <summary>
+            Initialize tag with a value
+            </summary>
+            <param name="tag">Tag</param>
+            <param name="value">New value</param>
+        </member>
+        <member name="M:T.Toolkit.TK.InitializeTag(System.String,System.Object)">
+            <summary>
+            Initialize tag with a value
+            </summary>
+            <param name="tagName">Tag name</param>
+            <param name="value">New value</param>
+        </member>
+        <member name="M:T.Toolkit.TK.IsArrayBase(System.String)">
+            <summary>
+            Gets if tag is array
+            </summary>
+            <param name="tagName">Tag name</param>
+            <returns>Flag indicatihng whether tag is array</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.IsFromTemplate(System.String)">
+            <summary>
+            Gets if tag is a user template
+            </summary>
+            <param name="tagName">Tag name</param>
+            <returns>Flag indicatihng whether tag is user template</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.ArraySize(System.String)">
+            <summary>
+            Gets array size from tag
+            </summary>
+            <param name="tagName">Tag name</param>
+            <returns>Array size</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.ArrayDataDefined(System.String)">
+            <summary>
+            Gets array size from tag. The size depends to value of quality. The first index found different of Undefined from bottom to top is the returned value.
+            </summary>
+            <param name="tagName">Tag name</param>
+            <returns>Array size</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.To``1(System.Object)">
+            <summary>
+            Performs convert to type
+            </summary>
+            <typeparam name="T">Type to convert</typeparam>
+            <param name="value">Value to convert</param>
+            <returns>Converted value</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.To(System.Type,System.Object)">
+            <summary>
+            Performs convert to type
+            </summary>
+            <param name="type">Type to convert</param>
+            <param name="value">Value to convert</param>
+            <returns>Converted value</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.ConvertTo``1(System.Object)">
+            <summary>
+            Performs convert to type
+            </summary>
+            <typeparam name="T">Type to convert</typeparam>
+            <param name="value">Value to convert</param>
+            <returns>Converted value</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.ToDateTime(System.Object)">
+            <summary>
+            Performs convert to DateTime
+            </summary>
+            <param name="value">Value to convert</param>
+            <returns>Converted value</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.ToTimeSpan(System.Object)">
+            <summary>
+            Performs convert to TimeStamp
+            </summary>
+            <param name="value">Value to convert</param>
+            <returns>Converted value</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.ToInt(System.Object)">
+            <summary>
+            Performs convert to int
+            </summary>
+            <param name="value">Value to convert</param>
+            <returns>Converted value</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.ToLong(System.Object)">
+            <summary>
+            Performs convert to long
+            </summary>
+            <param name="value">Value to convert</param>
+            <returns>Converted value</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.ToDouble(System.Object)">
+            <summary>
+            Performs convert to double
+            </summary>
+            <param name="value">Value to convert</param>
+            <returns>Converted value</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.ToBool(System.Object)">
+            <summary>
+            Performs convert to boolean
+            </summary>
+            <param name="value">Value to convert</param>
+            <returns>Converted value</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.ToString(System.Object)">
+            <summary>
+            Performs convert to string
+            </summary>
+            <param name="value">Value to convert</param>
+            <returns>Converted value</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.ToText(System.Object)">
+            <summary>
+            Performs convert to string
+            </summary>
+            <param name="value">Value to convert</param>
+            <returns>Converted value</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.ToDateTimeOffset(System.Object,System.DateTimeKind)">
+            <summary>
+            Performs convert to DateTimeOffset
+            </summary>
+            <param name="value">Value to convert</param>
+            <param name="kind">Kind of value</param>
+            <returns>Converted value</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.LoadFromXMLString(System.String,T.Kernel.Tags.UserType)">
+            <summary>
+            Load XML data and copy to tag
+            </summary>
+            <param name="xmlData">XML data</param>
+            <param name="tag">Tag template</param>
+        </member>
+        <member name="M:T.Toolkit.TK.LoadFromXMLString(System.String,System.String)">
+            <summary>
+            Load XML data and copy to tag
+            </summary>
+            <param name="xmlData">XML data</param>
+            <param name="tagName">Tag name</param>
+        </member>
+        <member name="M:T.Toolkit.TK.LoadFromXML(System.String,T.Kernel.Tags.UserType)">
+            <summary>
+            Load XML file and copy to tag
+            </summary>
+            <param name="fileName">XML file name</param>
+            <param name="tag">Tag template</param>
+        </member>
+        <member name="M:T.Toolkit.TK.LoadFromXML(System.String,System.String)">
+            <summary>
+            Load XML file and copy to tag
+            </summary>
+            <param name="fileName">XML file name</param>
+            <param name="tagName">Tag name</param>
+        </member>
+        <member name="M:T.Toolkit.TK.SaveToXMLString(T.Kernel.Tags.UserType)">
+            <summary>
+            Create XML data from tag
+            </summary>
+            <param name="tag">Tag template</param>
+            <returns>Returns XML data</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.SaveToXMLString(System.String)">
+            <summary>
+            Create XML data from tag
+            </summary>
+            <param name="tagName">Tag name</param>
+            <returns>Returns XML data</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.SaveToXML(System.String,T.Kernel.Tags.UserType)">
+            <summary>
+            Create XML file from tag
+            </summary>
+            <param name="fileName">XML file name</param>
+            <param name="tag">Tag template</param>
+            <returns>Flag indicating whether success or fail</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:T.Toolkit.TK.SaveToXML(System.String,System.String)" -->
+        <member name="M:T.Toolkit.TK.GetParentFolder(System.String)">
+            <summary>
+            Gets parent of asset path
+            </summary>
+            <param name="assetPath">Asset path</param>
+            <returns>Parent folder name</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetParentFolderAsync(System.String)">
+            <summary>
+            Gets parent of asset path async
+            </summary>
+            <param name="assetPath">Asset path</param>
+            <returns>Parent folder name</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetAssetFolderName(System.String)">
+            <summary>
+            Get asset path from object name
+            </summary>
+            <param name="objectName">Object name</param>
+            <returns>Asset path</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetAssetFolderNameAsync(System.String)">
+            <summary>
+            Get asset path from object name async
+            </summary>
+            <param name="objectName">Object name</param>
+            <returns>Asset path</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetAssets(System.String,System.Boolean)">
+            <summary>
+            Gets asset names from asset path
+            </summary>
+            <param name="assetPath">Asset path</param>
+            <param name="onlyTags">Flag indicating whether returns only tags</param>
+            <returns>Array containg asset names</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetAssetsAsync(System.String,System.Boolean)">
+            <summary>
+            Gets asset names from asset path async
+            </summary>
+            <param name="assetPath">Asset path</param>
+            <param name="onlyTags">Flag indicating whether returns only tags</param>
+            <returns>Array containg asset names</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetSubFolders(System.String)">
+            <summary>
+            Get children from asset path
+            </summary>
+            <param name="assetPath">Asset path</param>
+            <returns>Array containg children</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetSubFoldersAsync(System.String)">
+            <summary>
+            Get children from asset path async
+            </summary>
+            <param name="assetPath">Asset path</param>
+            <returns>Array containg children</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.IsAttribute(System.String,System.Int32)">
+            <summary>
+            Gets if element name is an attribute
+            </summary>
+            <param name="elementName">Element name</param>
+            <param name="timeoutSeconds">Max time to wait answer</param>
+            <returns>Flag indicating whether element name is an attribute</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.IsAttributeAsync(System.String,System.Int32)">
+            <summary>
+            Gets if element name is an attribute async
+            </summary>
+            <param name="elementName">Element name</param>
+            <param name="timeoutSeconds">Max time to wait answer</param>
+            <returns>Flag indicating whether element name is an attribute</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.HasChildren(System.String)">
+            <summary>
+            Gets if element name has children
+            </summary>
+            <param name="elementName">Element name</param>
+            <returns>Flag indicating whether element name has children</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.HasChildrenAsync(System.String)">
+            <summary>
+            Gets if element name has children async
+            </summary>
+            <param name="elementName">Element name</param>
+            <returns>Flag indicating whether element name has children</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.HasAttributes(System.String)">
+            <summary>
+            Gets if element name has attributes
+            </summary>
+            <param name="elementName">Element name</param>
+            <returns>Flag indicating whether element name has attributes</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.HasAttributesAsync(System.String)">
+            <summary>
+            Gets if element name has attributes async
+            </summary>
+            <param name="elementName">Element name</param>
+            <returns>Flag indicating whether element name has attributes</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.HasHistorian(System.String)">
+            <summary>
+            Gets if tag name has historian
+            </summary>
+            <param name="name">Tag name</param>
+            <returns>Flag indicating whether tag has historian</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.HasHistorianAsync(System.String)">
+            <summary>
+            Gets if tag name has historian
+            </summary>
+            <param name="name">Tag name</param>
+            <returns>Flag indicating whether tag has historian</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetParentElement(System.String)">
+            <summary>
+            Gets parent name from element name
+            </summary>
+            <param name="elementName">Element name</param>
+            <returns>Parent name</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetParentElementAsync(System.String)">
+            <summary>
+            Gets parent name from element name async
+            </summary>
+            <param name="elementName">Element name</param>
+            <returns>Parent name</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetChildrenElements(System.String,T.Toolkit.TK.eTkElementType)">
+            <summary>
+            Get children from element name
+            </summary>
+            <param name="elementName">Element name</param>
+            <param name="elementType">Element type</param>
+            <returns>Reference to DataTable</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetChildrenElementsAsync(System.String,T.Toolkit.TK.eTkElementType)">
+            <summary>
+            Get children from element name async
+            </summary>
+            <param name="elementName">Element name</param>
+            <param name="elementType">Element type</param>
+            <returns>Reference to DataTable</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetChildrenElements(System.String,System.Boolean@,System.Boolean@)">
+            <summary>
+            Get children from element name
+            </summary>
+            <param name="elementName">Element name</param>
+            <param name="hasAttributes">{Output] Flag indicating whether element has attributes</param>
+            <param name="hasChildren">{Output] Flag indicating whether element has children</param>
+            <returns>Reference to DataTable</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetChildrenElementsAsync(System.String,T.Library.TRef{System.Boolean},T.Library.TRef{System.Boolean})">
+            <summary>
+            Get children from element name async
+            </summary>
+            <param name="elementName">Element name</param>
+            <param name="hasAttributes">{Output] Flag indicating whether element has attributes</param>
+            <param name="hasChildren">{Output] Flag indicating whether element has children</param>
+            <returns>Reference to DataTable</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.BeginGetChildrenElements(System.String,T.Toolkit.TK.eTkElementType,System.AsyncCallback,System.Object)">
+            <summary>
+            Begin get children from element name
+            </summary>
+            <param name="elementName">Element name</param>
+            <param name="elementType">Element type</param>
+            <param name="callback">Callback method</param>
+            <param name="state">State object. This reference will be passed when callback is called</param>
+            <returns>Referece to async result</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.EndGetChildrenElements(System.IAsyncResult,System.Boolean@,System.Boolean@)">
+            <summary>
+            End an asynchronous GetChildElement method
+            </summary>
+            <param name="ar">Identification of the asynchronous invoke</param>
+            <param name="hasAttributes">{Output] Flag indicating whether element has attributes</param>
+            <param name="hasChildren">{Output] Flag indicating whether element has children</param>
+            <returns>Reference to DataTable</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetAllAttributes(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Get attributes of TagProvider from initial element
+            </summary>
+            <param name="initialElement">Initial element (branch). It can be empty string (initial)</param>
+            <param name="timeoutSeconds">Max time to wait answer</param>
+            <param name="getChildren">Flag indicating whether it should get all children (true) or not (false)</param>
+            <returns>Array of string containg attributes</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetAllAttributesAsync(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Get attributes of TagProvider from initial element async
+            </summary>
+            <param name="initialElement">Initial element (branch). It can be empty string (initial)</param>
+            <param name="timeoutSeconds">Max time to wait answer</param>
+            <param name="getChildren">Flag indicating whether it should get all children (true) or not (false)</param>
+            <returns>Array of string containg attributes</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.ContainsWildCard(System.String)">
+            <summary>
+            Checks if the given element name contains a wildcard character (+).
+            </summary>
+            <param name="elementName">The element name to check.</param>
+            <returns>True if the element name contains a wildcard character, false otherwise.</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.BeginGetAllAttributes(System.String,System.Int32,System.Boolean,System.AsyncCallback,System.Object)">
+            <summary>
+            Begin get attributes of TagProvider from initial element
+            </summary>
+            <param name="initialElement">Initial element (branch). It can be empty string (initial)</param>
+            <param name="timeoutSeconds">Max time to wait answer</param>
+            <param name="getChildren">Flag indicating whether it should get all children (true) or not (false)</param>
+            <param name="callback">Callback method</param>
+            <param name="state">State object. This reference will be passed when callback is called</param>
+            <returns>Referece to async result</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.EndGetAllAttributes(System.IAsyncResult)">
+            <summary>
+            End an asynchronous GetAllAttributes method
+            </summary>
+            <param name="ar">Identification of the asynchronous invoke</param>
+            <returns>Array of string containg attributes</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetAssets(System.String)">
+            <summary>
+            Get assets from initial element
+            </summary>
+            <param name="initialElement">Initial element (branch).</param>
+            <returns>Array of string containg attributes</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetAssetsAsync(System.String)">
+            <summary>
+            Get assets from initial element async
+            </summary>
+            <param name="initialElement">Initial element (branch).</param>
+            <returns>Array of string containg attributes</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.BeginGetAssets(System.String,System.AsyncCallback,System.Object)">
+            <summary>
+            Begin get assets from initial element
+            </summary>
+            <param name="initialElement">Initial element (branch).</param>
+            <param name="callback">Callback method</param>
+            <param name="state">State object. This reference will be passed when callback is called</param>
+            <returns>Referece to async result</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.EndGetAssets(System.IAsyncResult)">
+            <summary>
+            End an asynchronous GetAssets method
+            </summary>
+            <param name="ar">Identification of the asynchronous invoke</param>
+            <returns>Array of string containg attributes</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetElementType(System.String)">
+            <summary>
+            Gets element type from element name
+            </summary>
+            <param name="elementName">Element name</param>
+            <returns>String containg element type</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetElementTypeAsync(System.String)">
+            <summary>
+            Gets element type from element name async
+            </summary>
+            <param name="elementName">Element name</param>
+            <returns>String containg element type</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.BeginGetElementType(System.String,System.AsyncCallback,System.Object)">
+            <summary>
+            Begin get type from element name
+            </summary>
+            <param name="elementName">Element name</param>
+            <param name="callback">Callback method</param>
+            <param name="state">State object. This reference will be passed when callback is called</param>
+            <returns>Referece to async result</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.EndGetElementType(System.IAsyncResult)">
+            <summary>
+            End an asynchronous GetElementType method
+            </summary>
+            <param name="ar">Identification of the asynchronous invoke</param>
+            <returns>Type name if success else empty string </returns>
+        </member>
+        <member name="M:T.Toolkit.TK.CopyAssetToTagAsync(System.String,System.String)">
+            <summary>
+            Copy asset to tag
+            </summary>
+            <param name="assetSource">Asset</param>
+            <param name="tagNameTarget">Tag name</param>
+        </member>
+        <member name="M:T.Toolkit.TK.CopyAssetToTagAsync(System.String,T.Kernel.Tags.UserType)">
+            <summary>
+            Copy asset to tag
+            </summary>
+            <param name="assetSource">Asset</param>
+            <param name="tagTarget">Reference to tag</param>
+        </member>
+        <member name="M:T.Toolkit.TK.CopyTagToAssetAsync(System.String,System.String)">
+            <summary>
+            Copy asset to tag
+            </summary>
+            <param name="tagNameSource">Tag name</param>
+            <param name="assetTarget">Asset</param>
+        </member>
+        <member name="M:T.Toolkit.TK.SetReferenceLinkAsync(T.Kernel.Tags.UserType,System.String)">
+            <summary>
+            Set reference links of template members
+            </summary>
+            <param name="tagTemplate">Reference to tag</param>
+            <param name="initialAsset">Initial asset</param>
+        </member>
+        <member name="M:T.Toolkit.TK.SetReferenceLinkAsync(System.String,System.String)">
+            <summary>
+            Set reference links of template members
+            </summary>
+            <param name="tagTemplateName">Tag template name</param>
+            <param name="initialAsset">Initial asset</param>
+        </member>
+        <member name="M:T.Toolkit.TK._TransformTagTemplateToJson(T.Kernel.Core.ObjRef,System.Object)">
+            <summary>
+            Transform a TagTemplate into a Json Element (JObject or JArray)
+            </summary>
+            <param name="parentObjRef"></param>
+            <param name="parentObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:T.Toolkit.TK.Char(System.Int32)">
+            <summary>
+            Gets char
+            </summary>
+            <param name="ch">Char code</param>
+            <returns>String containg char</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.TIf(System.Boolean,System.Object,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="condition">The expression you want to evaluate</param>
+            <param name="thenStatement">Returned if Expression evaluates to True</param>
+            <param name="elseStatement">Returned if Expression evaluates to False</param>
+            <returns>Returns one of two objects, depending on the evaluation of an expression.</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.IIf(System.Boolean,System.Object,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="condition">The expression you want to evaluate</param>
+            <param name="thenStatement">Returned if Expression evaluates to True</param>
+            <param name="elseStatement">Returned if Expression evaluates to False</param>
+            <returns>Returns one of two objects, depending on the evaluation of an expression.</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.Toggle(System.Object)">
+            <summary>
+            Toggles value 
+            </summary>
+            <param name="value">Value. If value is an object name then the object receives toggled value</param>
+            <returns>New value</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.Logical(System.Object)">
+            <summary>
+            Return logic from a value
+            </summary>
+            <param name="value">Value</param>
+            <returns>Logic (true or false)</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.LogicalNot(System.Object)">
+            <summary>
+            Return inverse logic from a value
+            </summary>
+            <param name="value">Value</param>
+            <returns>Inverse logic (true or false)</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.CreateTaskEvent(System.String,System.Object,System.Boolean,System.Boolean,System.Int32)">
+            <summary>
+            Create an event to be executed
+            </summary>
+            <param name="obj">An object containing information to be used when this task will be executed</param>
+            <param name="isSequential">Flag indicating whether this event must run only after previous event finishes</param>
+            <param name="addToLast">Flag indicating whether this event should be added to last</param>
+            <param name="priority">Priority. 0: Normal, 1: AboveNormal, 2: Highest</param>
+            <returns>If success returns 0 else returns > 0 (1: Client Task Events cannot be created, 2: Script Task Server is not running)</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetTaskEvent(System.String)">
+            <summary>
+            Get object containing information being executed
+            </summary>
+            <returns>An object containing information being executed</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetTaskEventCount">
+            <summary>
+            Return number of events to be executed
+            </summary>
+            <returns>Number of events to be executed</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.SaveSnapshotTags(System.String)">
+            <summary>
+            Save current tag values to file.
+            </summary>
+        </member>
+        <member name="M:T.Toolkit.TK.LoadSnapshotTags(System.String)">
+            <summary>
+            Load tag values from file.
+            </summary>
+        </member>
+        <member name="M:T.Toolkit.TK.Trace(System.String,T.Toolkit.TK.eTkTraceType,System.String,System.String,System.String)">
+            <summary>
+            Log a message to TraceWindow
+            </summary>
+            <param name="message">Message</param>
+            <param name="type">Log type</param>
+            <param name="oobjectName">Info1 column in TraceWindow</param>
+            <param name="eventSource">Info2 column in TraceWindow</param>
+            <param name="eventValue">Info3 column in TraceWindow</param>
+        </member>
+        <member name="M:T.Toolkit.TK.GetCategoryNameFromIDs(System.UInt64,System.Boolean)">
+            <summary>
+            Get names or titles of categories
+            </summary>
+            <param name="categories">IDs of categories</param>
+            <param name="returnTitle">Flag indicating whether should return title instead of name</param>
+            <returns></returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetValueFromHistorian(System.String,System.DateTime)">
+            <summary>
+            Gets historian value from tag name
+            </summary>
+            <param name="tagName">Tag name</param>
+            <param name="dt">DateTime</param>
+            <returns>Value</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetValueFromHistorianAsync(System.String,System.DateTime)">
+            <summary>
+            Gets historian value from tag name
+            </summary>
+            <param name="tagName">Tag name</param>
+            <param name="dt">DateTime</param>
+            <returns>Value</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetValuesFromHistorian(System.String[],System.DateTime)">
+            <summary>
+            Get historian values from tag names
+            </summary>
+            <param name="tagNames">Tag names</param>
+            <param name="dt">DateTime</param>
+            <returns>Array containg values</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetValuesFromHistorianAsync(System.String[],System.DateTime)">
+            <summary>
+            Get historian values from tag names async
+            </summary>
+            <param name="tagNames">Tag names</param>
+            <param name="dt">DateTime</param>
+            <returns>Array containg values</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.UnitsConversion(System.String,System.String)">
+            <summary>
+            Convert tag value to new unit
+            </summary>
+            <param name="tagName">Tag name</param>
+            <param name="unitsDictionary">Base unit</param>
+            <returns>Converted value</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.UnitsConversionAsync(System.String,System.String)">
+            <summary>
+            Convert tag value to new unit async
+            </summary>
+            <param name="tagName">Tag name</param>
+            <param name="unitsDictionary">Base unit</param>
+            <returns>Converted value</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.ExecuteClassMethodOnServer(System.String,System.String,System.Object[])">
+            <summary>
+            Execute method of class Server domain
+            </summary>
+            <param name="className">Server class name</param>
+            <param name="methodName">Method name</param>
+            <param name="parameters">Parameters</param>
+            <returns>Result</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.ExecuteClassMethodOnServerAsync(System.String,System.String,System.Object[])">
+            <summary>
+            Execute method of class Server domain async
+            </summary>
+            <param name="className">Server class name</param>
+            <param name="methodName">Method name</param>
+            <param name="parameters">Parameters</param>
+            <returns>Result</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.InternalExecuteClassMethodOnServer(System.String,System.String,System.Object[])">
+            <summary>
+            Internal use
+            </summary>
+        </member>
+        <member name="M:T.Toolkit.TK.InternalExecuteClassMethodOnClient(System.String,System.String,System.Object[])">
+            <summary>
+            Internal use
+            </summary>
+        </member>
+        <member name="M:T.Toolkit.TK.BeginExecuteClassMethodOnServer(System.String,System.String,System.AsyncCallback,System.Object,System.Object[])">
+            <summary>
+            Begin async execute method of class Server domain
+            </summary>
+            <param name="className">Server class name</param>
+            <param name="methodName">Method name</param>
+            <param name="callback">Callback method</param>
+            <param name="state">State object. This reference will be passed when callback is called</param>
+            <param name="parameters">Parameters</param>
+            <returns>Referece to async result</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.EndExecuteClassMethodOnServer(System.IAsyncResult,System.Object[])">
+            <summary>
+            End an asynchronous execute class method
+            </summary>
+            <param name="ar">Identification of the asynchronous invoke</param>
+            <param name="parameters">Array of parameters</param>
+            <returns>Return value of method</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.FileSaveAs(System.Object,System.String)">
+            <summary>
+            Save content as file
+            </summary>
+            <param name="content">Content (byte[] or string)</param>
+            <param name="fileName">File name</param>
+        </member>
+        <member name="M:T.Toolkit.TK.GeneratePassword(System.Int32)">
+            <summary>
+            Generates default password
+            </summary>
+            <param name="minimumLen">Min length</param>
+            <returns>String containg password</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.CreateSyncMarker">
+            <summary>
+            Create a sync marker. Sync marker is used to ensure that all objects were syncronized to server
+            </summary>
+            <returns>ID sync marker</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.WaitSyncMarker(System.Object,System.TimeSpan)">
+            <summary>
+            Wait all objects will be syncronized to server
+            </summary>
+            <param name="id">ID sync marker</param>
+            <param name="timeout">Timeout to wait.</param>
+            <returns>Flag indicating whether objects were syncronized to server. If returns "true"  then sync marker is disposed internally</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.WaitSyncMarkerAsync(System.Object,System.TimeSpan)">
+            <summary>
+            Wait all objects will be syncronized to server async
+            </summary>
+            <param name="id">ID sync marker</param>
+            <param name="timeout">Timeout to wait.</param>
+            <returns>Flag indicating whether objects were syncronized to server. If returns "true"  then sync marker is disposed internally</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.SaveImageAsPDF(System.String,System.String,System.Boolean,System.Int32,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Save image as PDF file
+            </summary>
+            <param name="imageFileName">Source image file name</param>
+            <param name="outputFileName">Output pdf file name</param>
+            <param name="append">Flag indicating whether should append image to output PDF file</param>
+            <param name="orientation">0: Portrait and 1: Landscape</param>
+            <param name="margin">Margin in Thickness format</param>
+            <param name="title">Title</param>
+            <param name="subject">Subject</param>
+            <param name="author">Author</param>
+            <param name="creator">Creator</param>
+            <returns>String containg error message or null on success</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.SaveImageAsPDFAsync(System.String,System.String,System.Boolean,System.Int32,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Save image as PDF file async
+            </summary>
+            <param name="imageFileName">Source image file name</param>
+            <param name="outputFileName">Output pdf file name</param>
+            <param name="append">Flag indicating whether should append image to output PDF file</param>
+            <param name="orientation">0: Portrait and 1: Landscape</param>
+            <param name="margin">Margin in Thickness format</param>
+            <param name="title">Title</param>
+            <param name="subject">Subject</param>
+            <param name="author">Author</param>
+            <param name="creator">Creator</param>
+            <returns>String containg error message or null on success</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.ZipFile(System.String,System.String)">
+            <summary>
+            Creates a zip archive that contains the files and directories from the specified directory.
+            </summary>
+            <param name="sourceDirectoryName">The path to the directory to be archived, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+            <param name="destinationArchiveFileName">The path of the archive to be created, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+            <returns>If success returns null else string containg error</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.UnzipFile(System.String,System.String)">
+            <summary>
+            Extracts all the files in the specified zip archive to a directory on the file system.
+            </summary>
+            <param name="zipFileName">The zip file name that is to be extracted</param>
+            <param name="destinationDirectoryName">The path to the directory in which to place the extracted files, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+            <returns>If success returns null else string containg error</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:T.Toolkit.TK.CompileExpression(System.String)" -->
+        <member name="M:T.Toolkit.TK.EvaluateExpression(System.String)">
+            <summary>
+            Evaluates simple expression
+            </summary>
+            <param name="expression">Expression</param>
+            <returns>Result</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.EvaluateExpression(System.String,System.Collections.Generic.IDictionary{System.String,System.Object}[],System.Type[],System.String[])">
+            <summary>
+            Evaluates the simple expression using a data series
+            </summary>
+            <param name="expression">Expression</param>
+            <param name="parameters">Parameters containg a data series</param>
+            <param name="extraTypes">Optional. Includes other types, in addition to the basics (Math, DateTime, DateTimeOffset, DataTable), during compilation and execution</param>
+            <param name="namespaces">Optional. Includes namespaces of the extra types</param>
+            <returns>Array containg result of each evaluation</returns>
+            <example>
+            List&lt;Dictionary&lt;string, object&gt;&gt; list = new List&lt;Dictionary&lt;string, object&gt;&gt;();
+            for (int i = 0; i &lt; 100000; i++)
+            {
+            	Dictionary&lt;string, object&gt; dict = new Dictionary&lt;string, object&gt;();
+            	dict["x"] = i;
+            	list.Add(dict);
+            }
+            object[] result = TK.EvaluateExpression("x * 100", list.ToArray());
+            </example>
+        </member>
+        <member name="M:T.Toolkit.TK.IsTagDevicePointPrimaryStation(System.String,System.String)">
+            <summary>
+            Returns whether tag is using Device Node PrimaryStation or BackupStation
+            </summary>
+            <param name="tagName">Tag name</param>
+            <param name="devicePoint">Tag DevicePoint value </param>
+            <returns>True (PrimaryStation) or False (BackupStation)</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetAssetPathFromExternalTag(System.String,System.Boolean)">
+            <summary>
+            Get asset name from full syntax
+            </summary>
+            <param name="element">Full asset name</param>
+            <param name="resolvedAssetName">Flag to indicating resolved asset name</param>
+            <returns>Asset name</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetTagProviderFromAsset(System.String)">
+            <summary>
+            Get TagProvider name from full syntax
+            </summary>
+            <param name="element">TagProvider element name</param>
+            <returns>TagProvider name</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetAssetNameAsDisplayText(System.String)">
+            <summary>
+            Get asset name as display text
+            </summary>
+            <param name="element">Full asset name</param>
+            <returns>Asset name as display text</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.GetAssetNameAsDisplayTextAsync(System.String)">
+            <summary>
+            Get asset name as display text
+            </summary>
+            <param name="element">Full asset name</param>
+            <returns>Asset name as display text</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.DoubleQuotes(System.String)">
+            <summary>
+            Add double quote at the start and end of the string
+            </summary>
+            <param name="str">String value</param>
+            <returns>String value containg double quotes </returns>
+        </member>
+        <member name="M:T.Toolkit.TK.DownloadFileToLocalStorage(System.String,System.String,System.Boolean)">
+            <summary>
+            Download file and save local
+            </summary>
+            <param name="url">URL</param>
+            <param name="targetName">Target file name or Storage Key (if running on Web Browser)</param>
+            <param name="isContentText">Flag if content is text(true) or binary(false)</param>
+            <returns>Flag success (true) or fail(false)</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.ExecutePythonShell(System.String,System.Object[])">
+            <summary>
+            Execute Python Shell. Not available for HTML5Client
+            </summary>
+            <param name="pyFileName">Py filename</param>
+            <param name="args">Arguments. Can be null</param>
+            <returns>Output result</returns>
+        </member>
+        <member name="M:T.Toolkit.TK.SetActiveAssets(System.String,System.Boolean)">
+            <summary>
+            Set active flag of the assets that already were used previously
+            </summary>
+            <param name="startName">Start name</param>
+            <param name="flag">Flag to active(true) or reset(false)</param>
+        </member>
+        <member name="T:T.Toolkit.Wpf.IWpfControl">
+            <summary>
+            Interface for all components that receive tag events from the binding.
+            </summary>
+        </member>
+        <member name="T:T.Toolkit.Wpf.WK">
+            <summary>
+            WPF controls Tookit
+            </summary>
+        </member>
+    </members>
+</doc>

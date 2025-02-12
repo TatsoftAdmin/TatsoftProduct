@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>AB Rockwell PLC5 and SLC devices using AB 1761</Description>
+	<AssemblyName>T.ProtocolDriver.ABENI</AssemblyName>
+	<AssemblyVersion>1.0.0.1</AssemblyVersion>
+	<AllowUserTypes>true</AllowUserTypes>
+	<Multiplatform>true</Multiplatform>
+	<ProtocolOptions>
+		<ProtocolOptions>
+			<Names P1="Interface" P2="Model"/>
+			<EditTypes P1="string" P2="ComboBox=500;" />
+			<EditModes P1="Disable" P2="Enable"/>
+			<DefaultValues P1="TCP/IP" P2="500"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="180" G2="90"/>
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<TCPIP>
+		</TCPIP>
+	</Settings>
+	<Station>
+		<TCPIP>
+			<Names P1="IP" P2="Port" />
+			<DefaultValues P1 ="192.168.1.1" P2="44818" />
+			<EditModes P1="Enable" P2="Enable"/>
+			<EditTypes P1="ip" P2="int" />
+			<Hint P1="IP Address of the slave" P2="TCP/IP Port of the slave"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="230" G2="90" />
+		</TCPIP>
+	</Station>
+
+	<Points>
+		<Address AllowConfigDataType="true">
+			<Names P1="FileType" P2="FileNumber" P3="" P4="Address" P5="Parameter"/>
+			<DefaultValues P1="N" P2="" P3=":" P4="0" P5=""/>
+			<!--<EditTypes P1="ComboBox=N:Integer;F:Float;R:Control;C:Counter;T:Timer;B:Binary;S:Status;I:Input;O:Output;"
+				 P2="int" P3="Separator" P4="int" P5="String"/>-->
+			<EditTypes P1="ComboBox=N:Integer;F:Float;B:Binary;S:Status;"
+					 P2="int" P3="Separator" P4="int" P5="String"/>
+			<EditModes P1="Enable" P2="Optional" P3="Hidden" P4="Enable" P5="Optional"/>
+			<Hint P1="   N	Integer
+                    F	Float
+        		    B	Binary
+		            S	Status"
+				P2="Address File" P3="" P4="Address Element" P5="Advanced Parameter"/>
+
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="300" G2="135" />
+			/>
+			<!--R	Control
+    C	Counter
+    T	Timer
+    I	Input
+    O	Output-->
+		</Address>
+	</Points>
+</Protocol>

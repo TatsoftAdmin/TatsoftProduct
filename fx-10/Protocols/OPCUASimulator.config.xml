@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<OPCServerConfiguration>
+	<SimulatorControl>
+		<ServerPort>4840</ServerPort>
+		<AutoStart>false</AutoStart>
+		<Minimized>false</Minimized>
+		<AutoTrustClientCertificates>false</AutoTrustClientCertificates>
+		<SecuritySettings>
+			<None>true</None>
+			<Basic256>false</Basic256>
+			<Basic128Rsa15>false</Basic128Rsa15>
+			<Basic256Sha256>false</Basic256Sha256>
+		</SecuritySettings>
+	</SimulatorControl>
+	<DataStructure>
+		<Node Name="OPCServerObjects">
+			<Node Name="Area1">
+				<Node Name="Motor1">
+					<Variable Name="Current" Type="Double" VariationFlag="true" Min="-20" Max="20"/>
+					<Variable Name="Voltage" Type="Double" VariationFlag="true" Min="12" Max="14"/>
+					<Variable Name="Temperature" Type="Integer" VariationFlag="true" Min="40" Max="60"/>
+					<Variable Name="Status" Type="Boolean" VariationFlag="true"/>
+					<Variable Name="LastMessage" Type="String" VariationFlag="true"/>
+				</Node>				
+				<Node Name="Controller1">
+					<Variable Name="Kp" Type="Double" VariationFlag="false" Min="0" Max="50"/>
+					<Variable Name="Ki" Type="Double" VariationFlag="false" Min="0" Max="100"/>
+					<Variable Name="Setpoint" Type="Double" VariationFlag="false" Min="60" Max="65"/>
+				</Node>
+			</Node>
+			<Node Name="Area2">
+				<Node Name="Motor1">
+					<Variable Name="Current" Type="Double" VariationFlag="true" Min="-20" Max="20"/>				
+				</Node>
+				<Node Name="Controller1">
+					<Variable Name="Kp" Type="Double" VariationFlag="false" Min="0" Max="50"/>
+				</Node>
+			</Node>
+		</Node>	
+	</DataStructure>
+</OPCServerConfiguration>

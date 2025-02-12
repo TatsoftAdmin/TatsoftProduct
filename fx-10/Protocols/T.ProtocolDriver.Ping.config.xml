@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>Ping for IT Infrastructure</Description>
+	<AssemblyName>T.ProtocolDriver.Ping</AssemblyName>
+	<AssemblyVersion>1.2.0.0</AssemblyVersion>
+	<AllowUserTypes>true</AllowUserTypes>
+	<Multiplatform>true</Multiplatform>
+	<ProtocolOptions>
+		<ProtocolOptions>
+			<Names P1="BlockSize" />
+			<EditTypes P1="int" />
+			<EditModes P1="Enable" />
+			<DefaultValues P1="32"/>
+			<Hint P1="Send Block Size\r\nRange: 1-250 bytes"></Hint>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="180" G2="90"/>
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<TCPIP>
+			<DefaultValues P1="false" P2="false" P3="502" P4="1"/>
+			<EditModes P1="Hidden" P2="Enable" P3="Enable" P4="Enable" />
+		</TCPIP>
+	</Settings>
+	<Station>
+		<TCPIP>
+			<Names P1="IP" />
+			<DefaultValues P1="127.0.0.1"/>
+			<EditModes P1="Enable"/>
+			<EditTypes P1="ip" />
+			<Hint P1="IP Address to ping"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="175" G2="80" />
+		</TCPIP>
+	</Station>
+
+	<Points>
+		<Address AllowConfigDataType="false">
+			<Names P1="Information"/>
+			<DefaultValues P1="AverageTime"/>
+			<EditTypes P1="ComboBox=Ping;AverageTime;Lost;Received;MinimumTime;MaximumTime;"/>
+			<EditModes P1="Enable" />
+			<Hint
+				  P1= "Ping: Map to a PING template tag
+AverageTime:	average Response time (ms) of last execution
+Lost: number of lost packages in last execution
+Received: number of received packages in last execution
+MinimumTime: minimum time of last execution
+MaximumTime: maximum time of last execution"
+			/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="300" G2="135" />
+		</Address>
+	</Points>
+</Protocol>

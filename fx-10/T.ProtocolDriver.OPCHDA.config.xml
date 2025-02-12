@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>OPC HDA Client _Legacy</Description>
+	<AssemblyName>T.ProtocolDriver.OPCHDA</AssemblyName>
+	<AssemblyVersion>1.0.0.5</AssemblyVersion>
+	<Multiplatform>false</Multiplatform>
+	<Settings AllowCustomTypes="false">
+		<OPC>
+		</OPC>
+	</Settings>
+	<Station>
+		<OPC>
+			<Names P1="HDA Server" P2="Domain" P3="UserName" P4="Password" />
+			<DefaultValues P1=""  P2="" P3="" P4="" />
+			<EditModes P1="Enable" P2="Enable" P3="Enable" P4="Enable" />
+			<EditTypes P1="ComboBoxEditable" P2="string" P3="string" P4="Password" />
+			<Hint P1="HDA Server" P2="Domain" P3="User name" P4="User password" />
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="550" G2="200" />
+		</OPC>
+	</Station>
+	<Points>
+		<Address AllowConfigDataType="true">
+			<Names P1="Address" />
+			<DefaultValues P1="" />
+			<EditTypes P1="string" />
+			<EditModes P1="Enable" />
+			<Hint P1="Address" />
+		</Address>
+		<Modifiers>
+			<EditModes P1="Optional" P2="Hidden" P3="Hidden" P4="Hidden" />
+		</Modifiers>
+	</Points>
+</Protocol>

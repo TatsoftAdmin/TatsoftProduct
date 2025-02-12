@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>Siemens Simatic for TI505 devices</Description>
+	<AssemblyName>T.ProtocolDriver.SimaticTI505</AssemblyName>
+	<AssemblyVersion>1.0.1.0</AssemblyVersion>
+	<ShouldCloseCommAPIAfterErrors>true</ShouldCloseCommAPIAfterErrors>
+	<Multiplatform>true</Multiplatform>
+	<ProtocolOptions>
+		<ProtocolOptions>
+			<Names P1="Protocol"/>
+			<EditTypes P1="ComboBox=CAMP;CAMP+TaskCode;"/>
+			<EditModes P1="Enable"/>
+			<DefaultValues P1="CAMP+TaskCode"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="250" G2="130"/>
+			<Hint P1="Protocol Type"/>
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<TCPIP>
+		</TCPIP>
+	</Settings>
+	<Station>
+		<TCPIP>
+			<Names P1="IP Address" P2="Port" />
+			<DefaultValues P1 ="192.168.1.1" P2="1505"/>
+			<EditModes P1="Enable" P2="Enable"/>
+			<EditTypes P1="ip" P2="int"/>
+			<Hint P1="IP Address of the Device" P2="TCP/IP Port"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="220" G2="100" />
+		</TCPIP>
+	</Station>
+
+	<Points>
+		<Address AllowConfigDataType="true">
+			<Names P1="DataType" P2="Address"/>
+			<DefaultValues P1="V" P2="1"/>
+			<EditTypes P1="ComboBox=V:Memory;K:Memory;X:Discrete Input Packed;Y:Discrete Output Packed;C:Discrete Register Packed;WX:Word Input;WY:Word Output;TCP:Timer/Counter Preset;TCC:Timer/Counter Current;DSP:Drum Step Preset;DSC:Drum Step Current;DCP:Drum Count Preset;STW:System Status Word;DCC:Drum Current Count"
+					   P2="int"/>
+			<EditModes P1="Enable" P2="Enable"/>
+			<Hint P1="V  Memory
+K  Memory
+X  Discrete Input Packed
+Y  Discrete Output Packed
+C  Discrete Register Packed
+WX Word Input
+WY Word Output
+TCP  Timer/Counter Preset
+TCC  Timer/Counter Current
+DSP  Drum Step Preset
+DSC  Drum Step Current
+DCP  Drum Count Preset
+STW  System Status Word
+DCC  Drum Current Count"
+				 
+				  P2="Address"/>
+
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="300" G2="135" />
+			/>
+		</Address>
+	</Points>
+</Protocol>

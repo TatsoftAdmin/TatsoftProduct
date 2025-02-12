@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>Mitsubishi FX Serial</Description>
+	<AssemblyName>T.ProtocolDriver.MitsubishiFXSerial</AssemblyName>
+	<AssemblyVersion>1.0.1.0</AssemblyVersion>
+	<Multiplatform>true</Multiplatform>
+	<ProtocolOptions>
+		<ProtocolOptions>
+			<Names P1="BlockSize" P2="Format"/>
+			<EditTypes P1="int" P2="LabelBox=Format1"/>
+			<EditModes P1="Enable" P2="Hidden"/>
+			<DefaultValues P1="255" P2="Format1"/>
+			<Hint P1="Maximum size of the read blocks" P2="Message format"  />
+		</ProtocolOptions>
+
+	</ProtocolOptions>
+
+	<Settings AllowCustomTypes="false">
+		<Serial>
+			<DefaultValues P1="false" P2="false" P3="com1" P4="9600" P5="8" P6="1" P7="even" />
+			<EditModes P1="Hidden" P2="Hidden" P3="Enable" P4="Enable" P5="Enable" P6="Enable" P7="Enabled"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues P1="180" P2="90"/>
+		</Serial>
+		<MultiSerial>
+			<DefaultValues P1="false" P2="false" P3="2" P4="9600" P5="8" P6="1" P7="even" />
+			<EditModes P1="Hidden" P2="Hidden" P3="Enable" P4="Enable" P5="Enable" P6="Enable" P7="Enable"/>
+		</MultiSerial>
+	</Settings>
+	<Station>
+		<Serial>
+			<Names P1="SlaveID" />
+			<EditTypes P1="int=0-255" />
+			<DefaultValues P1="1" />
+			<EditModes P1="Enable" />
+			<Hint P1="Destination slave address."/>
+		</Serial>
+		<MultiSerial>
+			<Names P1="ComPort" P2="SlaveID" />
+			<DefaultValues P1="com1" P2="1" />
+			<EditModes P1="Enable" P2="Enable"/>
+			<EditTypes P1="LabelBox=com1;com2;com3;com4;com5;com6;com7;com8;" P2="int"/>
+			<Hint P1="Serial port identification" P2="Destination slave address"/>
+		</MultiSerial>
+	</Station>
+
+	<Points>
+		<Address AllowConfigDataType="true">
+			<Names P1="Operand" P2="Address" />
+			<DefaultValues P1="X" P2="0001"/>
+			<EditTypes P1="ComboBox=X: Input;Y: Output;M: Internal relay;S0: Annunciator;TS: Timer (contact);CS:Counter (contact);TN: Timer (present value);CN: Counter (present value);D: Data register;"
+					   P2="int"/>
+			<EditModes P1="Enable" P2="Enable"/>
+			<Hint
+				  P1="
+X	Input
+Y	Output
+M	Internal relay
+S0	Annunciator
+TS	Timer (contact)
+CS	Counter (contact)
+TN	Timer (present value)
+CN	Counter (present value)
+D	Data register"
+				  P2="
+Addresses: \r\n
+X	0x00	to	0x7FF
+Y	0x00	to	0x7FF
+M	0	to	3071
+S0	0	to	999
+TS	0	to	255
+CS	0	to	255
+TN	0	to	255
+CN	0	to	255
+D	0	to	7999"
+			/>
+
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="320" G2="95" />
+		</Address>
+	</Points>
+</Protocol>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>Omron Master using FINS Commands ReadOnly</Description>
+	<AssemblyName>T.ProtocolDriver.OmronFINSRead</AssemblyName>
+	<AssemblyVersion>1.3.0.0</AssemblyVersion>
+	<LocalPortEqualToRemotePort>true</LocalPortEqualToRemotePort>
+	<Multiplatform>true</Multiplatform>
+	<ProtocolOptions>
+		<ProtocolOptions>
+			<Names P1="Mode" P2="Network" P3="Node" P4="Ignore Non Fatal Error" />
+			<EditTypes P1="ComboBox=CS1;CV;" P2="int=0-127"  P3="int=0-126" P4="CheckBox"/>
+			<DefaultValues P1="CS1" P2="0" P3="0" P4="false"/>
+			<EditModes P1="Enable" P2="Enable" P3="Enable" P4="Enable" />
+			<Hint P1="FINS Communication mode\r\nCS1: CS1, CJ1 and compatibles\r\nCV:CV, CVM1, CVM1D and compatibles" P2="FINS Network" P3="Computer node address in the FINS Network" P4="Option to ignorea non fatal PLC error" />
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="260" G2="170" />
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<Serial>
+			<DefaultValues P1="false" P2="false" P3="com1" P4="9600" P5="7" P6="2" P7="even" />
+			<EditModes P1="Hidden" P2="Hidden" P3="Enable" P4="Enable" P5="Enable" P6="Enable" P7="Enable" />
+		</Serial>
+		<UDP>
+			<DefaultValues P1="false" P2="false" P3="502" P4="1"/>
+			<EditModes P1="Hidden" P2="Hidden" P3="Hidden" P4="Disable" />
+		</UDP>
+	</Settings>
+
+	<Station>
+		<Serial>
+			<Names P1="Network" P2="Node" P3="UnitID" />
+			<EditTypes P1="int=0-127" P2="int=0-126" P3="int=0-255" />
+			<DefaultValues P1="100" P2="1" P3="0"/>
+			<EditModes P1="Enable" P2="Enable" P3="Enable"/>
+			<Hint P1="Device´s network address" P2="Device´s node number" P3="ID number used for PC Inrerface"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="230" G2="90" />
+		</Serial>
+		<UDP>
+			<Names P1="IP" P2="Port" P3="Network" P4="Node" />
+			<DefaultValues P1 ="192.168.1.1" P2="9600" P3="100" P4="0" />
+			<EditModes P1="Enable" P2="Enable" P3="Enable" P4="Enable"/>
+			<EditTypes P1="ip" P2="int" P3="int=0-127" P4="int=0-126" />
+			<Hint P1="IP Address of the device" P2="Communication Port of the device" P3="Device´s network address" P4="Device´s node number"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="230" G2="90" />
+		</UDP>
+	</Station>
+	<Points>
+		<Address AllowConfigDataType="true" >
+			<Names P1="Memory Area" P2="Bank" P3="" P4="Address" />
+			<DefaultValues P1="CIO" P2="" P3=":" P4="0"/>
+			<EditTypes P1="ComboBox=CIO:CIO Area;WR:Work Area;HR:Holding Bit Area;AR:Auxiliary Bit Area;DM:DM Area;TA:Timers Area;CA:Counters Area;E:Extended Memory Area;EM:Extended Memory Area (older devices);" P2="String" P3="Separator" P4="int=0-32767"/>
+			<EditModes P1="Enable" P2="Optional" P3="Hidden" P4="Enable"/>
+			<Hint
+				  P1="CIO	CIO
+WR	Work Area
+HR	Holding Bit Area
+AR	Auxiliary Bit Area
+DM  DM Area
+TA  Timers Area
+CA  Counters Area
+E   Extended Memory Area
+EM  Extended Memory Area
+"
+				  P2="Optional Bank number Used with Extended Memory"
+			P3=""
+				  P4="Address from 0 to 32767"
+			/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="200" G2="120" />
+		</Address>
+
+	</Points>
+</Protocol>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>Codesys PLC Handler</Description>
+	<AssemblyName>T.ProtocolDriver.PLCHandler</AssemblyName>
+	<AssemblyVersion>1.0.0.0</AssemblyVersion>
+	<Import>true</Import>
+	<AllowUserTypes>true</AllowUserTypes>
+	<AllowNoArrayIndexesForArray>true</AllowNoArrayIndexesForArray>
+	<CustomInterface>Custom</CustomInterface>
+	<EnableWriteGroup>false</EnableWriteGroup>
+	<UseLastArrayPosition>true</UseLastArrayPosition>
+	<Multiplatform>false</Multiplatform>
+	<TagProvider Enable="true" BranchSeparator="." AttributeSeparator="." Access="ReadWrite" />
+	<ProtocolOptions>
+		<ProtocolOptions>
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<Custom>
+		</Custom>
+	</Settings>
+	<Station>
+		<Custom>
+			<AssemblyName>T.ProtocolDriver.PLCHandler.Editors.dll</AssemblyName>
+			<TypeName>T.ProtocolDriver.PLCHandler.Editors.StationEditor</TypeName>
+		</Custom>
+	</Station>
+	<Points>
+		<Address AllowConfigDataType="false">
+			<AssemblyName>T.ProtocolDriver.PLCHandler.Editors.dll</AssemblyName>
+			<TypeName>T.ProtocolDriver.PLCHandler.Editors.AddressEditor;Static</TypeName>
+		</Address>
+		<Modifiers>
+			<EditModes P1="Optional" P2="Hidden" P3="Hidden" P4="Hidden" P5="Optional" P6="Optional" />
+		</Modifiers>
+	</Points>
+</Protocol>

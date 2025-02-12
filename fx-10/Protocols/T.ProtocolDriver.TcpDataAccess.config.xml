@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>Server to Server Communication</Description>
+	<AssemblyName>T.ProtocolDriver.TcpDataAccess</AssemblyName>
+	<AssemblyVersion>1.18.0.2</AssemblyVersion>
+	<DefaultName>TcpDataAccess</DefaultName>
+	<CustomInterface>Custom</CustomInterface>
+	<AllowUserTypes>true</AllowUserTypes>
+	<AllowNoArrayIndexesForArray>true</AllowNoArrayIndexesForArray>
+	<UseLastArrayPosition>true</UseLastArrayPosition>
+	<TagProvider Enable="true" BranchSeparator="." AttributeSeparator="." Access="ReadWrite" />
+	<Multiplatform>true</Multiplatform>
+	<ProtocolOptions>
+		<ProtocolOptions>
+			<Names P1="TagHistorian" P2="TagProperties" />
+			<EditTypes P1="CheckBox" P2="String" />
+			<DefaultValues P1="True" P2="" />
+			<EditModes P1="Enable" P2="Enable" />
+			<Hint P1="Use remote TagHistorian" P2="Type here tag properties separated by ','" />
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="390" G2="180" />
+		</ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<Custom>
+		</Custom>
+	</Settings>
+	<Station>
+		<Custom>
+			<Names P1="Host" P2="Port" P3="UserName" P4="UserPassword" P5="WindowsAuthentication" P6="UpdateWriteRate" P7="StoreAndForward" />
+			<DefaultValues P1="127.0.0.1" P2="3101" P3="" P4="" P5="false" P6="2000" P7="False" />
+			<EditModes P1="Enable" P2="Enable" P3="Enable" P4="Enable" P5="Enable" P6="Enable"  P7="Enable" />
+			<EditTypes P1="string" P2="int" P3="string" P4="password" P5="CheckBox" P6="int"  P7="CheckBox"/>
+			<Hint P1="Host Server" P2="Port number" P3="User name" P4="User password" P5="Use Windows Authentication" P6="Update Write Rate in ms" P7="StoreAndForward" />
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="290" G2="180" />
+		</Custom>
+	</Station>
+	<Points>
+		<Address AllowConfigDataType="true">
+			<Names P1="Address" />
+			<DefaultValues P1="" />
+			<EditTypes P1="string" />
+			<EditModes P1="Enable" />
+			<Hint P1="Address" />
+		</Address>
+		<Modifiers>
+			<EditModes P1="Optional" P2="Hidden" P3="Hidden" P4="Hidden" P5="Optional" />
+		</Modifiers>
+	</Points>
+</Protocol>

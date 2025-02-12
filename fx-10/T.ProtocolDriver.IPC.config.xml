@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>IPC Filmex and Varex extrusion</Description>
+	<AssemblyName>T.ProtocolDriver.IPC</AssemblyName>
+	<AssemblyVersion>1.0.0.8</AssemblyVersion>
+	<AllowUserTypes>true</AllowUserTypes>
+	<AllowNoArrayIndexesForArray>true</AllowNoArrayIndexesForArray>
+	<ShouldCloseCommAPIAfterErrors>true</ShouldCloseCommAPIAfterErrors>
+	<Multiplatform>true</Multiplatform>
+	<ProtocolOptions>
+	</ProtocolOptions>
+	<Settings AllowCustomTypes="false">
+		<TCPIP>
+		</TCPIP>
+	</Settings>
+	<Station>
+		<TCPIP>
+			<Names P1="IP Address" P2="Port" />
+			<DefaultValues P1 ="192.168.1.1" P2="1505"/>
+			<EditModes P1="Enable" P2="Enable"/>
+			<EditTypes P1="ip" P2="int"/>
+			<Hint P1="IP Address of the Device" P2="TCP/IP Port"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="220" G2="100" />
+		</TCPIP>
+	</Station>
+
+	<Points>
+		<Address AllowConfigDataType="true">
+			<Names P1="DataBlock" P2="Number" P3="" P4="Word"/>
+			<DefaultValues P1="DB" P2="1" P3=":" P4="0"/>
+			<EditTypes P1="ComboBox=DB:DataBlock;" P2="int" P3="Separator" P4="int=0-32767"/>
+			<EditModes P1="Enable" P2="Enable" P3="Hidden" P4="Enable"/>
+			<Hint P1="Data Block"	 P2="Data Block Number" P3="" P4="Word"/>
+
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="300" G2="135" />
+			/>
+		</Address>
+	</Points>
+</Protocol>

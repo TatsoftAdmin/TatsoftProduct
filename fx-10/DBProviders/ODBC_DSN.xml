@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Provider>
+  <Description>ODBC using DSN</Description>
+  <ConnectionString>
+    <System.Data.Odbc>
+      <Names P1="DSN" P2="Additional Parameters"/>
+      <EditTypes P1="string" P2="string"/>
+      <DefaultValues P1="DSN" P2=""/>
+      <EditModes P1="Enable" P2="Enable"/>
+      <Hint P1="DataSourceName defined on Administrative Tools" P2="Aditional parameters to be added to the ConnectionString, separated by ',' (comma)"/>
+      <GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+      <GridValues G1="400" G2="170" />
+    </System.Data.Odbc>
+  </ConnectionString>
+</Provider>
+

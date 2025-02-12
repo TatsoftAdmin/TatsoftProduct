@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Provider>
+  <Description>CSV File Database</Description>
+  <ConnectionString>
+    <System.Data.OleDb>
+      <Names P1="Provider" P2="Data Source" P3="Extended Properties"/>
+      <EditTypes P1="string" P2="string" P3="string"/>
+      <DefaultValues P1="Microsoft.ACE.OLEDB.12.0" P2="&lt;path where the file is&gt;" P3="&quot;Text;HDR=Yes;FORMAT=Delimited&quot;"/>
+      <EditModes P1="Disable"  P2="Enable" P3="Disable" P4="Disable" P5="Disable" />
+      <Hint P1="Provider Name" P2="Path where the file is (fileName must not be included)" P3="Properties for this connection:
+HDR=Yes indicates that the first row contains columnnames, not data"
+			/>
+	  <GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+	  <GridValues G1="375" G2="145" />
+    </System.Data.OleDb>	
+  </ConnectionString>
+</Provider>

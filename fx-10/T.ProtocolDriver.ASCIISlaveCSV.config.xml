@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>ASCII Generic ASCII Slave Protocol CSV</Description>
+	<AssemblyName>T.ProtocolDriver.ASCIISlaveCSV</AssemblyName>
+	<AssemblyVersion>1.0.0.9</AssemblyVersion>
+	<Multiplatform>true</Multiplatform>
+	<ProtocolOptions>
+		<ProtocolOptions>
+		</ProtocolOptions>
+	</ProtocolOptions>
+
+	<Timeout>
+		<Timeout>
+			<EditModes P1="Enable" P2="Enable" P3="Enable" P4="Enable" P5="Enable" />
+		</Timeout>
+	</Timeout>
+
+	<Settings AllowCustomTypes="false">
+		<TCPIP>
+			<EditModes P1="Enable" P2="Enable" P3="Enable" P4="Disable"/>
+			<DefaultValues P1="true" P2="false" P3="0" P4="1"/>
+		</TCPIP>
+	</Settings>
+	<Station>
+		<TCPIP>
+			<Names P1="IP" P2="Port"  />
+			<DefaultValues P1 ="10.10.13.90" P2="10001"  />
+			<EditModes P1="Enable" P2="Enable" />
+			<EditTypes P1="ip" P2="int"  />
+			<Hint P1="IP Address of the server" P2="TCP/IP Port of the server" />
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="230" G2="90" />
+		</TCPIP>
+
+	</Station>
+	<Points>
+		<Address AllowConfigDataType="true" >
+			<Names P1="Position" />
+			<DefaultValues P1="0"/>
+			<EditTypes P1="String"/>
+			<EditModes P1="Enable"/>
+			<Hint P1="Position Number of value in the message" />
+		</Address>
+	</Points>
+</Protocol>

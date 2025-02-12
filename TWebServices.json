@@ -1,0 +1,30 @@
+{
+  "appSettings": {
+    "enableLog": false,
+    "portNumber": 10108,
+    "Services": {
+      "Service1": "ProjectServer,T.InfoService.Service,T.InfoService.Service.dll"
+    },
+    "___Services___Missing_Implementation": {
+      "Service2": "T.Witsml.Service,fx-10/T.Witsml.Service.dll"
+    },
+    "tRPCServer": {
+      "CertFileName": "",
+      "CertPass": "",
+      "CertHash": "",
+      "CertFileName_Port": "",
+      "CertPass_Port": "",
+      "CertHash_Port": "",
+      "MapPaths": {
+        "MapPath1": "solutions;HTML5"
+      },
+      "MIMETypes": {
+        "MIMEType1": ".js;application/javascript"
+      }
+    },
+
+    "RunPrograms": {
+    }
+
+  }
+}

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>  
+  <Description>Prediktor Historian Connector</Description>
+  <AssemblyName>T.ProtocolDriver.PrediktorAPIS</AssemblyName>
+  <AssemblyVersion>1.0.1.0</AssemblyVersion>
+  <Import>true</Import>
+  <AllowUserTypes>true</AllowUserTypes>
+  <AllowNoArrayIndexesForArray>true</AllowNoArrayIndexesForArray>
+  <CustomInterface>Custom</CustomInterface>
+  <EnableWriteGroup>true</EnableWriteGroup>
+  <UseLastArrayPosition>true</UseLastArrayPosition>
+	<Multiplatform>false</Multiplatform>
+  <ProtocolOptions>
+    <ProtocolOptions>
+      <Names P1="WriteToAllStations" P2="AllItemsSameGroup"/>
+      <EditTypes P1="CheckBox" P2="CheckBox" />
+      <DefaultValues P1="false" P2="false"/>
+      <EditModes P1="Enable" P2="Enable"/>
+      <Hint P1="Write to all servers (PrimaryStation and BackupStation)" P2="Add all items at the same group (reading and writing)" />
+      <GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+      <GridValues G1="290" G2="150" />
+    </ProtocolOptions>
+  </ProtocolOptions>
+  <Settings AllowCustomTypes="false">
+    <Custom>
+    </Custom>
+  </Settings>
+  <Station>
+    <Custom>
+      <AssemblyName>T.ProtocolDriver.PrediktorAPIS.Editors.dll</AssemblyName>
+      <TypeName>T.ProtocolDriver.PrediktorAPIS.Editors.StationEditor</TypeName>
+    </Custom>
+  </Station>
+  <Points>
+    <Address AllowConfigDataType="false">
+      <AssemblyName>T.ProtocolDriver.PrediktorAPIS.Editors.dll</AssemblyName>
+      <TypeName>T.ProtocolDriver.PrediktorAPIS.Editors.AddressEditor;Static</TypeName>
+    </Address>
+    <Modifiers>
+      <EditModes P1="Optional" P2="Hidden" P3="Hidden" P4="Hidden" />
+    </Modifiers>
+  </Points>  
+</Protocol>

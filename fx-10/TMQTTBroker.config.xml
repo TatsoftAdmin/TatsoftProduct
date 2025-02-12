@@ -1,0 +1,52 @@
+﻿<TMQTTBrokerConfiguration>
+	<GlobalSettings>
+		<Backlog>100</Backlog>
+		<DisableRetainedFile>false</DisableRetainedFile>
+		<MaxPendingMessagesPerClientOut>1000</MaxPendingMessagesPerClientOut>
+		<UserCredentials>
+			<User Name="" Password=""/>
+			<User Name="" Password=""/>
+		</UserCredentials>
+		<ClientIDs>
+			<ClientID ClientName="" Topic="" CanSubscribe="" CanPublish=""/>
+			<ClientID ClientName="" Topic="" CanSubscribe="" CanPublish=""/>
+		</ClientIDs>
+	</GlobalSettings>
+	
+	<LocalSettings>
+		<ListeningPort>1883</ListeningPort>
+		<CertificateFile></CertificateFile>
+		<CertificatePassword></CertificatePassword>
+		<SSLProtocols>None</SSLProtocols>
+	</LocalSettings>
+		
+	<RemoteSettings>
+		<RemoteBrokerURL></RemoteBrokerURL>
+		<RemotePort>1883</RemotePort>
+		<RemoteCertificateFile></RemoteCertificateFile>
+		<RemoteCertificatePassword></RemoteCertificatePassword>
+		<RemoteSSLProtocols>None</RemoteSSLProtocols>
+		<RemoteWebSocket>false</RemoteWebSocket>
+		<RemoteKeepAlive>100</RemoteKeepAlive>
+		<RemoteAllowUntrustedCertificates>true</RemoteAllowUntrustedCertificates>
+	</RemoteSettings>
+
+	<LinkedSolutions>	
+		<GroupId></GroupId>
+		
+		<TServersInfo>
+			<TServerInfo SolutionName="" IpAddress="" Port=""/>
+			<TServerInfo SolutionName="" IpAddress="" Port=""/>
+		</TServersInfo>
+
+		<TagProperties>
+			<Property></Property>
+		</TagProperties>
+
+		<NamespaceList>
+			<Property>Asset;Info;Server;Tag</Property>
+		</NamespaceList>
+
+	</LinkedSolutions>
+	
+</TMQTTBrokerConfiguration>

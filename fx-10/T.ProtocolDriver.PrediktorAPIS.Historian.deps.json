@@ -1,0 +1,166 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "T.ProtocolDriver.PrediktorAPIS.Historian/1.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "T.ProtocolDriver.PrediktorAPIS.Util": "1.0.0",
+          "T.ProtocolDriver.PrediktorAPIS.Util.Reference": "1.0.0.4"
+        },
+        "runtime": {
+          "T.ProtocolDriver.PrediktorAPIS.Historian.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "T.ProtocolDriver.PrediktorAPIS.Util/1.0.0": {
+        "runtime": {
+          "T.ProtocolDriver.PrediktorAPIS.Util.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": ""
+          }
+        }
+      },
+      "T.ProtocolDriver.PrediktorAPIS.Util.Reference/1.0.0.4": {
+        "runtime": {
+          "T.ProtocolDriver.PrediktorAPIS.Util.dll": {
+            "assemblyVersion": "1.0.0.4",
+            "fileVersion": "1.0.0.4"
+          }
+        }
+      },
+      "ApisNetUtilities/8.3.12.1": {
+        "runtime": {
+          "ApisNetUtilities.dll": {
+            "assemblyVersion": "8.3.12.1",
+            "fileVersion": "8.3.12.1"
+          }
+        }
+      },
+      "HiveNetApi/8.3.12.1": {
+        "runtime": {
+          "HiveNetApi.dll": {
+            "assemblyVersion": "8.3.12.1",
+            "fileVersion": "8.3.12.1"
+          }
+        }
+      },
+      "HoneystoreNetApi/8.3.12.1": {
+        "runtime": {
+          "HoneystoreNetApi.dll": {
+            "assemblyVersion": "8.3.12.1",
+            "fileVersion": "8.3.12.1"
+          }
+        }
+      },
+      "OpcNetApi.Prediktor/8.3.12.1": {
+        "runtime": {
+          "OpcNetApi.Prediktor.dll": {
+            "assemblyVersion": "8.3.12.1",
+            "fileVersion": "8.3.12.1"
+          }
+        }
+      },
+      "OpcNetApi.Com.Prediktor/8.3.12.1": {
+        "runtime": {
+          "OpcNetApi.Com.Prediktor.dll": {
+            "assemblyVersion": "8.3.12.1",
+            "fileVersion": "8.3.12.1"
+          }
+        }
+      },
+      "SentinelRMSCore/8.3.12.1": {
+        "runtime": {
+          "SentinelRMSCore.dll": {
+            "assemblyVersion": "8.3.12.1",
+            "fileVersion": "8.3.12.1"
+          }
+        }
+      },
+      "Prediktor.Log/8.3.12.1": {
+        "runtime": {
+          "Prediktor.Log.dll": {
+            "assemblyVersion": "8.3.12.1",
+            "fileVersion": "8.3.12.1"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "T.ProtocolDriver.PrediktorAPIS.Historian/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "T.ProtocolDriver.PrediktorAPIS.Util/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "T.ProtocolDriver.PrediktorAPIS.Util.Reference/1.0.0.4": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ApisNetUtilities/8.3.12.1": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HiveNetApi/8.3.12.1": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HoneystoreNetApi/8.3.12.1": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OpcNetApi.Prediktor/8.3.12.1": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OpcNetApi.Com.Prediktor/8.3.12.1": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SentinelRMSCore/8.3.12.1": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Prediktor.Log/8.3.12.1": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

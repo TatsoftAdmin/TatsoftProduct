@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Protocol>
+	<Description>eWON Synchronization Protocol</Description>
+	<AssemblyName>T.ProtocolDriver.EWon</AssemblyName>
+	<AssemblyVersion>2.0.0.0</AssemblyVersion>
+	<CustomInterface>Custom</CustomInterface>
+	<Multiplatform>true</Multiplatform>
+	<Settings AllowCustomTypes="false">
+		<Custom>
+		</Custom>
+	</Settings>
+	<Station>
+		<Custom>
+			<Names P1="Account" P2="Username" P3="Password" P4="DeveloperId"/>
+			<DefaultValues P1="Username" P2="" P3="" P4="" />
+			<EditModes P1="Enable" P2="Enable" P3="Enable" P4="Enable"/>
+			<EditTypes P1="String" P2="String" P3="String" P4="String"/>
+			<Hint P1="Account name" P2="Name of the user" P3="Password" P4="The develoer id"/>
+			<GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />
+			<GridValues G1="550" G2="200" />
+		</Custom>
+	</Station>
+	<Points>
+		<Address AllowConfigDataType="false">
+			<Names P1="Tag" P2="separator1" P3="eWON_Name"/>
+			<DefaultValues P1="TAGNAME" P2=";" P3=""/>
+			<EditTypes P1="string" P2="separator" P3="String" />
+			<EditModes P1="Enable" P2="Hidden" P3="Enable" />
+			<Hint P1="Name of the tag in the eWON" P2="eWON Name where the tags are"/>
+		</Address>
+	</Points>
+</Protocol>
