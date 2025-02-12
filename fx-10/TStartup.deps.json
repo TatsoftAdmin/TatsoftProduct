@@ -9,7 +9,7 @@
       "TStartup/1.0.0": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
-          "T.Kernel": "2020.0.1.405",
+          "T.Kernel": "2020.0.1.406",
           "T.Kernel.RemoteClient": "2020.0.1.1",
           "T.Kernel.RemoteClient.tRPC": "2020.0.1.1",
           "T.Kernel.TServiceModel": "2020.0.1.1",
@@ -23,11 +23,11 @@
         }
       },
       "Microsoft.CSharp/4.7.0": {},
-      "T.Kernel/2020.0.1.405": {
+      "T.Kernel/2020.0.1.406": {
         "runtime": {
           "T.Kernel.dll": {
-            "assemblyVersion": "2020.0.1.405",
-            "fileVersion": "2020.0.1.405"
+            "assemblyVersion": "2020.0.1.406",
+            "fileVersion": "2020.0.1.406"
           }
         }
       },
@@ -278,7 +278,7 @@
       "path": "microsoft.csharp/4.7.0",
       "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
-    "T.Kernel/2020.0.1.405": {
+    "T.Kernel/2020.0.1.406": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

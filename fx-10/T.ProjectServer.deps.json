@@ -13,7 +13,7 @@
           "NETStandard.Library": "2.0.3",
           "System.Memory": "4.0.1.2",
           "System.Text.Json": "8.0.0.0",
-          "T.Kernel": "2020.0.1.405"
+          "T.Kernel": "2020.0.1.406"
         },
         "runtime": {
           "T.ProjectServer.dll": {}
@@ -42,11 +42,11 @@
           }
         }
       },
-      "T.Kernel/2020.0.1.405": {
+      "T.Kernel/2020.0.1.406": {
         "runtime": {
           "T.Kernel.dll": {
-            "assemblyVersion": "2020.0.1.405",
-            "fileVersion": "2020.0.1.405"
+            "assemblyVersion": "2020.0.1.406",
+            "fileVersion": "2020.0.1.406"
           }
         }
       },
@@ -105,7 +105,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "T.Kernel/2020.0.1.405": {
+    "T.Kernel/2020.0.1.406": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

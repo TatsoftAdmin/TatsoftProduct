@@ -12,7 +12,7 @@
           "TMQTTBrokerLibrary": "1.0.0",
           "Microsoft.Bcl.AsyncInterfaces": "8.0.0.0",
           "System.Resources.Extensions": "7.0.0.0",
-          "T.Kernel": "2020.0.1.405",
+          "T.Kernel": "2020.0.1.406",
           "T.Library": "2020.0.1.1"
         },
         "runtime": {
@@ -44,11 +44,11 @@
           }
         }
       },
-      "T.Kernel/2020.0.1.405": {
+      "T.Kernel/2020.0.1.406": {
         "runtime": {
           "T.Kernel.dll": {
-            "assemblyVersion": "2020.0.1.405",
-            "fileVersion": "2020.0.1.405"
+            "assemblyVersion": "2020.0.1.406",
+            "fileVersion": "2020.0.1.406"
           }
         }
       },
@@ -210,7 +210,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "T.Kernel/2020.0.1.405": {
+    "T.Kernel/2020.0.1.406": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

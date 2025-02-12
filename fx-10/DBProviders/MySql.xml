@@ -16,9 +16,9 @@
 
     <MySql.Data.MySqlClient>
       <Names P1="Server" P2="Port" P3="Database" P4="SslMode" P5="Additional Parameters"/>
-      <EditTypes P1="string" P2="int" P3="string" P4="string" P5="string"/>
-      <DefaultValues P1="127.0.0.1" P2="3306" P3="mysql" P4="" P5=""/>
-      <EditModes P1="Enable" P2="Enable" P3="Enable" P4="Optional" P5="Enable"/>
+      <EditTypes P1="string" P2="int" P3="string" P4="ComboBox=None;Preferred;Required;" P5="string"/>
+      <DefaultValues P1="127.0.0.1" P2="3306" P3="mysql" P4="None" P5=""/>
+      <EditModes P1="Enable" P2="Enable" P3="Enable" P4="Enable" P5="Enable"/>
       <Hint P1="Server Name" P2="Port Number" P3="Database Name" P4="Ssl Mode. Use 'none' if not use SSL" P5="Aditional parameters to be added to the ConnectionString, separated by ',' (comma)"/>
       <Parameters UserSyntax="Uid" PassSyntax="Pwd" />
       <GridProperties G1="PopUpWidth" G2="PropertyColumnWidth" />

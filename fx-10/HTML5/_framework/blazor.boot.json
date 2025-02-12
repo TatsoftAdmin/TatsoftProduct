@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "THtml5Browser",
   "resources": {
-    "hash": "sha256-Cxid42t30pzKAXrdrTBPKJ1F0Pqx9YhwYrSA4s7AWqM=",
+    "hash": "sha256-8Yz/pH1ikKm/vlDlVhFDMopQfU8knkOsl5PiAHq2xCA=",
     "jsModuleNative": {
       "dotnet.native.8.0.11.6nq1fo6hbu.js": "sha256-VdKq87/z5NIxZKmuM+fv38XF+RcEb/bg3jVBwQSfwP4="
     },
@@ -168,17 +168,17 @@
       "System.Xml.Linq.wasm": "sha256-Nfq9DSUMqdQ4NdHCUInFxm7MkFBUXem3thDEckuSrOw=",
       "System.Xml.ReaderWriter.wasm": "sha256-m6gGWJzqF4HWiJjYnv/rRuaGqOKzZ/IoBexXei/JzsM=",
       "System.Xml.XmlSerializer.wasm": "sha256-ZPmoTU9/63PzQwIqwPOPi1LuU/h3JuiZ5gUHAaB01Sk=",
-      "T.Kernel.RemoteClient.tRPC.wasm": "sha256-g+yF40Dai2zrZzv598HVf61DOVFyAKttoDnCkTbTemQ=",
-      "T.Kernel.RemoteClient.wasm": "sha256-lkA9nwRVKms2hCNpvSM6PIj2yB455QAL2iQ7XBhd+44=",
-      "T.Kernel.TServiceModel.wasm": "sha256-InVZLxAhomHG1ObnF9AhsbQE5XgenD6MyC+qr2rY3Tk=",
-      "T.Kernel.wasm": "sha256-8HLZJZj6yR/nu5j9Hzchb8BNDihIw7qpowr19jhPHsk=",
-      "T.Library.wasm": "sha256-W03QdPm7+BQaEnd9jw16z1C740/G2AMsL8vZT24fD8g=",
-      "T.Modules.wasm": "sha256-eR/b5nkwqIbtuAE8ODCsDLAbICtUs4fNoUWFglP2SQ0=",
-      "T.ProjectServer.wasm": "sha256-3ZctOzy5zPLzpCDXy6PjKvJjvckl9jvHkrRY5fA05MI=",
-      "T.ProtocolAPI.wasm": "sha256-0JnpOn4ktNWjkcwL/MWHC0Ae3tztD2r2FrddFJxiO2s=",
-      "T.Toolkit.wasm": "sha256-McGztFBmQOM+7q5yf4lxm8IkZK2r2d5yVPRj6GfJCeA=",
-      "THtml5Browser.wasm": "sha256-Pld5aGXatQSKL9PjZ/fiV4k2MzA+cHNCYNErxpe2wSs=",
-      "THtml5Client.wasm": "sha256-ZJvtv3q8MfN7eXExnQVTUSPbZJJJ7DvpprFftH9RhNQ="
+      "T.Kernel.RemoteClient.tRPC.wasm": "sha256-yb6vRpTyxTOEiBmYG1at3FDpACpyFVLkLoRmjse6fMk=",
+      "T.Kernel.RemoteClient.wasm": "sha256-je8R9E5ItvFvSzmM7u26y55SulpEBdhtS572y0/yl+0=",
+      "T.Kernel.TServiceModel.wasm": "sha256-rqEIBnG/Qo31nLUlNtV+Pw7kYkuGJPqklQA5GGicobM=",
+      "T.Kernel.wasm": "sha256-Jc8pH6KPW3rraMLb/mpPt2kkNlV14TyUtlBvkNotAOs=",
+      "T.Library.wasm": "sha256-EAII7AN8FiCuomNZHR0o6TeOJLe4In/GEoS9NbTzK38=",
+      "T.Modules.wasm": "sha256-K8P0BKGxQs9fLn6opakqWJMNZ1QWzf9PMfvIQ9neJTs=",
+      "T.ProjectServer.wasm": "sha256-RWzidgnjIpg/KFxG+VLcpGKsLtOdXkFksRoCXdZ5DnE=",
+      "T.ProtocolAPI.wasm": "sha256-0WpPHIgqw7QBPOydTpOUkVBw2w54QKmpO8s/0YOpGTs=",
+      "T.Toolkit.wasm": "sha256-T8KMdbMHNldDy7yN6FqrtaLHfykyzqXAfDAlQHvNI/E=",
+      "THtml5Browser.wasm": "sha256-xO2RMRDgHOeG+q1f1KNqG86luRlNeW6nurmtu6ac8Vs=",
+      "THtml5Client.wasm": "sha256-4c+DhrfjObd/0jqgAPRd07/0JIgVhnVGRXaZ1quVA4Q="
     },
     "satelliteResources": {
       "cs": {
